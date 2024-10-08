@@ -1,0 +1,422 @@
+# statically defined unobjects
+
+- id: 35
+  isDeleted: true
+  emoji: 🥑
+  name: Kitchen Sink
+  description: This kitchen sink contains all the available dishes we serve up
+  s3Key: object/kitchensink_001.png
+  coverS3Key: object/covers/kitchensink_001.png
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: 'D0CDBD'
+  visibleForRole: Tester
+
+- id: 36
+  isDeleted: true
+  emoji: 🦶
+  name: Bigfoot
+  description: Bigfoot is a friendly monster who very rarely eats people
+  s3Key: object/bigfoot_003.png
+  coverS3Key: object/covers/bigfoot_003.png
+  bio: I'm a hairy creature who lives in the Pacific Norwest. I spend my days wandering the woods, eating mushrooms, and smoking weed.  I love to eat and drink.
+  backgroundColor: 'E7C752'
+  visibleForRole: Tester
+
+- id: 38
+  isDeleted: true
+  emoji: 🦶
+  name: 'Bigfoot'
+  description: 'Bigfoot is a friendly monster who rarely eats people'
+  bio: 'This is a biography that is very long and has a bunch of inforation about the object.'
+  s3Key: object/bigfoot_002.png
+  coverS3Key: object/covers/bigfoot.png
+  backgroundColor: '97A634'
+  visibleForRole: Tester
+
+- id: 39
+  isDeleted: true
+  emoji: 🦶
+  name: Cave of Secrets
+  description: Beware of what lies within
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  s3Key: object/cave_001.png
+  coverS3Key: object/covers/cave_001.png
+  backgroundColor: '4E3316'
+  visibleForRole: Tester
+
+- id: 51
+  isDeleted: true
+  emoji: 🦶
+  name: Party Keg
+  description: Time for keg stands!
+  s3Key: object/keg_002.png
+  coverS3Key: object/covers/keg_002.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: This keg rewards its users with cups of beer. But it requires energy to pump this keg, so make sure you come to the party well rested.
+  backgroundColor: '06C6BD'
+  location:
+    x: 20
+    y: 20
+  visibleForRole: Tester
+
+- id: 52
+  isDeleted: true
+  emoji: 🦶
+  name: Monkey Butt
+  description: It's a monkey butt right there in your face
+  s3Key: object/monkeybutt_001.png
+  # coverS3Key: object/covers/monkeybutt_001.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: '5AC8B7'
+  visibleForRole: Tester
+
+- id: 53
+  isDeleted: true
+  emoji: 🦶
+  name: Ginger
+  description: But I'll go by any name you want
+  s3Key: object/sexworker_001.png
+  coverS3Key: object/covers/sexworker_001.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: 'FF8BC1'
+  visibleForRole: Tester
+
+- id: 54
+  isDeleted: true
+  emoji: 🦶
+  name: Donnie Doll
+  description: I'm a total d-bag and I'm untouchable.
+  s3Key: object/donnie_001.png
+  coverS3Key: object/covers/donnie_001.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: I'm a total d-bag and I'm untouchable.
+  backgroundColor: 'F58F27'
+  visibleForRole: Tester
+
+- id: 55
+  isDeleted: true
+  emoji: 🦶
+  name: Doctor Spacemen
+  description: I got certified online.
+  s3Key: object/doctor_004.png
+  coverS3Key: object/covers/doctor_004.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: '89D4C2'
+  location:
+    x: 40
+    y: 20
+  visibleForRole: Tester
+
+- id: 56
+  isDeleted: true
+  emoji: 🦶
+  name: The Brewery
+  description: Come brew your favorite libation
+  s3Key: object/brewery.v2@3x.png
+  coverS3Key: object/covers/brewery@3x.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: The brewery requires raw ingredients to operate.  You need corn, hops and water.  Combine these ingredients in just the right way, in order to produce your favorite libation.
+  backgroundColor: 'E0CEB6'
+  location:
+    x: 60
+    y: 20
+  visibleForRole: Tester
+
+- id: 57
+  isDeleted: true
+  emoji: 🦶
+  name: Mirror
+  description: Stare deeply into your soul
+  s3Key: object/mirror_002.png
+  # coverS3Key: object/covers/mirror_002.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: '4F2C9F'
+  visibleForRole: Tester
+
+- id: 58
+  isDeleted: true
+  emoji: 🦶
+  name: Mine
+  description: Your ticket to wealth!
+  s3Key: object/mine_002.png
+  # coverS3Key: object/covers/mine_002.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: '413C1B'
+  visibleForRole: Tester
+
+- id: 59
+  isDeleted: true
+  emoji: 🦶
+  name: Casino HI-LO
+  description: Play to win!
+  # s3Key: object/casino_003.png
+  s3Key: 'object/hi_low.png'
+  coverS3Key: object/covers/hi_low.png
+  gradientS3Key: 'object/hi_low.png'
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: 'EE6786'
+  location:
+    x: 20
+    y: 40
+  visibleForRole: Tester
+
+- id: 60
+  isDeleted: true
+  emoji: 🦶
+  name: Produce Stand
+  description: We've got everything you need to prepare a great meal!
+  s3Key: object/productstand_002.png
+  coverS3Key: object/covers/productstand_002.png
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: '55A9AD'
+  location:
+    x: 40
+    y: 40
+  visibleForRole: Tester
+
+- id: 61
+  isDeleted: true
+  emoji: 🦶
+  name: Cold Brew Coffee
+  description: Drink me!
+  s3Key: object/coldbrew_002.png
+  coverS3Key: object/covers/coldbrew_001.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: Made by a hipster barista with much ❤️. This object will increase your energy level and decrease your tired level.
+  backgroundColor: 6AE1D4
+  visibleForRole: Tester
+  
+- id: 62
+  isDeleted: true
+  emoji: 🦶
+  name: Naughty Nurse
+  description: Drink me!
+  s3Key: object/sexynurse.png
+  # coverS3Key: object/covers/sexynurse.png
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: '6AE1D4'
+  visibleForRole: Tester
+
+- id: 63
+  isDeleted: true
+  emoji: 🦶
+  name: Corner Store
+  description: Come Spend Money You Don't Have!
+  s3Key: object/coldbrew_002.png
+  coverS3Key: object/covers/coldbrew_001.png
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: '6AE1D4'
+  visibleForRole: Tester
+
+- id: 65
+  isDeleted: true
+  emoji: 🦶
+  name: Disco Club
+  description: Dance!
+  s3Key: object/mirror_002.png
+  # coverS3Key: object/covers/mirror_002.png
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: '4cfc20'
+  visibleForRole: User
+
+- id: 66
+  isDeleted: true
+  emoji: 🦶
+  name: Henry
+  description: Everyone's favorite garden gnome!
+  bio: This is a garden gnome.
+  s3Key: object/gnome.png
+  coverS3Key: object/covers/gnome.png
+  backgroundColor: 'B6EB5F'
+  visibleForRole: Tester
+
+- id: 67
+  isDeleted: true
+  emoji: 🦶
+  name: Haunted House
+  description: Beware of what lies within
+  # createdByUserId: 331876e6-22a6-4fa4-81d8-f93a8906dc61
+  bio: This is the old Hackman House on Hackman Hill.  Intruders KEEP OUT.
+  s3Key: object/hauntedhouse.png
+  coverS3Key: object/covers/hauntedhouse.png
+  backgroundColor: '191F2D'
+  visibleForRole: Tester
+
+- id: 69
+  isDeleted: true
+  emoji: 🦶
+  name: Three-Card Monte
+  description: Play to win!
+  s3Key: object/casino_002.png
+  coverS3Key: object/covers/casino_001.png
+  gradientS3Key: object/casino_002.png
+  bio: A shady game played by a shady street dealer
+  backgroundColor: '#840028'
+  location:
+    x: 60
+    y: 40
+  visibleForRole: Tester
+  
+- id: 70
+  isDeleted: true
+  emoji: 🦶
+  name: Henry the Gnome
+  description: Lucky stop
+  bio: This is a garden gnome.
+  s3Key: object/gnome.png
+  coverS3Key: object/covers/gnome.png
+  backgroundColor: 'B6EB5F'
+  visibleForRole: Tester
+
+- id: 71
+  isDeleted: true
+  emoji: 🦶
+  name: Big Foot
+  description: A nice woodland creature
+  bio: This is bigfoot
+  s3Key: object/bigfoot_003.png
+  coverS3Key: object/covers/bigfoot_003.png
+  backgroundColor: 'B6EB5F'
+  location:
+    x: 20
+    y: 60
+  visibleForRole: Tester
+
+- id: test-object-001
+  isDeleted: true
+  emoji: 🥑
+  name: Test Object
+  description: Testing testing 123...
+  s3Key: action/unknown.png
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: 'D0CDBD'
+  visibleForRole: Tester
+
+- id: hammock
+  isDeleted: true
+  emoji: 🥑
+  name: Beach Hammock
+  description: Get some rest!
+  s3Key: object/hammock.png
+  coverS3Key: object/covers/hammock.png
+  bio: This is a Hammock
+  backgroundColor: 'D0CDBD'
+  visibleForRole: Tester
+
+- id: fortuneteller
+  isDeleted: true
+  emoji: 🥑
+  name: Fortune Teller
+  description: Let the fortune teller read your stars!
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/89617116_629155274584578_365919883495473152_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=tsF3IPug7-sAX8mWaHw&_nc_ht=scontent.fsfn4-1.fna&oh=fae4a837954eae752acf85e331ac0420&oe=5E9382A6
+  bio: This fortune teller has special abilities to predict the future
+  backgroundColor: 'D0CDBD'
+  visibleForRole: Tester
+
+- id: 'npc.jt.welcome.gnome'
+  isDeleted: true
+  emoji: 🦶
+  name: Henry
+  description: Everyone's favorite garden gnome!
+  bio: This is a garden gnome.
+  s3Key: object/gnome.png
+  coverS3Key: object/covers/gnome.png
+  backgroundColor: 'B6EB5F'
+  visibleForRole: Tester
+
+- id: 'npc.jt.hairy.monster'
+  isDeleted: true
+  emoji: 🦶
+  name: Jacob
+  description: A lonely and misunderstood creature of Unreal
+  bio: This is a garden gnome.
+  s3Key: object/hairymonster.png
+  coverS3Key: object/covers/hairymonster.png
+  backgroundColor: 'CA9C76'
+  visibleForRole: Tester
+
+- id: 'npc.jt.blue.joe'
+  isDeleted: true
+  emoji: 🦶
+  name: Joe
+  description: Your lucky ticket to early access!
+  bio: This is a garden gnome.
+  s3Key: object/bluejoe.png
+  coverS3Key: object/covers/bluejoe.png
+  backgroundColor: '658E2D'
+  visibleForRole: Tester
+
+- id: casino.blackjack
+  isDeleted: true
+  emoji: 🦶
+  name: Casino Blackjack
+  location:
+    x: 45
+    y: 65
+  description: Play to win!
+  s3Key: 'object/hi_low.png'
+  coverS3Key: 'object/covers/hi_low.png'
+  gradientS3Key: 'object/hi_low.png'
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  backgroundColor: 'EE6786'
+  visibleForRole: Tester
+
+
+- id: npc.strawberrypatch
+  isDeleted: true
+  emoji: 🦶
+  name: Strawberry Patch
+  location:
+    x: 45
+    y: 100
+  description: Harvest Strawberries
+  s3Key: object/bluejoe.png
+  coverS3Key: object/covers/bluejoe.png
+  backgroundColor: '658E2D'
+  # gradientS3Key: 'object/hi_low.png'
+  bio: This is a biography that is very long and has a bunch of inforation about the object.
+  visibleForRole: Tester
+
+- id: 'npc.jt.red.joe'
+  isDeleted: true
+  emoji: 🦶
+  name: Red Joe
+  description: Your lucky ticket to early access!
+  bio: This is a garden gnome.
+  s3Key: object/bluejoe.png
+  coverS3Key: object/covers/bluejoe.png
+  backgroundColor: 'FF8E2D'
+  visibleForRole: Tester
+
+- id: npc.appletree
+  isDeleted: true
+  emoji: 🦶
+  name: Apple Tree
+  description: Come Pick Apples!
+  bio: This is an apple tree.
+#   s3Key: object/bluejoe.png
+  coverS3Key: object/covers/bluejoe.png
+  imageUrl: 'http://www.pynefarms.com/resources/apple_tree.png'
+  backgroundColor: 'b8d3ff'
+  visibleForRole: Tester
+
+- id: centralbank
+  isDeleted: true
+  emoji: 🏦
+  name: Central Bank
+  description: Deposit and earn!
+  bio: This is Unreal's Central Bank
+  featuredSortKey: '0990'
+  s3Key: npc/centralbank/avatar.png
+  coverS3Key: npc/centralbank/cover.png
+  backgroundColor: '85BB65'
+  hashtribute: FinanciallySavvy
+  showBackpack: false
+  visibleForRole: Tester

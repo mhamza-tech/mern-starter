@@ -1,0 +1,30 @@
+- name: action.appletree.pick
+  text: Pick
+  description: 'Pick an apple'
+  order: AAA
+  imageUrl: 'http://www.clker.com/cliparts/4/2/3/d/11954329291743204660panier-shopping_basket_a_01.svg.hi.png'
+  s3Key: null
+  unObjectId: npc.appletree
+# backgroundColor: 'F6F6F6'
+
+- name: action.appletree.picked
+# text: Pick
+  description: 'Picked apple'
+  order: AAB
+  s3Key: action/color/apple.png
+  unObjectId: npc.appletree
+# backgroundColor: 'F6F6F6'
+
+- name: action.appletree.kick
+  text: Kick!
+  description: 'Kick the tree'
+  order: AAC
+  imageUrl: 'https://images.onlinelabels.com/images/clip-art/benj/Jackboot-189138.png'
+  unObjectId: npc.appletree
+
+- name: action.appletree.animal
+  text: Animal
+  description: 'apple eater'
+  order: AAD
+  imageUrl: 'http://stmarkhamilton.org/wp-content/uploads/2015/06/OR-platypus.png'
+  unObjectId: npc.appletree

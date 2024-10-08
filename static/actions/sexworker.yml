@@ -1,0 +1,7 @@
+- name: 'Action.SexWorker.Roleplay'
+  text: Role-play
+  description: Role-play
+  s3Key: action/color/roleplay.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/53/actionx
+  unObjectId: 53

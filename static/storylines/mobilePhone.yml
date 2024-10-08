@@ -1,0 +1,76 @@
+storyline:
+  unObjectId: 45
+  emoji: 📱
+  name: Mobile Phone
+  text: Your mobile phone is your life. That's a bad thing.
+  entryId: 
+
+start:
+  .Nice phone!:
+    text: Look at your phone. It's so black! Or perhaps another color! But most likely black!
+    Newsfeed: 
+    nextstate: mp
+mp:
+  .Yep :
+    text: Your phone has a camera, yes?
+    next state: mp2
+mp2:
+  .Yep:
+    text: Take a picture of your junk.
+    newsfeed: "{{user_name}} is **taking a picture of their junk** with the {{object_name}}."
+    next state: mp3
+mp3: 
+  .WHAT?:
+    text: Just do it. It'll be funny, I promise.
+    next state: mp4
+mp4:
+  .OK:
+    text: Great. What other pictures do you have?
+    next state: mp5
+    newsfeed: Who here has **taken X rated** pictures with a {{object_name}}?
+mp5:
+  .The usual:
+    text: Let me just grab your phone and see. Okay, dog and cat photos, friends, a lot of videos where you're driving and talking into the camera.
+    newsfeed: If you **go through** your {{object_name}} and delete all your German contacts, you'll be Hans-free.
+    next state: mp6
+mp6:
+  .Truth:
+    text: What games do you have on this phone?
+    newsfeed: 
+    next state: mp7
+mp7:
+  .Just dumb ones:
+    text: I see Fortnite, PUBG, Super Smash bros, nice. Now let's see who your favorite contacts are.
+    newsfeed: 
+    next state: mp8
+m8: 
+  .Can I have my phone back?:
+     text: Nope! Okay, who we got here? Aw, Mom. Is this your sister? Who's this person, they look hot.
+     next state: mp9
+mp9:
+  .My ex:
+    text: They are your ex but still in your favorites?
+    newsfeed: Don't let the {{object_name}} get you to put the **Ex in Sex**.
+    next state: mp10
+mp10:
+  .It's complicated:
+    text: Doesn't seem complicated to me, you still have them as a favorite. You need to try again! Hope springs eternal!
+    next state: mp11
+mp11:
+  .Can we talk about something else:
+    text: Absolutely. I can take your mind off that situation with a few quick taps.
+    next state: mp12
+mp12:
+  .What? Stop!:
+    text: BOOM! That picture of your junk is now on its way across the magical wireless waves to your mom, your sister, and your ex.
+    next state: mp13
+mp13:
+  .You are ruining my life:
+    text: Wait! Before you tell me I ruined your life, look who just texted back.
+    next state: mp14
+mp14:
+  .OMG it's my ex:
+    text: Yep, and they sent you the eggplant emoji. You know what that means. You got this. Go forth and nail it.
+    newsfeed: 
+    next state: end
+end:

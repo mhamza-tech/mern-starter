@@ -1,0 +1,45 @@
+- name: 'Action.HauntedHouse.North'
+  text: North
+  order: AAB
+  s3Key: action/color/north.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/68/actionx
+  unObjectId: 68
+  xp: 5
+
+- name: 'Action.HauntedHouse.South'
+  text: South
+  order: AAC
+  s3Key: action/color/south.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/68/actionx
+  unObjectId: 68
+  xp: 5
+
+- name: 'Action.HauntedHouse.East'
+  text: East
+  order: AAD
+  s3Key: action/color/east.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/68/actionx
+  unObjectId: 68
+  xp: 5
+
+- name: 'Action.HauntedHouse.West'
+  text: West
+  order: AAA
+  s3Key: action/color/west.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/68/actionx
+  unObjectId: 68
+  xp: 5
+
+- name: 'Action.HauntedHouse.Fight'
+  isDeleted: true
+  text: Fight
+  order: AAE
+  s3Key: action/color/fight.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/68/actionx
+  unObjectId: 68
+  xp: 10

@@ -1,0 +1,29 @@
+storyline:
+  unObjectId: 43
+  emoji: 💀
+  name: Pirate
+  text: Ready to plunder some booty? 
+  entryId: 
+start:
+  .Ahoy, Matey!:
+    text: A pirate walks into the bar.
+    Newsfeed: 
+    nextstate: ahoy2
+ahoy2:
+  .Here we go:
+    text: 'The bartender notices that the pirate has a ship wheel coming out of his pants.'
+    Newsfeed: What do you **say to a {{object_name}}** with a ship's wheel coming out of his pants?
+    next state: ahoy3  
+ahoy3:
+  .Avast ye:
+    text: 'The bartender says to the pirate, "Hello there good sir, is everything okay? You have a ship wheel coming out of your pants."'
+    Newsfeed: 'How do you make a {{object_name}} furious? Take away the "p".'
+    next state: ahoy4
+ahoy4:
+  .Yo ho ho:
+    text: 'The pirate replies, "Ayyye, it be drivin me nuts!"'
+    Newsfeed: 
+    next state: end        
+end: 
+
+

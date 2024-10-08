@@ -1,0 +1,45 @@
+- name: 'Action.Brewery.Corn'
+  text: Corn
+  description: 'Add some corn to the brew machine'
+  s3Key: action/color/corn.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/56/actionx
+  unObjectId: 56
+  xp: 1
+
+# - name: 'Action.Brewery.Corn'
+#   isDeleted: true
+
+- name: 'Action.Brewery.Hops'
+  text: Hops
+  description: 'Mix in some hops and see what you get.'
+  s3Key: action/color/hops.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/56/actionx
+  unObjectId: 56
+  xp: 2
+
+
+# - name: 'Action.Brewery.Hops'
+#   isDeleted: true
+
+- name: 'Action.Brewery.Water'
+  text: Water
+  description: 'Water is a necessary ingredient for all brewing'
+  s3Key: action/color/water.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/56/actionx
+  unObjectId: 56
+  xp: 1
+# - name: 'Action.Brewery.Water'
+#   isDeleted: true
+
+- name: 'Action.Brewery.TryAgain'
+  text: Try Again
+  description: 'Restart the brewing machine'
+  order: ZZZZ
+  s3Key: action/color/retry.png
+  backgroundColor: null
+  collectionId: unobject/56/actionx
+  unObjectId: 56
+  xp: 0

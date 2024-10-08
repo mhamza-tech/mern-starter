@@ -1,0 +1,16 @@
+- name: Action.DiscoClub.Dance
+  text: Dance
+  order: AAA
+  s3Key: null
+  unObjectId: 65
+  collectionId: unobject/65/actionx
+  backgroundColor: 4cfc20
+
+- name: Action.DiscoClub.Confetti
+  text: Confetti
+  order: AAA
+  s3Key: null
+  unObjectId: 65
+  collectionId: unobject/65/actionx
+  backgroundColor: 4cfc20
+

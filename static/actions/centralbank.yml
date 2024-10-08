@@ -1,0 +1,42 @@
+#
+# actions associated with the centralbank handler module
+#
+
+- name: centralbank.action.deposit5
+  text: Deposit $5
+  backgroundColor: F6F6F6
+  s3Key: action/color/5bill.png
+  args:
+    amount: 5
+
+- name: centralbank.action.deposit10
+  text: Deposit $10
+  backgroundColor: F6F6F6
+  s3Key: action/color/10bill.png
+  args:
+    amount: 10
+
+- name: centralbank.action.deposit20
+  text: Deposit $20
+  backgroundColor: F6F6F6
+  s3Key: action/color/20bill.png
+  args:
+    amount: 20
+
+- name: centralbank.action.deposit100
+  text: Deposit $100
+  backgroundColor: F6F6F6
+  s3Key: action/color/100bill.png
+  args:
+    amount: 100
+
+- name: centralbank.action.withdraw
+  text: Withdraw All
+  backgroundColor: F6F6F6
+  s3Key: action/color/wallet.png
+
+- name: centralbank.action.interest
+  text: Grant Interest
+
+- name: centralbank.action.checkNoBalance
+  text: Check No Balance

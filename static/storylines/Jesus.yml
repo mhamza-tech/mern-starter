@@ -1,0 +1,100 @@
+storyline:
+  unObjectId: 23
+  emoji: 👼🏽
+  name: Jesus Christ
+  text: Chit Chat with Jesus
+  entryId: mPRWUyhOu4JhjpTKYxw2g
+
+start:
+  .Say Hello to Jesus:
+    next state: yes
+    text: You find yourself hanging out with Jesus. Do you have any questions?
+    Newsfeed: "{{ user_name }} is **chilling** with {{ object_name }}. A miracle? Or death?"
+yes:
+  .I can't think of any:
+    next state: Mary
+    text: Jesus says, "want to hear a Virgin Mary joke?"
+    Newsfeed: "{{ object_name }} is **telling** Virgin Mary jokes and {{user_name}} realizes that for Jesus, Virgin Mary jokes are Yo Momma jokes."
+Mary:
+  .Um that seems weird:
+    next state: virginjoke
+    text: |
+      "So one guy says to the other, congratulations on your new job. How did you get it?"
+      The other guy says, "The same way that the Virgin Mary got Jesus." 
+    Newsfeed: "{{object_name}} is **just alright** with {{user_name}}."
+virginjoke:
+  .A miracle?:
+    next state: mary2
+    text: No, sex that I can't tell anyone about.
+    Newsfeed: "{{object_name}} told {{user_name}} that he auditioned for this season's The Bachelor but was turned down."
+mary2:
+  .Try again:
+    next state: mary3
+    text: What do you call the Virgin Mary in a sex dungeon?
+    Newsfeed: "{{object_name}} sees all. He's always watching yoooooooouuuuuuuuuuu."
+mary3:
+  .Miracle whip!:
+    next state: mary4
+    text: Jesus is asking if you want him to turn some of your SmartWater into wine.
+    Newsfeed: "{{ object_name }} just **turned** {{ user_name }}'s SmartWater into wine." 
+mary4:
+  .YES PLEASE:
+    next state: mary5
+    text: Why don't you tell Jesus a joke? You say "Guess what they call the day you died."
+    Newsfeed: "{{object_name}} is telling jokes, and absolutely nailing it."
+mary5:
+  .What?:
+    next state: mary7
+    text: You deliver the punchline. "Good Friday!"" Jesus says, "Seriously? What the hell?"
+    Newsfeed: Why wasn't {{object_name}} born in America? Because they couldn't find 3 wise men and a virgin.
+mary7:
+  .Change the subject:
+    next state: mary8
+    text: You muse to Jesus, "Isn't it odd that after immaculately conceiving and birthing a divine prophet, the conclusion was that she had sex with a God, rather than conclude that SHE was the God?"
+    Newsfeed: 
+mary8:  
+  .What's up with Communion:
+    next state: mary9
+    text: You ask Jesus if communion wafers are really his flesh, and is the wine really his blood?
+    Newsfeed: Are communion wafers really **the flesh of {{object_name}}**, and is the wine really his blood?
+mary9:  
+  .Do you really want to know?:
+    next state: mary10
+    text: "You point out to Jesus that this means that the Church is making people choose to be cannibals, basically. He says, cryptically, 'blood is thicker than water'."
+    Newsfeed: Does taking communion mean you are eating {{object_name}}, and wouldn't that mean you are a cannibal?
+mary9:  
+  .Cannibal schmamable:
+    next state: gilgamesh
+    text: "Jesus continues singing the Andy Gibb song, 'YOU ARE, THIS DREAMERS ONLY DREAM, HEAVENS ANGEL. DEVILS DAUGHTER.'"
+    Newsfeed: "{{object_name}} is **telling the secrets of** the Church with {{user_name}}." 
+gilgamesh:  
+  .Um sure of course:
+    next state: sumerian
+    text: "Jesus says, 'You know the Flood in the Bible? That story where there's a flood, and Noah, and an Ark?'"
+    Newsfeed: "{{object_name}} is **dishing about** the Real Housewives of Noah's Ark." 
+sumerian:  
+  .Yes, I remember:
+    next state: sumerian2
+    text: "We copied that from the Sumerians. Like, Google Gilgamesh. It will sound familiar. There have been flood myths for thousands of years before Noah." 
+    Newsfeed: "{{object_name}} is **admitting** that the Bible copied ancient Sumerian texts to {{user_name}}."     
+sumerian2:
+  .That's not cool:
+    next state: sumerian3
+    text: Jesus says, I know it doesn't SEEM cool, but honestly all the religions do it. Like, the Greeks have a flood myth. The effing Chinese have a flood myth. We know the stories people want to hear, and why not reach for a tried and true salvation myth if you can?
+sumerian3:
+  .Wut:
+    next state: sumerian4
+    text: Yeah, the Greeks and Romans had their own flood myths and we at Christianity Incorporated just borrowed a little here and there. No one was into the pantheons anymore, but why waste perfectly good myths? Reuse, Recycle, whatever the third one is.
+sumerian4:
+  .Didn't you guys kill the Romans?:
+    next state: sumerian5
+    text: Yes! You should go to the Forum in Rome, it is AMAZING. We fucking toppled those pagan temples to the ground.
+
+
+
+
+
+
+
+end:           
+      

@@ -1,0 +1,9 @@
+- name: 'Action.ColdBrewCoffee.DrinkColdBrewCoffee'
+  text: Drink Cold Brew Coffee
+  description: 'Drink Cold Brew Coffee'
+  s3Key: action/color/drink.png
+  backgroundColor: null
+  collectionId: unobject/56/actionx
+  unObjectId: 56
+  xp: 5
+

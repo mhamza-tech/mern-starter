@@ -1,0 +1,64 @@
+- name: 'Action.TheCave.North'
+  text: North
+  order: AAA
+  s3Key: action/color/north.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/39/actionx
+  unObjectId: 39
+  xp: 5
+
+- name: 'Action.TheCave.South'
+  text: South
+  order: AAB
+  s3Key: action/color/south.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/39/actionx
+  unObjectId: 39
+  xp: 5
+
+- name: 'Action.TheCave.East'
+  text: East
+  order: AAC
+  s3Key: action/color/east.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/39/actionx
+  unObjectId: 39
+  xp: 5
+
+- name: 'Action.TheCave.West'
+  text: West
+  order: AAD
+  s3Key: action/color/west.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/39/actionx
+  unObjectId: 39
+  xp: 5
+
+- name: 'Action.TheCave.Fight'
+  text: Fight
+  order: AAD
+  s3Key: action/color/fight.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/39/actionx
+  unObjectId: 39
+  xp: 10
+
+# - name: 'Action.TheCave.ShareBeer'
+#   text: Share Beer
+#   description: 'Share Beer'
+#   s3Key: action/beer@3x.png
+#   backgroundColor: F6F6F6
+#   collectionId: unobject/39/actionx
+#   unObjectId: 39
+#   xp: 5
+# - name: 'Action.TheCave.ShareBeer'
+#   isDeleted: true
+
+- name: 'Action.TheCave.RestartLevel'
+  text: Restart Level
+  description: 'Restart Level'
+  s3Key: action/color/retry.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/39/actionx
+  unObjectId: 39
+  xp: 0

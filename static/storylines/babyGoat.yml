@@ -1,0 +1,32 @@
+storyline:
+  unObjectId: 47
+  emoji: 🐐
+  name: Baby Goat
+  text: Baby goats are bouncy!
+  entryId: 
+
+start:
+  .So jumpy!:
+    next state: bg2
+    text: Look at these two adorable goats! THEY ARE WEARING PAJAMAS! Squeee!
+    Newsfeed: If you can **look at this** {{object_name}} gif and not squeal, well, your heart is stone. {{user_name}} almost exploded with cute overload.
+    entryId: 78K1w12fpdyaFaQB7cRbt
+bg2:
+  .I need more:
+    next state: bg3
+    text: Rough housing in the barn. Ah, farm life. 
+    entryId: 2ZLWf8Da3MSdkZkpbtggBU
+    Newsfeed: "You have {{ object_name }} to be **kidding me**."
+bg3:
+  .Still more:
+    next state: bg4
+    text: Oh my, it's a baby goat and a pig! 
+    entryId: 28HWo7jiiv1YuB3rJ6zFrb
+    Newsfeed: "**Stand back**, {{user_name}} has {{ object_name }}this."
+bg4:
+  .I die:
+    next state: end
+    text: That's it. You've died of cuteness overload. Have this picture of an adorable Shibe to take to your grave with you.
+    entryId: 1iX3bNWQYbMvHDDL99lzqd
+    Newsfeed: Too many adorable {{ object_name }} gifs **can be deadly**.
+end:     

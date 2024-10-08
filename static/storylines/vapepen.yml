@@ -1,0 +1,52 @@
+storyline:
+  unObjectId: 9
+  emoji: 🌬
+  name: Vape Pen
+  text: Vaping, what could possibly go wrong. Oh, wait.
+  entryId: 3PZIpWGGowjEGcn7lTNpCu
+start:
+  .Take this vape pen:
+    next state: vaping
+    text: Vape pens hold THC cartridges, or nicotine cartridges, or death fungus, whatever floats your boat. Want to puff one? 
+    newsfeed: "{{user_name}} is **deciding** between nicotine and THC for the {{object_name}}. And respiratory failure, or shortness of breath."
+vaping:
+  .Sure:
+    next state: puff
+    text: You take the first puff of the vape pen. This is so much cooler than cigarettes. You GET it. Vapehead 4 lyfe!
+    newsfeed: "{{user_name}} is **puffing** the {{object_name}}, feeling cool. And they are still alive! So far." 
+Puff:
+  .Puff:
+    next state: puffAgain
+    text: You've taken another small puff of the vape pen. How are your lungs holding up so far? Ready for another?
+    newsfeed: "{{user_name}} is **getting cooler by the minute**, hitting the {{object_name}} some more. Giving those lungs a workout."
+PuffAgain:
+  .Vaping, baby:
+    next state: HitIt
+    text: You've taken a big puff of the vape pen. Is it THC or nicotine? Are your lungs about to collapse? So far so good!
+    newsfeed: "{{user_name}} can't remember if they **loaded** the {{object_name}} with nicotine or THC. But it's certainly loaded with potentially lethal chemicals."
+HitIt:
+  .Maybe both:
+    next state: HitIt2
+    text:  You feel wired AND stoned. Hit that baby one more time! There is literally no downside.
+    newsfeed: "{{user_name}} is feeling **wired and stoned**, and is still breathing, so this {{object_name}} is obviously fine. Hear that, CDC? " 
+HitIt2:
+  .Hit that baby one more time!:
+    next state: palatable
+    text: Let's switch out the cartridge in the vape pen. One of those exotic cartridges that the vape store sells that probably has Vitamin E acetate in it.
+    newsfeed: "{{user_name}} **wants** a new {{object_name}} cartridge, one with a fruity flavor and extra Vitamin E acetate." 
+palatable:  
+  .Yes that's a great idea:
+    next state: inhalenew
+    text: This new cartridge has a drawing of a hot dog, funnel cake, and a soda on it. Like a state fair! But with more lung scarring.  
+    newsfeed: "{{user_name}} is **all about** those custom lung-collapsing cartridges for their {{object_name}}." 
+inhalenew:
+  .It's Hot Dog flavor!:
+    next state: picknnewcart
+    text: The new cartridge reminds you of being at the state fair. Your mouth is filled with the taste of hot dogs, or more likely, thickening agents made from hot dogs.
+    Newsfeed: "You can't tell {{user_name}} **what to do** with a {{object_name}}. Unshackle yourself from so-called 'health experts' and 'the CDC'."
+picknnewcart: 
+  .You are now at a state fair:
+    next state: end
+    text: The vape pen transported you to the Iowa State Fair. Wait a minute, this is a hospital. This is an emergency room! What is lipoid pneumonia?
+    newsfeed: "The {{object_name}} **transported {{user_name}}** to the Iowa State Fair, aka, the emergency room."
+end:    

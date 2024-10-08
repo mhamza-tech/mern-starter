@@ -1,0 +1,196 @@
+- name: 'Action.Rewarded.ThrowMonkeyPoop'
+  text: Throw Monkey Poop
+  description: Actor is rewarded this action by monkeys in the network.
+  order: Aba
+  s3Key: action/color/poop.png
+  backgroundColor: F6F6F6
+  xp: 30
+  tags:
+    - touch
+    - aggressive
+
+- name: 'Action.Rewarded.HighFive'
+  text: Give a high-five
+  description: Actor is rewarded this action
+  order: Aba
+  s3Key: action/color/highfive.png
+  backgroundColor: F6F6F6
+  xp: 6
+  tags:
+    - touch
+    - aggressive
+
+- name: 'Action.Rewarded.PatchouliSpray'
+  text: Apply Patchouli Spray
+  description: Patchouli Spray
+  order: Ak
+  s3Key: action/color/pachouli.png
+  backgroundColor: F6F6F6
+  xp: 20
+  tags:
+    - unfriendly
+    - noxious
+
+- name: 'Action.Rewarded.ApplyFirstAid'
+  text: First Aid Kit
+  description: First Aid Kit
+  s3Key: action/color/aidkit.png
+  backgroundColor: F6F6F6
+  xp: 14
+
+- name: 'Action.Rewarded.BigKiss'
+  text: Big Kiss
+  description: Big Kiss
+  s3Key: action/color/kiss.png
+  dropAnimationS3Key: lottie/bigkiss.json
+  backgroundColor: F6F6F6
+  xp: 6
+
+- name: 'Action.Rewarded.TakeDietPill'
+  text: Diet Pill
+  description: Diet Pill
+  s3Key: action/color/dietpill.png
+  backgroundColor: F6F6F6
+  xp: 6
+
+- name: 'Action.Rewarded.HugeFart'
+  isDeleted: true
+  text: Huge Fart
+  description: 'Huge Fart'
+  s3Key: action/color/bigfart.png
+  backgroundColor: F6F6F6
+  xp: 30
+
+- name: 'Action.Rewarded.GiveBeer'
+  text: Beer
+  description: A jug of beer
+  order: BBA
+  s3Key: action/color/beermug.png
+  backgroundColor: 'F6F6F6'
+  xp: 30
+
+- name: 'Action.Rewarded.GiveWhiskey'
+  text: Whiskey
+  description: A shot of whiskey
+  s3Key: action/color/whiskey.png
+  backgroundColor: 'F6F6F6'
+  xp: 50
+
+- name: 'Action.Rewarded.FeedPizza'
+  text: Pizza
+  description: A slice of pizza
+  order: Za
+  s3Key: action/color/pizza.png
+  backgroundColor: 'F6F6F6'
+  xp: 10
+
+- name: 'Action.Rewarded.Apple'
+  text: Apple
+  description: Apple
+  order: Za
+  s3Key: action/color/apple.png
+  backgroundColor: 'F6F6F6'
+  xp: 10
+
+- name: 'Action.Rewarded.Kale'
+  text: Kale
+  description: Kale
+  order: Za
+  s3Key: action/color/kale.png
+  backgroundColor: 'F6F6F6'
+  xp: 10
+
+# - name: 'Action.Rewarded.Beer'
+#   text: Buy Beer
+#   description: 'A Bottle of Beer'
+#   order: BBA
+#   s3Key: action/beer_1@3x.png
+#   backgroundColor: 'F6F6F6'
+#   xp: 14
+
+- name: 'Action.Rewarded.WineInACan'
+  text: Wine
+  description: A Can of Wine
+  order: BBA
+  s3Key: ''
+  backgroundColor: 'F6F6F6'
+  xp: 14
+
+- name: 'Action.Rewarded.Coffee'
+  text: Coffee
+  description: A cup of coffee
+  order: BBA
+  s3Key: 'action/color/fillcup.png'
+  backgroundColor: 'F6F6F6'
+  xp: 14
+
+- name: 'Action.Rewarded.Water'
+  text: Water
+  description: 'Water'
+  s3Key: action/color/water.png
+  backgroundColor: 'F6F6F6'
+  xp: 1
+
+- name: 'Action.Rewarded.RainbowPoop'
+  text: Rainbow Poop
+  description: Some Rainbow Poop
+  s3Key: action/color/rainbowpoop.png
+  backgroundColor: 'F6F6F6'
+  xp: 1
+
+- name: 'Action.Rewarded.RainbowBrick'
+  text: Rainbow Brick
+  description: Rainbow Brick
+  s3Key: action/color/rainbowbrick.png
+  backgroundColor: 'F6F6F6'
+  xp: 100
+
+- name: 'Action.Rewarded.Strawberry'
+  text: Strawberry
+  description: A strawberry is a truly delicious treat
+  s3Key: action/color/rainbowbrick.png
+  backgroundColor: 'F6F6F6'
+  xp: 1
+
+- name: 'Action.Rewarded.JellyBean'
+  text: Jelly Bean
+  description: A Jelly Bean is a tasty treat!
+  s3Key: action/color/jellybeans.png
+  backgroundColor: 'F6F6F6'
+  xp: 1
+
+- name: 'Action.Rewarded.GoldenApple'
+  text: Golden Apple
+  description: Golden Apple
+  order: Za
+  s3Key: action/color/goldenapple.png
+  backgroundColor: 'F6F6F6'
+  xp: 10
+
+- name: 'Action.Rewarded.Tomato'
+  text: Tomato
+  description: A tomato
+  s3Key: action/color/tomatoe.png
+  backgroundColor: 'F6F6F6'
+  xp: 1
+
+- name: 'Action.Rewarded.Orange'
+  text: Orange
+  description: An orange
+  s3Key: action/color/orange.png
+  backgroundColor: 'F6F6F6'
+  xp: 1
+
+- name: 'Action.Rewarded.CuttingBoard'
+  text: Cutting board
+  description: A cutting board
+  s3Key: action/color/cuttingboard.png
+  backgroundColor: 'F6F6F6'
+  xp: 1
+
+- name: 'Action.Rewarded.Cup'
+  text: Cup
+  description: A cup
+  s3Key: action/color/solocup.png
+  backgroundColor: 'F6F6F6'
+  xp: 1

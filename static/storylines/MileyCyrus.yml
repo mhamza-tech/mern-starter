@@ -1,0 +1,68 @@
+storyline: 
+  unObjectId: 21
+  emoji: 👅
+  name: Miley Cyrus
+  text: Hi I'm Miley, like, let's hang out.
+  entryId: BVhIGCraxbrbG8ievKMaH
+
+start:
+  .I would love to, Miley!:
+    nextstate: smoke
+    text: If you could hang out with Miley Cyrus, what would you want to do?
+    Newsfeed: "{{user_name}} is **hanging out** with {{object_name}}."
+    entryId: 6BJVYKMz1aLsP0MKVGRpKj
+smoke:
+  .Rip a bong:
+    next state: flaming
+    text: If you were listening to music with Miley, what would you be listening to?
+    Newsfeed: "{{object_name}} is **doing bong rips** with {{user_name}}."
+flaming: 
+  .Flaming Lips:
+    next state: dogs
+    text: How many dogs does Miley have?
+    newsfeed:  "{{object_name}} **came in** like a WREEEEEECCCCCCCCCKKKKKING BAAAAAAAAALLLLL! {{user_name}} just sort of walked in normally."
+    entryId: 6m7GiXbG2UfmdAaDYdaMC4
+dogs: 
+  .Seven:
+    next state: pig
+    text: How many pigs does Miley have?
+    Newsfeed: True {{object_name}} fans know how many pigs she **has**, come on. The woman loves pigs!  
+    entryId: 744GiPWa1oEIyq6YMwGE4M
+pig:      
+  .Just two:
+    next state: twerk
+    text: What's the best pants-almost-off dance off?
+    Newsfeed: "Oh no, {{user_name}} is **twerking** with {{object_name}}!"
+twerk: 
+  .Twerking:
+    next state: Dolly
+    text: If you could have one country music fairy godmother, who would it be?
+    Newsfeed: Did you **know** that Dolly Parton is {{object_name}}'s godmother?
+    entryId: 3xPYpPoCrQOwehLnqL18um
+Dolly: 
+  .Dolly Parton!:
+    next state: minihorses
+    text: How many mini horses does Miley have?
+    Newsfeed: True {{object_name}} fans **know** how many mini horses she has. Not regular size, the mini ones!         
+minihorses: 
+  .Two:
+    next state: horses
+    text: How many full size horses does Miley have?
+    newsfeed: "{{object_name}} **has** an arkload of animals, doesn't she?"
+horses: 
+  .Two:
+    next state: cats
+    text: How many cats does Miley have?
+    Newsfeed: "{{object_name}} is basically a **crazy cat lady**, but a lot hotter. A LOT hotter." 
+    entryId: 7CxwFg6xjYxBtBbSqfLYdM
+cats:
+  .Three:
+    next state: bangerz
+    text: It was starting to look like she was populating an ark! If you were going to eat breakfast with Miley, what would you order?
+    Newsfeed: "{{user_name}} is **carousing** with {{object_name}}."
+bangerz:
+  .Bangerz and Mash:
+    next state: end
+    text: I know this is getting corny, but I Can't Stop, Won't Stop! 
+    Newsfeed: "**Hang** out with {{user_name}} and {{object_name}} now."
+end:   

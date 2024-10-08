@@ -1,0 +1,59 @@
+
+# so we can evolve the format of this file (and corresponding parser)
+parserVersion: v2  
+
+storyline:
+  unObjectId: 1
+  name: The Psychedelic Mushroom
+  imageUrl: https://blahblah.com/blah
+
+start:
+  - eat:
+      text: You *ATE* a mushroom. But you don't feel any different. Wanna try that again?
+      imageUrl: https://blahblah.com
+  - eat:
+      text: |
+        You *ATE MORE* mushrooms. You're getting high!
+        Colors look brighter.  The air smells wonderful.
+        Your dog is talking to you and you understand every word.
+        He's dictating a grocery list to you.
+  - eat:
+      nextState: stoned
+      text: |
+        You *ATE MORE* mushrooms. You are very, very, very high.
+        The walls are vibrating. The ghost of Timothy Leary is planning
+        a road trip with you.  You are almost out of mushrooms!
+  - dance:
+      text: You're not high enough to pull this off.  EAT MORE!
+ 
+stoned:
+  - eat:
+      text: You're tripping your face off. LET'S DO SOMETHING!
+  - dance:
+      text: |
+        You are *DANCING* to music only you can hear! 
+        Everyone is staring at you.  Your moves are legit. #Dancelikenooneiswatching
+  - dance:
+      text: On second thought you're WAY too high to pull this off.  Try something else!
+  - kiss:
+      nextState: bigfoot
+      text: |
+        You are *KISSING* the Psychadelic Mushroom, and it is kissing 
+        you back.  With tongue.  When you open up your eyes again, 
+        you discover that you are now kissing BIGFOOT!  His mustache
+        tickles.  Okay, his whole face ticklers.
+  - _: 
+      text: You're way too stoned for that.  Try something else!
+
+bigfoot:
+  - run:
+      text: |
+        You are *RUNNING* through the forest with the Psychadelic Mushroom, 
+        and BigFoot is chasing you!
+  - hide:
+      nextState: cave
+      text: |
+        You are *HIDING* from Bigfoot with the Psychadelic Mushroom
+        in a secret cave and the danger has passed.
+
+

@@ -1,0 +1,63 @@
+storyline:
+  unObjectId: 10
+  emoji: 🍹
+  name: Tequila
+  text: Tequila is like a magic carpet, taking you on adventures that you'll barely remember!
+  entryId: 5cO89udvmV7toimANftkqh
+
+start:
+  .Tequila time:
+    nextstate: shots
+    text: There are a dozen shots of tequila in front of you. You can take a shot, or walk away.
+    Newsfeed: "{{user_name}} is **deciding** whether doing shots of {{object_name}} is a good idea. Duh, it's always a good idea. Right?"
+shots:
+  .Shots!:
+    next state: shots2
+    text: In what is always a smart move, you've decided to have a shot. Una mas? Si!
+    Newsfeed: "{{user_name}} starting **doing shots** of {{object_name}}."
+shots2:
+  .More shots!:
+    next state: shots3
+    text: Second shot! Your Spanish is getting better. Eres muy inteligente!
+    Newsfeed: "{{user_name}} can now **speak Spanish**, thanks to {{object_name}}. Try it!"
+shots3:
+  .Hell yes!: 
+    next state: shots4
+    text: Your third shot of tequila was smooth and delicious, which is rumored to be the name of your sex tape. Take another shot!
+    Newsfeed: "{{user_name}} is still **doing shots** of {{object_name}} talking about a sex tape."
+shots4:
+  .Down the hatch!:
+    next state: Pedro
+    text: Shot cuatro. You're not even halfway through your dozen shots. You need a drinking buddy. How about Pedro here?
+    Newsfeed: "**Drinking** {{object_name}} alone is just sad."
+Pedro:
+  .Hola amigo!:
+    next state: chihuahua
+    text: Pedro is a very cheerful charming chubby chihuaha who has invited himself to drink shots with you. He's complimenting you on your hair, and telling you all about tequila, and the agave fields of Mexico. 
+    Newsfeed: Pedro the chihuahua is **drinking shots** of {{object_name}} with {{user_name}}!  
+chihuahua:
+  .Ai ai ai chihuahua!:    
+    next state: bestfriend
+    text: This chihuahua is lit AF. He's wearing a tiny sombrero, and cracking jokes about Mexico not paying for Trump's wall. You are laughing. 
+    Newsfeed: When chihuahuas are **drinking** {{object_name}}, they should always wear sombreros. 
+bestfriend:
+  .New best friend!:
+    next state: yesmexico
+    text: The chihuahua asks if you have ever been to Mexico. You say no. He invites you to travel to Mexico with him. You say yes. 
+    Newsfeed: The {{object_name}} is **a wormhole** to Mexico! 
+yesmexico:
+  .Welcome to Mexico:
+    next state: Tacos
+    text: You are finally in a magical place where there is a taco truck on every corner. Would you like a taco?
+    Newsfeed: Pedro the chihuahua and {{user_name}} are **getting tacos** to go with their {{object_name}}.
+tacos:
+  .Hells yes:
+    next state: welcometomexico
+    text: You are eating a crispy Baja fish taco. There is spicy cabbage slaw on it. It is perfect. Why would you ever leave?
+    Newsfeed: "{{user_name}} is **eating** a crispy Baja fish taco and drinking {{object_name}}."
+welcometomexico:
+  .You now live in Mexico!:
+    next state: end
+    text: You and Pedro now live in a seaside villa in Mexico, and every day you drink a dozen tequila shots and eat fish tacos. Congratulations, you won life!
+    Newsfeed: "{{user_name}} and Pedro the chihuahua are **living happily ever after**, thanks to {{object_name}}." 
+end:

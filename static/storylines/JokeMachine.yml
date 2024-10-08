@@ -1,0 +1,79 @@
+storyline:
+  unObjectId: 15
+  emoji: 🤪
+  name: Joke Machine
+  text: The joke machine tells jokes beloved by dads worldwide.
+  entryId: hQ6EidoH1lzjoWDtUrQCN
+
+start:
+  .Let's do this:
+    nextstate: open2
+    text: Would you like to hear some jokes?
+    newsfeed: "Jokes on jokes on jokes on JOKES! The {{object_name}} is **spitting out** hilarity faster than {{user_name}} can lol." 
+open2:
+  .Yes:
+    next state: open3
+    text: What's brown and sticky? 
+    Newsfeed: There **are a lot** of terrible jokes in the {{ object_name }}.
+open3:
+  .A stick!:
+    next state: open4
+    text: If everyone in the world stood shoulder to shoulder around the Equator, 2/3 of them would drown.
+    Newsfeed: Hot equator jokes **happening** now in {{ object_name }}.
+open4:
+  .More please:
+    next state: open5
+    text: Did you know that an elephant can jump higher than a 2 story house? 
+    Newsfeed: The {{ object_name }} hasn't **made** {{ user_name}} laugh once yet.
+open5:
+  .That's because houses can't jump.:
+    next state: open6
+    text: What do you call a guy who isn't a father, but loves to tell Dad jokes? 
+    Newsfeed: Jokes about dads in actual dad jokes is difficult to do, but the {{object_name}} **manages** it!
+open6:
+  .A faux pa.:
+    next state: open7
+    text: Why can't you trust atoms? 
+    Newsfeed: "{{user_name}} **enjoys** high-brow physics jokes, which are few and far between at the {{object_name}}."      
+open7:
+  .They make up everything.:
+    next state: open8
+    text:  If you laid all the snakes in the world end to end, someone would tell you to stop.
+    Newsfeed: If the {{ object_name }} has to **tell** a snake joke, at least it's not a snakes on a plane joke.
+open8:
+  .Again!:
+    next state: open9
+    text: Did you hear about the psychic dwarf that escaped from prison? The police are looking for a small medium at large.  
+    Newsfeed: Midget jokes? Come on {{object_name}}, that's a **low blow**.  
+open9:
+  .Please sir may I have another:
+    next state: open10
+    text: Whats the difference between a hippo and a zippo? 
+    Newsfeed: "{{ user_name}} is **LOLing** at the {{ object_name }}. Come for the jokes, stay for the, uh, jokes. It's a {{object_name}}, it doesn't have a lot of range."
+open10:
+  .One's heavy and one's a bit lighter:
+    next state: open11
+    text: Did you hear about the drummer who gave all of his daughters the same name? 
+    Newsfeed: "The {{ object_name }} is making {{user_name}} **ROFL**. LITERALLY roll on the floor laughing. {{user_name}} has bruises now and also might have vertigo."
+open11:
+  .Anna 1, Anna 2, Anna 3, Anna 4!:
+    next state: open12
+    text: Why do the Irish only eat 239 beans?
+    newsfeed: Who **loves** Irish jokes? {{user_name}}. And {{object_name}}.
+open12:
+  .One more would be too farty.:
+    next state: open13
+    text: When can a printer make music? 
+    Newsfeed: "{{object_name}} told a printer joke which made {{ user_name }} **laugh**." 
+open13:
+  .When it's jamming.:
+    next state: open14
+    text: What's a cow with no legs? 
+    Newsfeed: If you **find** cow jokes to be udderly hilarious, you'll want to visit the {{object_name}}.
+open14:
+  .Ground beef!:
+    next state: end
+    text: How can you tell the French are really tough? They eat pain for breakfast. Thanks, you've been a great audience! More jokes added all the time. I'm here all week! 
+    Newsfeed: That's right, the {{object_name}} **can joke** in multiple languages. Joking about the French is le meilleur.
+end:    
+    

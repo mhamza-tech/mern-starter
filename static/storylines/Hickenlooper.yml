@@ -1,0 +1,32 @@
+storyline:
+  unObjectId: 16
+  emoji: 👴🏻
+  name: John Hickenlooper
+  text: Who? What?
+  entryId: 6s1EQdwyOkKy2QOcYEINQG
+start:
+  .What the hell is this?:
+    nextstate: who
+    text: Hi, I'm John Hickenlooper and I'm running for President of the United States in 2020!
+    Newsfeed: Okay who here has actually **heard** of {{ object_name }}?
+who:
+  .Who?:
+    next state: who2
+    text: I was the Governer of the great state of Colorado.
+    Newsfeed: "{{ user_name }} is **talking to** {{ object_name }}, the Democratic presidential candidate."
+who2:
+  .Where?:
+    next state: who3
+    text: I don't have a lot of name recognition yet, but I am confident I will. Let's talk about my policy ideas, for example, I'm very passionate about fiscal reform!
+    Newsfeed: When **talking** to {{object_name}}, definitely probe him about fiscal responsibility, like {{ user_name }} is doing.
+who3:
+  .I'm sorry, what's your name again?:
+    next state: who4
+    text: John, John Hickenlooper. Rymes with Chicken Super! Thicken super? Does this help?
+    Newsfeed: "{{ object_name }} is **bad at rhyhming**. He rhymed Hickenlooper with Thicken Super. {{ user_name }} is not impressed."
+who4:
+  .It does not:
+    next state: end
+    text: I came here to ask you to vote for me, but I've already dropped out of the race.  
+    Newsfeed: "{{ user_name }} was not **considering** voting for {{ object_name }} at all, but he's dropped out of the race."  
+end:           

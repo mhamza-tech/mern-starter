@@ -1,0 +1,55 @@
+#
+# @rob4lderman
+# nov2019
+#
+# avocado actions
+#
+
+- name: 'Action.Cornerstore.Look'
+  text: 'Look'
+  description: "Look"
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'Action.Cornerstore.CheckWealth'
+  text: 'Check Wealth'
+  description: "Look"
+  collectionId: action/checkwallet@3x.png
+  unObjectId: 35
+  backgroundColor: 'F6F6F6'
+
+- name: 'Action.Cornerstore.Punch'
+  text: 'Look'
+  description: "Look"
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'Action.Cornerstore.BuyPatchouli'
+  text: 'Buy Patchouli'
+  description: "Buy Some Patchouli"
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'Action.Cornerstore.BuyBeer'
+  text: 'Buy Beer'
+  description: "Buy Some Beer"
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'Action.Cornerstore.BuyCoffee'
+  text: 'Buy Coffee'
+  description: "Buy Some Coffee"
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'Action.Cornerstore.BuyWineInACan'
+  text: 'Buy Wine in a Can'
+  description: "Buy Some Wine in a Can"
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'

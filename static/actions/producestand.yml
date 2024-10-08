@@ -1,0 +1,118 @@
+#
+# @rob4lderman
+# jan2020
+#
+# producestand actions 
+#
+
+- name: action.producestand.buyapple
+  text: Apple - $2
+  s3Key: action/color/buyapple.png
+  unObjectId: 60
+  backgroundColor: null
+  args:
+    item: apple
+    price: 2
+    rewardedActionName: Action.Rewarded.Apple
+    rewardedImageS3Key: action/color/apple.png
+    rewardedActionQuantity: 1
+
+- name: action.producestand.buyorange
+  text: Orange - $4
+  s3Key: action/color/buyorange.png
+  unObjectId: 60
+  backgroundColor: null
+  args:
+    item: orange
+    price: 4
+
+- name: action.producestand.buytomato
+  text: Tomato - $3 
+  s3Key: action/color/buytomatoe.png
+  unObjectId: 60
+  backgroundColor: null
+  args:
+    item: tomato
+    price: 3
+
+- name: action.producestand.buykale
+  text: Kale - $8
+  s3Key: action/color/buykale.png
+  unObjectId: 60
+  backgroundColor: null
+  args: 
+    item: kale
+    price: 8
+    rewardedActionName: Action.Rewarded.Kale
+    rewardedImageS3Key: action/color/kale.png
+    rewardedActionQuantity: 1
+
+- name: action.producestand.buycuttingboard
+  text: Cutting Board - $12
+  s3Key: action/color/buyboard.png
+  unObjectId: 60
+  backgroundColor: null
+  args: 
+    item: cuttingboard
+    price: 12
+
+- name: action.producestand.buyknife
+  text: Knife - $15
+  s3Key: action/color/buyknive.png
+  unObjectId: 60
+  backgroundColor: null
+  args: 
+    item: knife
+    price: 15
+    rewardedActionName: Action.Rewarded.Knife
+    rewardedImageS3Key: action/color/knive.png
+    rewardedActionQuantity: 1
+
+- name: action.producestand.buypatchouli
+  text: Patchouli Spray - $25
+  s3Key: action/color/buypachouli.png
+  unObjectId: 60
+  backgroundColor: null
+  args: 
+    item: patchouli
+    price: 25
+    rewardedActionName: Action.Rewarded.PatchouliSpray
+    rewardedActionQuantity: 3
+
+- name: action.producestand.buycorn
+  text: Corn - $8
+  s3Key: action/color/buycorn.png
+  unObjectId: 60
+  backgroundColor: null
+  args: 
+    item: corn
+    price: 8
+    rewardedActionName: Action.Brewery.Corn
+    rewardedImageS3Key: action/color/corn.png
+    rewardedActionQuantity: 2
+
+- name: action.producestand.buyhops
+  text: Hops - $12
+  s3Key: action/color/buyhops.png
+  unObjectId: 60
+  backgroundColor: null
+  args: 
+    item: hops
+    price: 12
+    rewardedActionName: Action.Brewery.Hops
+    rewardedImageS3Key: action/color/hops.png
+    rewardedActionQuantity: 2
+
+- name: action.producestand.checkwallet
+  text: Check Your Wallet
+  unObjectId: 60
+  s3Key: action/color/wallet.png
+  backgroundColor: null
+
+- name: action.producestand.checkinventory
+  text: Check Your Bag
+  order: AAD
+  unObjectId: 60
+  s3Key: action/color/checkbag.png
+  backgroundColor: null
+

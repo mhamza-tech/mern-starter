@@ -1,0 +1,46 @@
+# actions associated with the beat npcs (creepSlapper and puppyLover)
+
+- name: action.beat.defeat
+
+- name: action.beat.slap
+  text: Slap
+  s3Key: action/color/slap.png
+  dropAnimationS3Key: ''
+  isDeleted: true
+
+- name: action.beat.anvil
+  text: Throw an anvil
+  s3Key: action/color/anvil.png
+  dropAnimationS3Key: ''
+  isDeleted: true
+
+- name: action.beat.pet
+  text: Pet
+  s3Key: action/color/pet.v2.png
+  dropAnimationS3Key: ''
+  isDeleted: true
+
+- name: action.beat.scratch
+  text: Scratch
+  s3Key: action/color/scratch.png
+  dropAnimationS3Key: ''
+  isDeleted: true
+
+- name: sunny_mist_102
+  text: Sunny Mist
+  description: Sunny Mist is vaporized good vibes!
+  s3Key: action/color/sunny_mist_102.png
+  dropAnimationS3Key: ''
+  isDeleted: true
+
+- name: sweet_talk_103
+  text: Sweet Talk
+  description: Whisper sweet nothings into...the air.
+  s3Key: action/color/sweet_talk_103.png
+  dropAnimationS3Key: ''
+  isDeleted: true
+
+- name: action.beat.bone
+  text: Throw a bone
+  s3Key: action/color/bone.png
+  isDeleted: true

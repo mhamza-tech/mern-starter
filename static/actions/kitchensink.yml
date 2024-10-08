@@ -1,0 +1,673 @@
+- name: chop
+  text: Chop
+  description: Chop Chop!
+  backgroundColor: '8888ff'
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  tags: 
+    - touch
+    - aggressive
+
+- name: leftcard
+  isDeleted: true
+  text: LEFT CARD
+  order: AAA
+  description: Select the card on the left!
+  s3Key: action/card@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: centercard
+  isDeleted: true
+  text: MIDDLE CARD
+  order: AAB
+  description: Select the card in the middle!
+  s3Key: action/card@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: rightcard
+  isDeleted: true
+  text: RIGHT CARD
+  order: AAC
+  description: Select the card on the right!
+  s3Key: action/card@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.apple'
+  isDeleted: true
+  text: 'APPLE $2'
+  description: "Buy an apple! It'll cost you $2"
+  s3Key: action/buyapple@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.orange'
+  isDeleted: true
+  text: 'ORANGE $4'
+  description: "Buy an orange! It'll cost you $4"
+  s3Key: action/buyorange@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.tomato'
+  isDeleted: true
+  text: 'TOMATO $3'
+  description: "Buy a tomato! It'll cost you $3"
+  s3Key: action/buytomatoe@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.kale'
+  isDeleted: true
+  text: 'KALE $8'
+  description: "Buy some expensive kale! It'll cost you $8"
+  s3Key: action/buykale@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.cuttingboard'
+  isDeleted: true
+  text: 'CUTTING BOARD $12'
+  description: "Buy a cutting board!"
+  s3Key: action/buychoppingboard@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.knife'
+  isDeleted: true
+  text: 'KNIFE $15'
+  description: "Buy a knife!"
+  s3Key: action/buyknife@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.checkwallet'
+  text: 'CHECK WALLET'
+  description: "Check how much $$$ you have"
+  s3Key: action/checkwallet@3x.png
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.checkinventory'
+  isDeleted: true
+  text: 'INVENTORY'
+  description: "Check how much stuff you have"
+  s3Key: null
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.gamble'
+  isDeleted: true
+  text: 'GAMBLE'
+  description: "Gamble with the tricksy Avocado and try to win some cash!"
+  s3Key: null
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.shake'
+  text: 'SHAKE'
+  description: "Run the native shake!"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.sourcedanimation'
+  text: 'LOTTIE'
+  description: "Run an animation"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.localsourcedanimation'
+  text: 'LOCAL LOTTIE'
+  description: "Run a player-specific animation (WIP so you might not see anything)"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.whoosh'
+  text: 'WHOOSH'
+  description: "Run the WHOOSH sound effect"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.sourcedsound'
+  text: 'SOUND'
+  description: "Run a sourced sound effect"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.localsourcedsound'
+  text: 'LOCAL SOUND'
+  description: "Run a player-specific sound effect (WIP so you might not hear anything)"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.vibrate'
+  text: 'VIBRATE (1 sec)'
+  description: "Shake the mobile device hardware"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.createnewsfeeditem'
+  text: 'NEWSFEED'
+  description: "Generate newsfeed items"
+  s3Key: null
+  order: zza
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+  isDeleted: true
+
+- name: 'avocado.createnewsfeeditemratelimit'
+  text: 'NEWSFEED RATE-LIMIT'
+  description: "Generate newsfeed items at a limited rate"
+  s3Key: null
+  order: zza
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+  isDeleted: true
+
+- name: 'avocado.createnewsfeeditemforactor'
+  text: 'NEWSFEED FORUSERID'
+  description: "Generate newsfeed items for a user"
+  s3Key: null
+  order: zza
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+  isDeleted: true
+
+- name: 'avocado.placetile'
+  text: 'PLACE TILES'
+  description: "Place some tiles on the screen (WIP)"
+  s3Key: null
+  order: ppp1
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.spotit'
+  text: 'SPOT IT'
+  description: "Play SPOT IT! (WIP)"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.clearspotit'
+  text: 'CLEAR SPOT IT'
+  description: "Clear the SPOT IT! board (WIP)"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.placeunobjecttile'
+  text: 'PLACE OBJECT TILE'
+  description: "Place a tile on the object (WIP)"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.removetile'
+  text: 'REMOVE TILES'
+  description: "Remove tiles from the screen (WIP)"
+  s3Key: null
+  order: ppp2
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.animatetiles'
+  text: 'ANIMATE TILES'
+  description: "Animate tiles on the screen (WIP)"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.placeanimatingtile'
+  text: 'PLACE ANIMATING TILE'
+  description: "Place a tile with a permanent looping animation on the screen"
+  s3Key: null
+  order: aaaa
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.multitile'
+  text: 'MULTI TILE'
+  description: "Place some tiles on the screen"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.notify'
+  text: 'NOTIFY'
+  description: "Send a push notification in 5s to the maker and the actor"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.progressfield'
+  text: 'PROGRESS'
+  description: "Update progress field (WIP)"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.reset'
+  text: 'RESET'
+  description: "Reset state (WIP)"
+  s3Key: null
+  order: z
+  collectionId: unobject/35/actionx
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.animationsequence'
+  text: 'ANIM SEQUENCE 1s'
+  s3Key: null
+  order: z
+  unObjectId: 35
+  backgroundColor: '8888ff'
+  args: 
+    pause_s: 1
+
+- name: 'avocado.animationsequence.2s'
+  text: 'ANIM SEQUENCE 2s'
+  s3Key: null
+  order: z
+  unObjectId: 35
+  backgroundColor: '8888ff'
+  args: 
+    pause_s: 2
+
+- name: 'avocado.animationsequence.3s'
+  text: 'ANIM SEQUENCE 3s'
+  s3Key: null
+  order: z
+  unObjectId: 35
+  backgroundColor: '8888ff'
+  args: 
+    pause_s: 3
+
+- name: 'avocado.animationsequenceeffect'
+  text: 'ANIM SEQ EFFECT'
+  s3Key: null
+  order: z
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.bonanza'
+  text: 'BONANZA'
+  s3Key: null
+  imageUrl: https://m.media-amazon.com/images/M/MV5BMTQzOTE5MzQ5OF5BMl5BanBnXkFtZTcwMDk5MTIwNw@@._V1_.jpg
+  order: z
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.deletecomments'
+  text: 'DELETE COMMENTS'
+  s3Key: null
+  order: z
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.debugfirstaidkit'
+  text: 'DEBUG FIRST AID KIT'
+  s3Key: null
+  order: aaaa
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.testanything'
+  text: 'TEST ANYTHING'
+  dropAnimationSourceUri: 'https://assets5.lottiefiles.com/datafiles/1jUq06Xn8mNO5Zb/data.json'
+  s3Key: null
+  order: aaaa
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.sequenceeffect'
+  text: 'SEQUENCE EFFECT'
+  dropAnimationSourceUri: null,
+  s3Key: null
+  order: aaaa
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.tileeffect'
+  text: 'TILE EFFECT'
+  s3Key: null
+  order: aaaa
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+
+- name: 'avocado.placeprivatetiles'
+  text: 'PLACE PRIVATE TILES'
+  description: "Place private tiles on the screen"
+  s3Key: null
+  order: ppp5
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.removeprivatetiles'
+  text: 'REMOVE PRIVATE TILES'
+  description: "Remove private tiles from the screen"
+  s3Key: null
+  order: ppp6
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.schedulejob'
+  text: 'SCHEDULE JOB'
+  s3Key: null
+  order: zzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.storystatusfield'
+  text: 'story'
+  s3Key: null
+  order: zzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+  isDeleted: true
+
+- name: 'avocado.incrementlocalaction'
+  text: 'INCR LOCAL ACTION'
+  s3Key: null
+  order: zzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.changetext'
+  text: 'CHANGE TILE TEXT'
+  description: 'Changes the text in the tile'
+  s3Key: null
+  order: ppp3
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.create.sponge.action'
+  text: 'CREATE SPONGE'
+  s3Key: null
+  order: zzzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.execute.sponge.action'
+  text: 'USE SPONGE'
+  s3Key: null
+  order: zzzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.transfer.sponge.action'
+  text: 'TRANSFER SPONGE'
+  s3Key: null
+  order: zzzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.hello.world'
+  text: 'HI JOE'
+  imageUrl: null
+
+- name: 'avocado.read.action.instances'
+  text: 'READ ALL ACTIONS'
+  description: "Fetch all your action instances"
+  s3Key: null
+  backgroundColor: '8888ff'
+
+- name: 'avocado.read.action.sponge.instances'
+  text: 'READ SPONGE ACTIONS'
+  description: "Fetch all your sponge instances"
+  s3Key: null
+  backgroundColor: '8888ff'
+
+- name: 'avocado.action.cooldown'
+  text: 'ACTION COOLDOWN'
+  description: "When used, the action button gets a brief cooldown"
+  order: zzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.action.disable'
+  text: 'ACTION DISABLE'
+  description: "When used, the action button gets disabled forever"
+  order: zzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.schedulejobwithargs'
+  text: 'SCHEDULE JOB with args that will be merged with action.args'
+  s3Key: null
+  order: zzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+
+- name: 'avocado.jobactionwithargs'
+  text: 'Run scheduled job action with action.args merged with job.args'
+  s3Key: null
+  order: zzz
+  unObjectId: 35
+  backgroundColor: '8888ff'
+  args:
+    greeting: 'Hi, I am a random greeting that will be overwritten'
+    randomNumber: 1234567890
+
+- name: 'avocado.action.countdown.second.30'
+  text: '30 SECOND COUNT'
+  description: "Stopwatch style"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.action.countdown.second.30.ticker'
+  text: '30 SECOND COUNT TICKER'
+  description: "Ticker style"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.action.cancel.job'
+  text: 'Cancel a scheduled job'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.action.msg.chatstyle01'
+  text: 'SYSTEM MESSAGE CHAT_STYLE_01'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.modal.simple'
+  text: 'SIMPLE MODAL'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.modal.simple.quarter'
+  text: 'SIMPLE QUARTER MODAL'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.modal.simple.confirmation'
+  text: 'SIMPLE CONFIRM MODAL'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.modal.swippable.cards'
+  text: 'SWIPE CARDS MODAL'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.sequenceeffect.concurrent'
+  text: 'PARALLEL EFFECT'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.ping'
+  text: 'PING'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.tapme.launch'
+  text: 'TAP DROP TROLL'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.animate.native.dizzy'
+  text: 'NATIVE ANIM. DIZZY'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.animate.native.addToInventoryFallDownFullScreen'
+  text: 'NATIVE ANIM. ADD TO INVENTORY FALL'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.lottie.slow.speed'
+  text: 'SLOW LOTTIE'
+  backgroundColor: '8888ff'
+
+- name: 'avocado.job.repeat'
+  text: 'QUEUE REPEAT JOB'
+  description: "Repeat a job a few times"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.job.nodeapi'
+  text: 'QUEUE NODE API JOB'
+  description: "Shows you the game node details in a message"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.hashtributes.reset'
+  text: 'RESET HASHTRIBUTES'
+  description: "Resets all the users hashtributes"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.actionxinstances.read'
+  text: 'GET ACTIONXINSTANCE'
+  description: "Tests the 2 methods to get an ActionXInstance"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.actionxinstances.replace'
+  text: 'REPLACE ACTIONXINSTANCE'
+  description: "Replaces one ActionXInstance for another"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.getByEid'
+  text: 'GET BY EID'
+  description: "fetches 2 entities by Eid"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.counter.increase'
+  text: 'INC COUNTER'
+  description: "Increases a counter"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.time.local'
+  text: 'LOCAL TIME'
+  description: "Show the local time"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.newsfeed.default'
+  text: 'NEWSFEED DEFAULT'
+  description: "Create a NewsfeedItemDefault"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.newsfeed.live'
+  text: 'NEWSFEED LIVE'
+  description: "Create a live NewsfeedItem"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.newsfeed.expireLive'
+  text: 'NEWSFEED EXPIRE LIVE'
+  description: "Expire a live NewsfeedItem"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.newsfeed.rateLimit'
+  text: 'NEWSFEED RATE LIMIT'
+  description: "Rate limited newsfeed"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.newsfeed.you'
+  text: 'NEWSFEED YOU'
+  description: "Create a NewsfeedItemDefault"
+  backgroundColor: '8888ff'
+  isDeleted: true
+
+- name: 'avocado.nativeAnimations.orbit'
+  text: 'ORBIT ANIM'
+  description: "Show an Orbit Animation"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.nativeAnimations.explosion'
+  text: 'EXPLOSION ANIM'
+  description: "Show an Explosion Animation"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.userStates.inspect'
+  text: 'INSPECT: USER STATES'
+  description: "Show a User states"
+  backgroundColor: '8888ff'
+  isDeleted: true
+
+- name: 'avocado.userStates.reset'
+  text: 'RESET USER STATES'
+  description: "Reset all user states"
+  backgroundColor: '8888ff'
+  isDeleted: true
+
+- name: 'avocado.counter.reset'
+  text: 'RESET COUNTERS'
+  description: "Reset all counters"
+  backgroundColor: '8888ff'
+  isDeleted: true
+
+- name: 'avocado.stories.reset'
+  text: 'RESET STORIES'
+  description: "Reset all stories"
+  backgroundColor: '8888ff'
+  isDeleted: false
+
+- name: 'avocado.items.grant'
+  text: 'GRANT ALL ITEMS'
+  description: "Give 1 of each item"
+  backgroundColor: '8888ff'
+
+- name: 'avocado.modifiers'
+  text: 'WITH MODIFIERS'
+  description: "Has modifiers"
+  backgroundColor: '8888ff'

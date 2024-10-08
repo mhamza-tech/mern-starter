@@ -1,0 +1,175 @@
+/**
+ * @rob4lderman
+ * oct2019
+ * 
+ * Types of Actions / Effects.
+ * 
+ * 1. create/delete edges
+ *      - take
+ *      - friend
+ *      - follow
+ *      - give
+ *      - TODO: generic create/delete/update edge
+ *      - TODO: generic firestore.doc.set ?  <-- can't bc need edge {id}
+ * 
+ * 2. update "game state" / "entity state" / "public state"
+ *      - punch
+ *      - isTyping
+ *      - TODO: generic firestore.doc.set
+ *      
+ * 3. activities
+ *      - newsfeed items
+ * 
+ * generic -> specific
+ *  - generic create/delete edge (?) effect
+ *  - generic set "game state"
+
+The question is where the demux'ing  happens.
+You have a common pipe.  Multiplexing various types of requests across the common pipe.
+If the client calls different apis for everything, then demux'ing happens on the client.
+Otherwise it happens on the server.
+Pros/cons of demux'ing. 
+
+mAction(input:{
+    id: 'take',    // maps to a handler/resolver
+    args: {
+        thisEntityId: 'xyz',
+        thatEntityId: 'abc',
+                   // generic JSON object of args
+    }
+})
+
+action: {
+    id: 'take',    // maps to a handler/resolver
+    name: 'take',  // maps to a handler/resolver
+    effects: [
+        {
+            id: 'createEdgeUniqueByThatEntityIdAndEdgeType',
+            thisEntityId: '{{args.thisEntityId}}',
+            thatEntityId: '{{args.thatEntityId}}',
+            edgeType: 'HAS',
+        },
+        {
+            id: 'createNewsfeedActivity',
+            text: '{{name args.thisEntityId}} just took the {{name args.thatEntityId}}',   // transforms on input data
+            thumbnail: '{{thumbnail args.thisEntityId}}'
+        },
+    ],
+}
+
+// isTyping
+mAction(
+    input:{
+        id: 'setDocument',
+        args: {
+            documentId: 'chat/{id}/user/{id}/fields/istyping',
+            set: {
+                id: 'istyping',
+                type: 'boolean',
+                value: true,
+            }
+        }
+    }
+)
+
+
+
+ *
+ */
+
+import {
+    sf,
+    LoggerFactory,
+} from '../../utils';
+import * as  model from './action.model';
+import _ from 'lodash';
+const logger = LoggerFactory('action.handlers');
+
+// TODO
+const actionStubInput = {
+   id: "take",                  // <-- indexes into the actionHandlers dict
+   entityId: "123412341234",
+   entityType: "UnObject"
+};
+ 
+// TODO: we need to share types across microservices.
+const inboundEdgesQuery = `
+    query inboundEdges(input:{
+        thatEntityId: "blahblah",
+        edgeType: "Has",
+    }) {
+
+    }
+`;
+
+const entityQuery = `
+    query
+`;
+
+const isTrueWithProbability = (probability:number = 1.0): boolean => {
+    return !!! _.isNil( probability ) 
+        && _.random( 0, 1.0 ) <= probability
+        ;
+};
+
+const takeSuccess = (sessionUser:any, input:any) => {
+    return model.inboundEdges( {
+            thatEntityId: input.entityId, 
+            edgeType: EdgeType.Has 
+        })
+        .then( sf.tap_wait(
+            edges => Promise.all( _.map( edges, edge => firestore.deleteEdge( edge ) ) )
+        ))
+        .then( () => model.createEdge({
+            thisEntityId: sessionUser.id, 
+            thisEntityType: 'User',
+            edgeType: EdgeType.Has, 
+            thatEntityId: input.entityId, 
+            thatEntityType: input.entityType 
+        }))
+        .then( edge => firestore.createEdge( edge ) )
+        .catch( sf.tap_throw( err => logger.error( 'ERROR: take', { sessionUser, input, err } ) ) ) 
+        ;
+};
+ 
+const takeFail = (sessionUser:any, input:any) => Promise.reject( 'Failed probability test');
+
+const take = (sessionUser:any, action:any) => {
+    return isTrueWithProbability( action.probability )
+        ? takeSuccess( sessionUser, action )
+        : takeFail( sessionUser, action );
+        ;
+};
+
+const punchSuccess = (sessionUser:any, action:any) => {
+    const docRef = firestore.doc( _.toLower( `${edge.thisEntityType}/${edge.thisEntityId}/fields/punched` ) );
+    docRef.update( 'counter', Firestore.FieldValue.increment(1) )
+        .then( () => docRef.get() )
+        .then( docSnap => logger.log( 'incremented counter', { doc: docSnap.data() }) )
+        ;
+};
+
+const actionHandlers = {
+    punch,
+    take: withProbability( takeSuccess, takeFail ),
+};
+
+const buildDocumentPathForThisEdge = (edge) => 
+    _.toLower( `${edge.thisEntityType}/${edge.thisEntityId}/outboundEdges/${edge.id}`) 
+    ;
+
+const buildDocumentPathForThatEdge = (edge) => 
+    _.toLower( `${edge.thatEntityType}/${edge.thatEntityId}/inboundEdges/${edge.id}`) 
+    ;
+
+const firestore = {
+    deleteEdge: (edge:any) => Promise.all([
+        firestore.doc( buildDocumentPathForThisEdge(edge) ).delete(),
+        firestore.doc( buildDocumentPathForThatEdge(edge) ).delete(),
+    ]),
+    createEdge: (edge:any) => Promise.all([
+        firestore.doc( buildDocumentPathForThisEdge(edge) ).set( edge, { merge: true } ),
+        firestore.doc( buildDocumentPathForThatEdge(edge) ).set( edge, { merge: true } ),
+    ]),
+};
+

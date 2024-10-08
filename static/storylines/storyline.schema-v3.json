@@ -1,0 +1,28 @@
+{
+    "$id": "https://unreal.fun/storyline.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Storyline",
+    "description": "An UnReal storyline",
+    "type": "array",
+    "items": [
+        {
+            "type": "object",
+            "properties": {
+                "parserVersion": {
+                    "type": "string"
+                }
+            }
+        },
+        {
+            "type": "object",
+            "properties": {
+                "storyline": {
+                    "type": "array"
+                }
+            }
+        }
+    ],
+    "additionalItems": { 
+        "type": "object"
+    }
+}

@@ -1,0 +1,1 @@
+export const QUEUE_PROCESSES = Symbol('QUEUE_PROCESSES')

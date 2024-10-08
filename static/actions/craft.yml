@@ -1,0 +1,11 @@
+#
+# actions associated with the craft npcs
+#
+
+- name: action.craft.claim
+  text: Claim
+  s3Key: action/color/pickup.png
+
+- name: action.craft.ready
+
+- name: action.craft.cancel

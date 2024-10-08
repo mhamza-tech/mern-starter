@@ -1,0 +1,382 @@
+#
+# @rob4lderman
+# jan2020
+#
+# deleted actions.
+# can't just delete them from the yml cuz the actions read from
+# the yml files are "upserted" into the db.  So we need to explicitly
+# mark the yml actions isDeleted: true
+#
+
+- name: cage
+  isDeleted: true
+  text: Cage
+  description: Cage it NOW!
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags: 
+    - aggressive
+
+- name: poke
+  isDeleted: true
+  text: Poke
+  description: Give your partner a poke
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags: 
+    - touch
+    - friendly
+
+- name: lick
+  isDeleted: true
+  text: Lick
+  description: Give it a lick
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - touch 
+    - taste
+
+- name: smell
+  isDeleted: true
+  text: Smell
+  description: Give it a sniff
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - smell
+
+- name: sniff
+  isDeleted: true
+  text: SNIFF
+  description: Give it a sniff
+  order: Zb
+  s3Key: null
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+
+- name: fart_jt
+  isDeleted: true
+  text: Fart 2
+  s3Key: null
+  package: core
+  collectionId: x/actionx
+
+
+
+- name: chat
+  isDeleted: true
+  text: Chat
+  description: Chat it up
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - chat
+
+- name: inspect
+  isDeleted: true
+  text: Inspect
+  description: Take a closer look
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - seek
+
+- name: squish
+  isDeleted: true
+  text: Squish
+  description: Squish it
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - touch
+
+- name: squeeze
+  isDeleted: true
+  text: Squeeze
+  description: Give it a squeeze
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - touch
+
+- name: hug
+  isDeleted: true
+  text: Hug
+  description: Give it a hug
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - touch
+
+- name: tickle
+  isDeleted: true
+  text: Tickle
+  description: Tickle it
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - touch
+
+- name: grab
+  isDeleted: true
+  text: Grab
+  description: Grab it!
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - touch
+    - aggressive
+
+- name: bite
+  isDeleted: true
+  text: Bite
+  description: Give it a bite
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - taste
+    - aggressive
+
+- name: throw
+  isDeleted: true
+  text: Throw
+  description: Throw it!
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - touch
+    - aggressive
+
+- name: scare
+  isDeleted: true
+  text: Scare
+  description: Be scary!
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: x/actionx
+  tags:
+    - aggressive
+
+- name: test_jt
+  isDeleted: true
+  text: JT TEST
+  order: Za 
+  description: JT TEST CODE
+  s3Key: action/jeff_test.png
+  backgroundColor: 4dbeea
+  xp: 2
+  power: 1
+  dropAnimationSourceUri: https://assets1.lottiefiles.com/datafiles/gD8H2jNOhxSiBqb/data.json
+  package: core
+  collectionId: actionx
+  tags: 
+    - friendly
+    - touch
+
+#  Housekeeping below here
+
+# fart was a legacy name.  Need to purge from db.
+- name: fart
+  package: core
+  isDeleted: true
+
+
+- name: spraymace
+  package: core
+  isDeleted: true
+
+- name: punch
+  package: core
+  isDeleted: true
+
+
+- name: look
+  package: core
+  isDeleted: true
+
+- name: kiss
+  package: core
+  isDeleted: true
+
+- name: smile
+  package: core
+  isDeleted: true
+
+- name: glare
+  package: core
+  isDeleted: true
+
+- name: stinkyfart
+  package: core
+  isDeleted: true
+
+- name: applytrumpsticker
+  package: core
+  isDeleted: true  
+
+- name: 'Action.General.FeedPizza'
+  package: core
+  isDeleted: true  
+  
+- name: 'trump.wearmagahat'
+  package: core
+  isDeleted: true  
+
+- name: throwmagahat
+  package: core
+  isDeleted: true  
+
+- name: stickproteststicker
+  package: core
+  isDeleted: true  
+
+- name: feed_1
+  package: core
+  isDeleted: true  
+
+- name: test_jt
+  package: core
+  isDeleted: true  
+
+# wearmagahat was a legacy name.  Need to purge from db.
+- name: wearmagahat
+  package: core
+  isDeleted: true
+
+# 'core.wearmagahat' was a legacy name.  Need to purge from db.
+- name: 'core.wearmagahat'
+  package: core
+  isDeleted: true
+
+# DELETED - 'frown' is old and not part of the MVP list for now.
+- name: frown
+  isDeleted: true
+  text: Frown
+  description: Put an unhappy frown on your face
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: actionx
+  tags: 
+    - friendly
+    - touch
+
+# DELETED - 'growl' is old and not part of the MVP list for now.
+- name: growl
+  isDeleted: true
+  text: Growl
+  description: Growl at Someone
+  order: Zb
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  tags: 
+    - unfriendly
+    - reflexive
+
+# DELETED - 'send_holiday_cheer' is old and not part of the MVP list for now.
+- name: send_holiday_cheer
+  isDeleted: true
+  text: Send Holiday Cheer
+  description: Send Holiday Cheer
+  order: Z
+  s3Key: action/unknown.png
+  backgroundColor: 4dbeea
+  package: core
+  collectionId: actionx
+  tags: 
+    - unfriendly
+    - noxious
+
+# DELETED - relocating Big Kiss to Doctor or Naughty Nurse
+- name: bigkiss
+  isDeleted: true
+  text: Big Kiss
+  order: Ae
+  description: Big Kiss
+  s3Key: action/bigkiss@3x.png
+  backgroundColor: fc6f78
+  xp: 6
+  power: 1
+  dropAnimationSourceUri: https://assets1.lottiefiles.com/datafiles/gD8H2jNOhxSiBqb/data.json
+  dropAnimationS3Key: lottie/bigkiss.json
+  package: core
+  collectionId: actionx
+  tags: 
+    - friendly
+    - touch
+
+
+# DELETED - remove and renamed to rewarded package
+- name: highfive
+  isDeleted: true
+  text: High-Five
+  description: Give it a high five
+  order: Ah
+  s3Key: action/HiFive@3x.png
+  backgroundColor: d852ff
+  package: xcore
+  tags:
+    - touch
+
+# remove and added to reward package
+- name: patchoulispray
+  isDeleted: true
+  text: Patchouli Spray
+  description: Patchouli Spray
+  order: Ak
+  s3Key: action/pachulispray@3x.png
+  backgroundColor: b449e4
+  package: core
+  xp: 6
+  tags: 
+    - unfriendly
+    - noxious
+
+- name: 'Action.Rewarded.Beer'
+  isDeleted: true
+  package: rewarded

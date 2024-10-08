@@ -1,0 +1,23 @@
+- name: 'Action.Doctor.RequestDietPill'
+  text: Buy Diet Pills
+  description: Buy Diet Pills
+  s3Key: action/color/buydietpill.png
+  backgroundColor: null
+  collectionId: unobject/55/actionx
+  unObjectId: 55
+
+- name: 'Action.Doctor.RequestExam'
+  text: Request an Exam
+  description: Request an Exam
+  s3Key: action/color/requestcheck.png
+  backgroundColor: null
+  collectionId: unobject/55/actionx
+  unObjectId: 55
+
+- name: 'Action.Doctor.PurchaseFirstAidKit'
+  text: Buy First Aid Kit
+  description: Buy First Aid Kit
+  s3Key: action/color/buyaidkit.png
+  backgroundColor: null
+  collectionId: unobject/55/actionx
+  unObjectId: 55

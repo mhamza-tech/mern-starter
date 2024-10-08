@@ -1,0 +1,57 @@
+#!/bin/sh
+#
+#
+# $ ./curltest {function_name}
+#
+# export API_HOST=http://localhost:13000
+# export API_HOST=https://gql-dev.unreal.fun
+#
+# export API_TOKEN=37214dac-0c16-40d8-b26e-59d8f8a91a0e
+# get a token: $ ./curltest post_sessions
+#
+# export ADMIN_TOKEN=admin-cca69ed8-c064-4c0e-8850-c1a1389ac254
+#
+
+
+# -H "Authorization: Token client-$API_TOKEN" \
+function ready {
+curl -i  \
+  -X POST https://gql-dev.unreal.fun \
+  -H 'Content-Type: application/json' \
+  -d @- <<HERE 
+{
+    "query": "{ 
+        ready
+    }"
+}
+HERE
+}
+
+
+function post_machine {
+curl -s -S -k \
+  -X POST $API_HOST/api/graph \
+  -H "Authorization: Token client-$API_TOKEN" \
+  -H 'Content-Type: application/json' \
+  -d @- <<HERE 
+{
+    "query": "{ 
+        machine(id: 1) { 
+            id
+            uniqueId 
+            name
+        } 
+    }"
+}
+HERE
+}
+
+
+if [ -n $1 ]; then
+    fn=$1
+    shift
+    $fn $*
+fi
+
+
+

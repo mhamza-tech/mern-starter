@@ -1,0 +1,7 @@
+- name: 'Action.MonkeyButt.Cage'
+  text: Cage
+  description: 'Cage'
+  s3Key: action/color/cage.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/52/actionx
+  unObjectId: 52

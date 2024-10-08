@@ -1,0 +1,64 @@
+storyline:
+  unObjectId: 33
+  emoji: 🌈
+  name: The Psychedelic Mushroom
+  text: Hi I'm the Psychedelic Mushroom. I'm here to take you on an unreal journey.
+  imageUrl:
+  entryId: 4v7P6wszJPu9bTkufpxGM8
+start:
+  eat:
+  .Hello Magic Mushroom!:
+    next state:
+    text: "You ate a Psychelic Mushroom. But you don't feel any different. Wanna try that again?"
+    imageUrl: 
+    newsfeed: "{{user_name}} just took a **bite** out of a {{object_name}}."
+    entryId: 
+    emoji: 
+  .eat:
+  .Have some more?:
+    next state:
+    text: You ate more mushrooms. You're getting high! Colors look brighter. The air smells wonderful. Your dog is talking to you and you understand every word. He's dictating a grocery list to you.
+    newsfeed: "{{user_name}} is eating {{object_name}} and **talking to a dog.**"
+  ...eat:
+  .A little more?:
+    next state: stoned
+    text: |
+      You ate more mushrooms. You are very, very, very high.
+      The walls are vibrating. The ghost of Timothy Leary is planning
+      a road trip with you. He ate the rest of the mushrooms.
+    newsfeed: "{{user_name}} is very **stoned** on {{object_name}} and planning a trip with Timothy Leary." 
+stoned:
+  .You are really stoned, dude:
+    next state: dance
+    text: You're tripping your face off. You hear music! Maybe it's music. Or maybe the universe is trying to tell you something. Keep listening.
+    newsfeed: "{{user_name}} is **hearing music**, probably because of {{object_name}}."
+dance:
+  .Let's dance!:
+    next state: kiss
+    text: |
+      You are dancing to music only you can hear! It sounds like the Dave Matthews Band. 
+      Everyone is staring at you, but your dance moves are legit. #Dancelikenooneiswatching
+    newsfeed: "The {{object_name}} has turned into a speaker, playing Pink Floyd. {{user_name}} is **dancing**." 
+kiss:
+  .Feeling sexy?:
+    next state: bigfoot
+    text: You are kissing the Psychedelic Mushroom, and it is kissing you back. With tongue. But when you open your eyes, it's Bigfoot's lips you're sucking on. His mustache tickles. Okay, his whole face tickles. But he radiates beauty.
+    newsfeed: "{{user_name}} is **kissing Bigfoot**. {{object_name}} tends to make everything sexy."
+bigfoot:
+  .Bigfoot is in love:
+    next state: vegas
+    text: Bigfoot gets down on one giant, hairy knee and proposes to you. He has a ring made out of squirrel poop and chewed gum.
+    newsfeed: "{{user_name}} just **got a marriage proposal** from Bigfoot. {{object_name}} is quite a matchmaker."
+vegas:
+  .Say yes!: 
+    nextState: cave
+    text: With tears of love (and lust) in your eyes, you accept the squirrel poop and chewed gum engagement ring. It's beautiful. You and Bigfoot head to Las Vegas for a quickie wedding. 
+    newsfeed: First comes love, then comes **marriage**, for {{user_name}} and Bigfoot, thanks to {{object_name}}. What's up next, a baby in a baby carriage?
+cave:
+  Move in with your new husband:
+    nextstate: end
+    text: You and Bigfoot are starting a lovely new life together in Bigfoot's cave. 
+    newsfeed: "{{user_name}} and Bigfoot are newlyweds! They are settled into Bigfoot's cave. If you **try {{object_name}}** maybe you will find true love, too."   
+end:
+
+  

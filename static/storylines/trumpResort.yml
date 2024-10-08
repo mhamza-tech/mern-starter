@@ -1,0 +1,122 @@
+storyline:
+  unObjectId: 40
+  emoji: 🏌🏻‍
+  name: Trump Resort
+  text: This is not the very best resort. And it does not have the very best people.
+  entryId: 3AZ6Opgk3HLaVizMRDtaSb 
+start:
+  .Check in:
+    text: Welcome to the Florida Trump Resort! We'll need and ID and a credit card for incidentals.
+    newsfeed: "{{user_name}} has **just arrived** at the {{object_name}} and is ready for some rest and relaxation."
+    next state: checkin2
+checkin2:
+  .Ok, sure:
+    text: This resort is somewhere in South Florida. Somewhere kind of swampy. As you hand over your credit card and ID, you notice that the lady checking you in looks a lot like Ivanka Trump.
+    newsfeed:
+    next state: luggage
+luggage:    
+  .OK:
+    text: "Here comes a valet to help you with your luggage. 'Hola, Manny! Ándale, ándale!' says the Ivanka Trump lookalike, in an imperious voice."
+    newsfeed:
+    next state: manny
+manny:    
+  .Hello Manny:
+    text: Manny pulls up in a golf cart and loads your luggage. As he drives you to your room, you start chatting. You pass a brownish looking pool. A crying toddler is floating around in the pool on an inflatible GOP elephant.
+    newsfeed: All the inflatible pool floaties at the {{object_name}} are **in the shape** of GOP elephants.
+    next state: manny2
+manny2:
+  .Thanks for the ride:
+    text: "As soon as the golf cart gets out of earshot of the front desk and the blonde, Manny turns to you and starts pleading. 'Please help me, the Trump Resort has my passport and won't let me leave!'"
+    newsfeed:
+    next state: manny3
+manny3:
+  .Seriously?:
+    text: "Manny starts telling you the story. 'An American guy came down to Guatamala, into our small town. He called us his hermanos, gave us fake visa papers, and said we were bueno to work in the United States.' "
+    newsfeed:
+    next state: manny4
+manny4:
+  .That's not legal:
+    text: "Manny continues, 'This guy, he looked like a Ken doll, but more asexual, he said they would pay us $15 an hour at the new Four Seasons in Miami. I say, of course! Everybody wants to work for the Four Seasons. They have class.'"
+    newsfeed:
+    next state: manny5
+manny5:
+  .Jared Kushner?:
+    text: "Manny looks surprised. 'Yeah! That was his name. Do you know him? Anyways he tooks us all here, to this dump.'"
+    newsfeed: Jared Kushner **trafficks illegal immigrants** for the {{object_name}}. He really can do everything.
+    next state: manny6
+manny6:
+  .Mr. Trump knows you're illegal?:
+    text: "'Oh yeah. He fills out the fake immigration papers himself. He likes to make up fake names for us that are supposed to be insulting.'"
+    newsfeed: Donald Trump has **mean nicknames** for everyone. Even the illegal immigrants he hires at the {{object_name}}.
+    next state: insultname  
+insultname:
+  .Insulting fake names?:
+    text: Like, Señor Taco Face. 
+    newsfeed:
+    next state: terrible
+terrible:
+  .That's just dumb:
+    text: And Sleepy Jose.
+    newsfeed:
+    next state: terrible2
+terrible2:
+  .You're kidding:
+    text: And Low Energy Jorge.
+    newsfeed:
+    next state: terrible3
+terrible3:
+  .What is wrong with him:
+    text: And Crooked Horacio.
+    newsfeed: When Donald Trump **calls someone crooked**, he should be looking in the mirror at the {{object_name}}.
+    next state: terrible4   
+terrible4:
+  .He's such a moron:
+    text: And Little Marco.
+    newsfeed:
+    next state: terrible5
+terrible5:
+  .You can't be serious:
+    text: And Lyin' Juan Comey.
+    newsfeed:
+    next state: terrible6  
+terrible6:
+  .This is a humanitarian crisis:
+    text: And Low IQ Jesus.
+    newsfeed:
+    next state: terrible7                  
+terrible7:
+  .How can I help?:
+    text: "Manny says, 'If I could get my hands on one of the military uniforms, I could sneak onto one of the planes or the boats.'"
+    newsfeed: The illegal immigrants at the {{object_name}} are **trying to escape**, but Donald Trump took their passports.
+    next state: military
+military:
+   .What military uniforms?:
+    text: "You look around and see a lot of soldiers, sailors, pilots. 'All branches of the US military that come within a thousand miles of this resort are required to stay at this hotel.'"
+    newsfeed: It used to be that getting killed in war was the scariest thing about serving in the military. Now, it's the prospect of **getting bedbugs** at the {{object_name}}.
+    next state: military2  
+military2:
+   .Very legal, very cool:
+    text: "You agree to help Manny get his hands on a military uniform. There are a group of sailors walking up the path. 'Hey Sailors!' you call out."
+    newsfeed:
+    next state: military3
+military3:
+   .Sailors are awesome:
+    text: "The sailors like you. 'Hey there,' they reply. You say, 'The First Lady has requested a Navy uniform, can one of you help me out?'"
+    newsfeed: Melania Trump surely **enjoys a man in a uniform**. Now that they are all required to stay at the {{object_name}}, must make for easy pickings. 
+    next state: military4      
+military4:
+   .No problem!:
+    text: "All three sailors strip down to their underwear. Wow, that was easy! 'Here you go, Manny!' you say and hand over the uniforms."
+    newsfeed:
+    next state: military5      
+military5:
+   .What next?:
+    text: "Manny joyfully takes the uniforms. He runs to the pool, squats and takes a giant dump in it. The toddler stops crying. Manny gets on his phone. 'Hello, is this the Health Department? I'm calling from the Trump Resort and there is a human turd floating in the pool. You should get over here right away.'"
+    newsfeed: "The {{object_name}} has been cited for fecal contamination in its pools multiple times. They are **literally shitholes**."
+    next state: military6     
+military6:
+   .What next?:
+    text: "Manny heads to one of the hundreds of Naval ships docked at the resort. 'Thank you, I will never forget you,' he says. You wave goodbye and then get the hell out of this shithole resort as fast as you can."
+    newsfeed:
+    next state: end    
+end:

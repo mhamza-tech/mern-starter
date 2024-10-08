@@ -1,0 +1,17 @@
+- name: Action.BlueJoe.Patchouli
+  isDeleted: true
+  text: Spray Patchouli
+  order: AAA
+  s3Key: action/color/pachouli.png
+  collectionId: unobject/npc.jt.blue.joe/actionx
+  unObjectId: npc.jt.blue.joe
+  backgroundColor: 'F6F6F6'
+
+- name: Action.BlueJoe.Shave
+  isDeleted: true
+  text: Shave
+  order: AAA
+  s3Key: action/color/shave.png
+  collectionId: unobject/npc.jt.blue.joe/actionx
+  unObjectId: npc.jt.blue.joe
+  backgroundColor: 'F6F6F6'

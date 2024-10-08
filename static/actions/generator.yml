@@ -1,0 +1,8 @@
+# actions associated with the generator npcs
+
+- name: action.generator.pick
+  text: Pick
+  s3Key: action/color/pickup.png
+  dropAnimationSourceUri: lottie/pickup.json?v=1
+
+- name: action.generator.regenerate

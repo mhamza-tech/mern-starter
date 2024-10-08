@@ -1,0 +1,134 @@
+#
+# @rob4lderman
+# jan2020
+#
+# casino actions 
+#
+
+
+- name: action.casino.leftcard
+  text: Left Card
+  order: AAA
+  s3Key: action/color/card.png
+  unObjectId: 59
+  backgroundColor: null
+  args:
+    card: leftcard
+
+- name: action.casino.centercard
+  text: Middle Card
+  order: AAB
+  s3Key: action/color/card.png
+  unObjectId: 59
+  backgroundColor: null
+  args:
+    card: centercard
+
+- name: action.casino.rightcard
+  text: Right Card
+  order: AAC
+  s3Key: action/color/card.png
+  unObjectId: 59
+  backgroundColor: null
+  args:
+    card: rightcard
+
+- name: action.casino.bonusleftcard
+  text: BONUS CARD
+  order: AAD
+  s3Key: action/color/card.png
+  unObjectId: 59
+  backgroundColor: null
+  args:
+    card: bonusleftcard
+
+- name: action.casino.bonusrightcard
+  text: BONUS CARD
+  order: AAE
+  s3Key: action/color/card.png
+  unObjectId: 59
+  backgroundColor: null
+  args:
+    card: bonusrightcard
+
+
+- name: action.casino.bet5
+  text: Bet $5
+  order: AAA
+  s3Key: action/color/5bill.png
+  unObjectId: 59
+  backgroundColor: null
+  args: 
+    amount: 5
+
+- name: action.casino.bet10
+  text: Bet $10
+  order: AAB
+  s3Key: action/color/10bill.png
+  unObjectId: 59
+  backgroundColor: null
+  args: 
+    amount: 10
+
+- name: action.casino.bet20
+  text: Bet $20
+  order: AAC
+  s3Key: action/color/20bill.png
+  unObjectId: 59
+  backgroundColor: null
+  args: 
+    amount: 20
+
+- name: action.casino.checkwallet
+  text: Check Your Wallet
+  order: AAD
+  unObjectId: 59
+  s3Key: action/color/wallet.png
+  backgroundColor: null
+
+
+- name: action.casino.hilo.play
+  text: Play HI-LO
+  order: ZZZ
+  s3Key: null
+  unObjectId: 59
+  backgroundColor: null
+
+- name: action.casino.hilo.higher
+  text: Higher
+  order: AAA
+  s3Key: action/color/high.png
+  unObjectId: 59
+  backgroundColor: null
+  args: 
+    higherOrLower: higher
+
+- name: action.casino.hilo.lower
+  text: Lower
+  order: AAB
+  s3Key: action/color/low.png
+  unObjectId: 59
+  backgroundColor: null
+  args: 
+    higherOrLower: lower
+
+- name: action.casino.blackjack.hit
+  text: HIT
+  order: AAA
+  s3Key: null
+  unObjectId: 59
+  backgroundColor: null
+
+- name: action.casino.blackjack.stay
+  text: STAY
+  order: AAB
+  s3Key: null
+  unObjectId: 59
+  backgroundColor: null
+
+- name: action.casino.blackjack.doubledown
+  text: DOUBLE DOWN
+  order: AAC
+  s3Key: null
+  unObjectId: 59
+  backgroundColor: null

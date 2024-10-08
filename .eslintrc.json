@@ -1,0 +1,101 @@
+{
+  "ignorePatterns": [
+    "dist",
+    "node_modules",
+    "aws",
+    "coverage",
+    "static"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint/eslint-plugin"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "root": true,
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "@typescript-eslint/ban-types": 0,
+    "@typescript-eslint/explicit-module-boundary-types": 0,
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "brace-style": 2,
+    "padded-blocks": [
+      "error",
+      {
+        "blocks": "never",
+        "classes": "always"
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 0
+      }
+    ],
+    "eol-last": [
+      "error",
+      "always"
+    ],
+    "semi": [
+      2,
+      "never"
+    ],
+    "@typescript-eslint/indent": [
+      "error",
+      2
+    ],
+    "@typescript-eslint/comma-spacing": [
+      "error",
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "no-unexpected-multiline": 0,
+    "@typescript-eslint/quotes": [
+      "error",
+      "single"
+    ],
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/camelcase": 0,
+    "@typescript-eslint/interface-name-prefix": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "@typescript-eslint/explicit-function-return-type": 2,
+    "array-bracket-spacing": [2, "never"],
+    "space-in-parens": [
+      2,
+      "never"
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "after-used"
+      }
+    ],
+    "@typescript-eslint/member-delimiter-style": [
+      2,
+      {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": true
+        }
+      }
+    ]
+  }
+}

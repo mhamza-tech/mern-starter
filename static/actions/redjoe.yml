@@ -1,0 +1,10 @@
+#
+# actions associated with the redjoe handler module
+#
+
+- name: 'redjoe.action.helloworld'
+  text: 'Hi Joe'
+
+- name: 'redjoe.action.peanutbutter'
+  text: 'Peanut Butter!'
+  imageUrl: 'https://www.peanutbutter.com/wp-content/uploads/2019/03/SKIPPY_Product_PB_Spread_Creamy_Peanut_Butter_40oz.png'

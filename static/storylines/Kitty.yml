@@ -1,0 +1,49 @@
+storyline:
+  unObjectId: 11
+  emoji: 🐱
+  name: Kitty
+  text: Who runs the world? Kitties run the world.
+  entryId: 5FEeTJWGl3ygHa77tRpXcu
+
+start:
+  .Yay it's a kitty!:
+    next state: pet
+    text: There's a kitty here. What would you like to do?
+    Newsfeed: "{{user_name}} is thinking about **petting** the {{object_name}}."
+    entryId: R3Dccbdke5uCJA60x7G5F
+pet:
+  .Pet: 
+    next state: pet2
+    text: Kitty likes the way you pet her.
+    Newsfeed: "{{ object_name }} **loves** to be pet."
+    entryId: 4sR3VzTBw3rRNgU8eJ1BKf
+pet2:
+  .Pet again:
+    next state: pet3
+    text: Kitty likey, Kitty is purring!
+    Newsfeed: The skillfull **petting** by {{user_name}} is making {{ object_name }} purr.
+    entryId: 6ADGkuL8TiGfTpE5aV7NTu
+pet3:
+  .Pet again:
+    next state: pet4
+    text: Kitty rolls over and shows you her tummy. Want to scratch her tummy?
+    Newsfeed: "{{user_name}} is **giving** {{object_name}} tummy rubs."
+    entryId: 
+pet4:
+  .Tummy scritches!:
+    next state: pet5
+    text: "Kitty bites you HARD and runs away. Kitty's a tease! And mean. But you know you like it. Call her back to you!"
+    Newsfeed: "{{ object_name }} is biting {{user_name}}, and {{user_name}} is kind of **into it**."
+    entryId: 6tDDT4yEBEfoAJiWPRsQSP
+pet5:
+  .OW:
+    next state: pet6
+    text: What if you rubbed tuna all over your body and then called her. Here, Kitty Kitty!
+    newsfeed: "{{user_name}} is **rubbing tuna** all over their body in an effort to lure the {{object_name}} back."
+pet6:
+  .Sure, I'm not bleeding that much:
+    next state: end
+    text: Your bait worked. Kitty comes over and gets some more pets from you, and is purring again. She rolls on her back. Tummy pet? Nope, once bitten, twice shy. You bail.
+    Newsfeed: The tuna bait worked. But {{object_name}} and {{user_name}} are split up; the biting **gave {{user_name}} Cat Scratch Fever**, which is an illness caused by the bacterium Bartonella henselae.
+    entryId: htkILAQFeSem4H9wD9r8Y 
+end:

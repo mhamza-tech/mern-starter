@@ -1,0 +1,65 @@
+- name: 'Action.Debug.Inspect'
+  isDeleted: true
+  text: 'Debug: Inspect'
+  order: Zz 
+  description: 'Debug: Inspect'
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  package: coretest
+  collectionId: actionx
+  tags: 
+    - friendly
+    - touch
+
+- name: 'Action.Debug.TestHashStatus'
+  isDeleted: true
+  text: 'Test: HashStatus'
+  order: Za 
+  description: 'Test: HashStatus'
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  package: coretest
+  collectionId: actionx
+  tags: 
+    - friendly
+    - touch
+
+- name: 'Action.Debug.TestUserTraits'
+  isDeleted: true
+  text: 'Test: UserTraits'
+  order: Za 
+  description: 'Debug: UserTraits'
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  package: coretest
+  collectionId: actionx
+  tags: 
+    - friendly
+    - touch
+
+- name: 'Action.Debug.Reset'
+  isDeleted: false
+  text: 'Debug: Reset Target'
+  order: Za 
+  description: 'Reset Target'
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  package: core
+  collectionId: actionx
+  tags: 
+    - friendly
+    - touch
+
+
+- name: 'Action.Debug.Add20ToWealth'
+  isDeleted: true
+  text: 'Debug: Add $20'
+  order: Zz 
+  description: 'Debug: Add $20'
+  s3Key: action/color/20bill.png
+  backgroundColor: 'F6F6F6'
+  package: core
+  collectionId: actionx
+  tags: 
+    - friendly
+    - touch

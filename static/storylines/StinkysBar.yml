@@ -1,0 +1,244 @@
+storyline:
+  unObjectId: 2
+  emoji: 🍻
+  name: Stinky's Bar
+  text: This is the best dive bar in all of Unreal!
+  entryId: 60DADTydQh7eVAvb2u83Sz
+
+start:
+  .It's Stinky's Bar!:
+    next state: outsideBar
+    text: You are now outside Stinky's Bar.
+
+outsideBar:
+  .Enter:
+    next state: insideBar
+    text: You’re inside the bar! There’s a hot bartender, a popcorn machine, a Christmas tree, a jukebox, a few elderly regulars, and of course the bar itself. What would you like to do?
+    Newsfeed: "Hey, {{user_name}} just got the **full Cheers treatment** when she arrived at {{object_name}}. Everyone yells 'YAY {{user_name}}!'"
+  .Vape:
+    text: You're calming your nerves with a THC weed vape pen. Don't get too calm, or you won't make it inside. 
+    Newsfeed: "{{user_name}} isn't sure about going into {{object_name}}, so they're **vaping** outside."
+  ..Vape:  
+    text: Oh yeah. you are feeling stoney. Time to go in?
+    newsfeed: "{{user_name}} is still **vaping** outside of {{object_name}}."
+  ...Vape: 
+    text: Are you just going to stand outside the bar all night vaping?
+    newsfeed: "{{user_name}} is still standing right outside of {{object_name}} and **vaping**."
+  ....Vape: 
+    text: I guess that's a yes, you are just going to stand outside the bar vaping. Lame.
+    newsfeed: "Yep, {{user_name}} is still avoiding going into {{object_name}} by **vaping** excessively."
+  .....Vape:
+    text: Dude. DUDE. 
+    newsfeed: "Well, {{user_name}} is still standing around outside of {{object_name}} and **vaping** like a creep."
+  
+insideBar:
+  .Get a drink:
+    next state: stool
+    text: Time for a drink? Of course it is, why even ask. Belly up to the bar and take a seat.
+    newsfeed: "If {{user_name}} **lived here**, they'd be home by now, if they lived in {{object_name}}."
+  .Check out the jukebox:
+    next state: jukebox
+    text: Someone is playing Justin Bieber on the jukebox. You should pick the next song.
+    newsfeed: "{{user_name}} has **entered** {{object_name}} and is about to change the song on the jukebox."
+  .Check out the pinball machine:
+    next state: pinball
+    text: You hear the BING BING BING of a pinball machine and it calls to you.
+    newsfeed: "{{user_name}} **entered** {{object_name}} and is headed towards the pinball machine."
+bar:
+  .Order a drink:
+    next state: loud
+    text: Ooh, this drink is just what the doctor ordered. Dr. Loud! You down it, get another, then another. You are starting to get belligerent.
+    newsfeed: "{{user_name}} is **pounding** drinks at {{object_name}}."
+  .Flirt with bartender:
+    next state: bartender
+    text: You don't have a lot of game, but you are making the bartender laugh, which is always a good sign.
+    newsfeed: "{{user_name}} is **flirting** with the bartender at {{object_name}}."
+bartender:
+  .Chat:
+    next state: bar
+    text: You say to the bartender, am I seeing double or is there an angel on your shoulder?
+    Newsfeed: "{{user_name}} is **flirting** in {{object_name}}."
+  .Ask her to watch your drink:
+    next state: bathroom
+    text: You ask the bartender to watch your drink while you take a leak. 
+    Newsfeed: "{{user_name}} **left their drink** on the bar at {{object_name}} so they could go take a leak."
+  .Rock out!:
+    next state: jukebox
+    text: Go play some songs on the jukebox.
+    newsfeed: "{{user_name}} is doing his best **Fonzie impression** at the jukebox at {{object_name}}. AYYYYY!"
+tipsy:
+  .Tell a story:
+    next state:
+    text: You're a little tipsy, and telling a story about the time you did that one thing. Remember? That thing?
+    Newsfeed: "{{user_name}} is **telling** drunken stories at {{object_name}}."
+  .Grab a snack:
+    next state: popcornmachine
+    text: You realize that you are drinking a lot on an empty stomach. There is a popcorn machine in the back!
+    Newsfeed: "{{user_name}} is **getting popcorn** at {{object_name}}."
+  .Giggle fit:
+    next state: bartender
+    text: You are giggling uncontrollably. You're tipsy.
+    Newsfeed: "{{user_name}} is **having a giggle fit** in {{object_name}}."
+loud:
+  .Talk about the Warriors:
+    next state: dancefloor
+    text: You just professed your love of the Golden State Warriors, best NBA team ever. This bar agrees! Because you are right. Let's dance!
+    Newsfeed: "{{user_name}} is **telling everyone** at {{object_name}} that the Golden State Warriors are the greatest of all time."
+  .Talk about the Denver Nuggets:
+    next state: punched
+    text: Ha, you like the Denver Nuggets? Lame! The Warriors fans at the bar demand a retraction.
+    Newsfeed: "{{user_name}} is **telling everyone** at {{object_name}} that the Denver Nuggets are the worst of all time."
+  .Go take a pee:
+    next state: bathroom
+    text: Time to drain the main vein.
+    Newsfeed: "{{user_name}} has been **pounding beers** at {{object_name}} and they have to go take a leak."
+
+punched:
+  .Apologize:
+    next state: bar
+    text: You immediately apologize. 
+    Newsfeed: "{{user_name}} is **apologizing** at {{object_name}}."
+  .Offer drink:
+    next state: bar
+    text: You have offered to buy a drink to smooth things over. 
+    Newsfeed: "{{user_name}} is **buying** drinks at {{object_name}}."
+  .Double down:
+    next state: loud
+    text: You don't apologize to ANYONE! Get loud!
+    Newsfeed: Oh dear. {{user_name}} is **fighting** at {{object_name}}.
+jukebox: 
+  .Play a song:
+    next state: 
+    text: You are playing Sweet Child o’ Mine by Guns and Roses! Classic bar tune. 
+    Newsfeed: "{{user_name}} is **listening** to metal tunes at {{object_name}}."
+  ..Play a song:
+    next state: headbanging
+    text: You are playing You Shook Me All Night Long, by AC/DC! Bang your head.  
+    Newsfeed: "{{user_name}} is **headbanging** to at {{object_name}}."
+  .Pinball:
+    next state: pinball
+    text: Now that you made sure the tunes are tasty, go play pinball.
+    Newsfeed: "{{user_name}} is going to **play** pinball at {{object_name}}."
+pinball:
+  .Play:
+    text: Mash the flippers! Doh, first ball sinks.
+    Newsfeed: "{{user_name}} is not **good at pinball**, everyone at {{object_name}} now knows."
+  ..Play:
+    text: Nice! you’ve got 3 balls left.
+    Newsfeed: "{{user_name}} **has three balls** at {{object_name}}."
+  ...Play:
+    text: You're doing really well! 2 more balls to play.
+    Newsfeed: "{{user_name}} is **doing well** on the pinball machine at {{object_name}}."
+  ....Play:
+    text: You've got one ball left and a really good chance of beating the high score!
+    Newsfeed: "{{user_name}} only **has one ball left** at {{object_name}}."
+  .....Play:
+    next state: win
+    text: You won! you got high score. put your name on the leaderboard!
+    Newsfeed: "{{user_name}} just **got high score** on the pinball machine at {{object_name}}."
+  .Shake machine:
+    next state: 
+    text: You are shaking the machine to try and get your ball in the powerball hole. It didn't work.
+    Newsfeed: "{{user_name}} is **shaking** the pinball machine at {{object_name}}."
+  ..Shake machine:
+    next state: 
+    text: Shake it, don't break it!
+    Newsfeed: "{{user_name}} is close to **tilting** the pinball machine at {{object_name}}."
+  ...Shake machine:
+    next state: bartender
+    text: Tilt! You're going to need some more quarters.
+    Newsfeed: "{{user_name}} has **tilted** the pinball machine at {{object_name}}."
+win:  
+  .Set high score:
+    next state: 
+    text: You set your initials for the high score leaderboard. Celebrate with a drink!
+    Newsfeed: "{{user_name}} is **celebrating** the pinball high score with a drink at {{object_name}}."
+  .Play again:
+    next state: pinball
+    text: Play again!
+    newsfeed: "{{user_name}} is **getting a fresh set of balls** on the pinball machine at {{object_name}}."
+dancefloor:
+  .Do the Dougie:
+    next state:
+    text: The Dougie is on! You love this song. Sing along \"Put your arms out front, lean side to side, They gonna be on you when they see you hit dat dougie right?\" 
+    newsfeed: "{{user_name}} is on the dancefloor at {{object_name}} **doing the Dougie**."
+  .Do the Mashed Potato:
+    next state: 
+    text: The Mashed Potato was all the rage in 1962. Made popular by James Brown, this is THE jam.
+    newsfeed: "{{user_name}} is on the dancefloor at {{object_name}} **doing the Mashed Potato**."
+  .Do a Texas Two Step:
+    next state:
+    text: You are now two-stepping! One two, one two, slide shuffle. Don't look at your feet! 
+    newsfeed: "{{user_name}} is on the dancefloor at {{object_name}} **doing the Texas two-step**."
+  .Do the Robot:
+    next state: bar
+    text: You are doing The Robot and it is awesome. people might actually mistake you for an actual robot! Robot to the bar!
+    newsfeed: "{{user_name}} is on the dancefloor at {{object_name}} **doing the Robot**."
+  .Waltz:
+    next state:
+    text: You're waltzing to a lovely country-tinged waltz song. Triple time, keep up!
+    newsfeed: "{{user_name}} is **waltzing** on the dancefloor at {{object_name}}."
+
+popcornmachine:
+  .Eat:
+    next state:
+    text: Yum, popcorn. Nom nom nom!
+    newsfeed: "{{user_name}} is **eating** popcorn at {{object_name}}."
+  ..Eat:
+    next state:
+    text: MOAR popcorn!
+    newsfeed: "{{user_name}} is **eating more** popcorn at {{object_name}}."  
+  ...Eat:
+    next state:
+    text: You're on your third bucket of popcorn. THAT'S ALOTTA POPCORN! Maybe too much?
+    Newsfeed: "{{user_name}} is **having** a third bucket of popcorn at {{object_name}}."
+  .Add butter:
+    next state: bathroom
+    text: You've added that oily, viscous fake butter flavor to your popcorn. Does it make it better? Unclear. Does it make it worse? Also unclear. Enjoy!
+    newsfeed: "{{user_name}} is **putting fake butter** on popcorn at {{object_name}}."
+bathroom:
+  .Pee:
+    next state:
+    text: That was a nice, long pee. What else is on your bathroom agenda?
+    Newsfeed: "{{user_name}} is **peeing** at {{object_name}}."
+  .Poop:
+    next state:
+    text: You've pushed Mr. Brown into the pool. 
+    Newsfeed: "{{user_name}} is **pushing** Mr. Brown into the pool at {{object_name}}."
+  ..Poop:
+    next state:
+    text: You are dropping deuces right and left! You're aces at deuces.
+    Newsfeed: "{{user_name}} is **dropping deuces** at {{object_name}}."
+  ...Poop:
+    next state:
+    text: This is, quite literally, a shit show, and you're the star! Take a bow.
+    Newsfeed: "{{user_name}} is **having a third turd** in {{object_name}}."
+  ....Poop:
+    next state:
+    text: Are you a plumber? Cuz that's a lot of pipe.
+    Newsfeed: "{{user_name}} is **laying some pipe** in {{object_name}}."
+  .....Poop:
+    next state:
+    text: Shit happened.
+    Newsfeed: "{{user_name}} is **having** a fifth dump in {{object_name}}."
+  ......Poop:
+    next state: 
+    text: You've pooped so much that your poops are tiny, like M&Ms. Feces Pieces! 
+    Newsfeed: "{{user_name}} is at {{object_name}} **making** little Feces Pieces."
+headbanging:
+  .Bang your head:
+    next state:
+    text: Bang your head back and forth.  
+    Newsfeed: "{{user_name}} is **headbanging** in {{object_name}}."
+  .Flip your hair:
+    next state: jukebox
+    text: You are flipping your hair back and forth, front to back, side to side. That's some excellent metal hair. 
+    Newsfeed: "{{user_name}} is **flipping their hair** to the metal tunes in {{object_name}}."
+  .Play air guitar:
+    next state:
+    text: You are playing some expert air guitar. SHREDDING!
+    Newsfeed: There is serious **shredding** over at {{object_name}}, by {{user_name}} who is playing air guitar.
+  .Make devil horns:  
+    next state: jukebox
+    text: You throw up your hands, index finger and pinky raised, to make the classic heavy metal sign of the devil horns. You are so metal right now.
+    Newsfeed: "{{user_name}} is **listening to metal** and making the devil horns sign in {{object_name}}."

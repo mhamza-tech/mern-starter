@@ -1,0 +1,13 @@
+storyline:
+  unObjectId: 36
+  emoji: 🦶
+  name: Bigfoot
+  text: Bigfoot is a friendly monster who really very rarely eats people
+  entryId: 2hmHFbebNEh2zIdS4o0EDc
+
+start:
+  .Examine this bigfoot:
+    next state: end
+    text: Bigfoot ate you. Well that's it. Sry this almost never happens.
+    Newsfeed: Bigfoot ate yet another person, this time it was {{ user_name }}.
+end:   

@@ -1,0 +1,13 @@
+storyline:
+  unObjectId: 39
+  emoji: 🦶
+  name: The Cave
+  text: A shady spot where you can escape from the hot tropics!
+  entryId: 5RpIvuY8fLGdFAsqPqNOYk
+
+start:
+  .Examine this bigfoot:
+    next state: end
+    text: Bigfoot ate you. Well that's it. Sry this almost never happens.
+    Newsfeed: Bigfoot ate yet another person, this time it was {{ user_name }}.
+end:   

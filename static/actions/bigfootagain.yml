@@ -1,0 +1,8 @@
+- name: 'Action.BigFootAgain.Shave'
+  text: 'Shave'
+  description: 'Shave'
+  s3Key: action/color/shave.png
+  backgroundColor: 'F6F6F6'
+  collectionId: unobject/71/actionx
+  unObjectId: 71
+  xp: 5

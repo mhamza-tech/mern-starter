@@ -1,0 +1,6 @@
+{
+  "parserOptions": {
+    "project": "src/tsconfig.json",
+    "sourceType": "module"
+  }
+}

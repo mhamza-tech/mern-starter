@@ -1,0 +1,17 @@
+- name: 'Action.ColdKegBeer.FillCup'
+  text: Fill Cup
+  description: 'Fill Cup'
+  s3Key: action/color/fillcup.png
+  backgroundColor: null
+  collectionId: unobject/51/actionx
+  unObjectId: 51
+  xp: 5
+
+- name: 'Action.ColdKegBeer.PumpKeg'
+  text: Pump Keg
+  description: 'Pump Keg'
+  s3Key: action/color/pump.png
+  backgroundColor: null
+  collectionId: unobject/51/actionx
+  unObjectId: 51
+  xp: 20

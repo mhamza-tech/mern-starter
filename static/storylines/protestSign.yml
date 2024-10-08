@@ -1,0 +1,62 @@
+storyline:
+  unObjectId: 41
+  emoji: 👎
+  name: Protest Sign
+  text: Make your own protest sign!
+  entryId:  
+start:
+  .Let's get started:
+    text: First, let's decide what or who you're going to protest.
+    newsfeed: 
+    next state: protest
+    entryId: 2E74tC2x2fcB1H9Y4Tq6X5
+who:
+  .Chrissy Tiegen:
+    text: Let that /#foulmouthedwife know what you think about her and her mouth! The foul one!
+    next state: who2
+    entryId: 365gLNvPaEJQXiY8VtEEAa
+    newsfeed: Chrissy Tiegen is a national treasure, but still some people **want to make** a {{object_name}} against her.
+  .Crooked Donald Trump:
+    text: He's a dotard. He's an f$%#ing moron. He's the Toddler-in-Chief.
+    next state: who2
+    entryId: 4zT560eSuuXY0426uma4Yn
+    newsfeed: Making a {{object_name}} against Donald Trump is easy because there's **so much** to protest.
+  .Wind:  
+    text: WTF is up with the wind? Why is there wind? It blows and blows and screws up your hair and also destroys towns.
+    next state: who2
+    entryId: 27ySdTRTUN7EvQmArTUWXH
+    newsfeed: Why not **protest the wind**? It's too windy, right? Grab a {{object_name}} and start a protest.
+who2:
+  .What style sign?:
+    text: Picking a style for your sign is important. You could do something slick and designed, or go old-school homemade style.
+    next state: message
+message:
+  .Well designed:
+    text: Nice! Some iconic sign designs are Black Lives Matter, Yes We Can, and Make America Great Again.
+    next state: message2 
+    entryId: B3jNnpHrFUm7jEKLuob5Y
+  .Homemade:
+    text: The classic homemade sign is written on cardboard, in Sharpie, in all caps, and squished on the right side because you ran out of room because you didn't plan ahead.
+    next state: message2 
+    entryId: 2aPi4JYce0UQt5nG4zmUDc
+    newsfeed: Why do people plan their {{object_name}} lettering so poorly? Everything on the right-hand side is always **smooshed** when they run out of room.
+message2:    
+  .What's it going to say?:
+    text: Do you want a message of hope, or to vehemently oppose something?
+    next state: content
+    newsfeed: You can protest pretty much anything, with the right {{object_name}}.
+content:    
+  .Hope:
+    text: A message of hope is always welcome. Protest signs can protest against negativity, you know.
+    Newsfeed: Down with hate! **Up with hope!** Not every {{object_name}} has to be negative, you know.
+    next state: content2  
+  .Oppose: 
+    text: The classic approach to a sign. The enemy of your enemy will be your friend.
+    next state: content2
+    entryId: 60XGjTR18Xc18DJxXpDGnQ
+    newsfeed: 
+content2: 
+   .Go protest!:
+    text: You've got your sign, get out there and protest something. Anything! Everything.
+    next state: end
+end:        

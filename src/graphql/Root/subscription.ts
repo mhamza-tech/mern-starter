@@ -1,0 +1,1 @@
+export const NEW_HEARTBEAT = 'NEW_HEARTBEAT'

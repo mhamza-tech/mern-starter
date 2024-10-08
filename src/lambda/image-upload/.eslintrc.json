@@ -1,0 +1,6 @@
+{
+  "parserOptions": {
+    "project": "src/lambda/image-upload/tsconfig.json",
+    "sourceType": "module"
+  }
+}

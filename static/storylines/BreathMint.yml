@@ -1,0 +1,53 @@
+storyline: 
+  unObjectId: 25
+  emoji: 🍬
+  name: Breath Mint
+  text: Someone hands you a breath mint. What does it mean?
+  entryId: 4YuY64sxTTh94Bw1EyAdj7
+  
+start:
+  .They like me?:
+    nextstate: what
+    text: Why do some people get offended when someone hands them a breath mint?
+    Newsfeed: "Do people get offended when they're offered a {{object_name}}? {{user_name}} is **finding out.**"
+what:
+  .Not sure, seems OK:
+    next state: badbreath
+    text: So let's say you're talking to someone and suddenly they press a breath mint in your hand. Could they be telling you that you have bad breath?
+    Newsfeed: During a casual conversation, someone just **gave** a {{ user_name }} a {{object_name}}.
+badbreath:
+  .Are they?:
+    nextstate: well
+    text: Yes, probably, right? It's hard to smell your own breath.
+    Newsfeed: Even though it was meant to be helpful, **giving** {{user_name}} a {{object_name}} has made {{user_name}} self-concious. 
+well:
+  .Like for example, now?:
+    next state: ok
+    text: Of course my breath doesn't smell bad! Although come to think of it, my cheeseburger at lunch had red onions on it. 
+    Newsfeed: After a cheeseburger with onions, you're **gonna need** a {{object_name}}.
+ok:
+  .Red onions, eh?:
+    next state: ok2
+    text: Hm, you may be on to something here. Go ahead and give me the mint. What flavors do you have?
+    Newsfeed:
+ok2: 
+  .Burrito flavor:
+    next state: ok3
+    text: Burrito flavor? Are you kidding?
+    Newsfeed: Ever **had** a burrito flavored {{object_name}}?
+ok3:
+  .Okay, asphalt flavor?:
+    next state: ok4
+    text: NO!
+    Newsfeed:
+ok4: 
+  .Picky! Chilean Sea Bass?:
+    next state: ok5
+    text: I don't understand what is happening.
+    newsfeed: What is your favorite fish? Think about **making it** into a {{object_name}}!
+ok5:
+  .Do you want mint flavor?:
+    next state: end
+    text: Fine. Here's a spearmint mint. Wait, that's redundant! So is peppermint. Have cinnamon!
+    newsfeed: If you see {{user_name}} around, give their breath a **sniff**. SPICY! Thanks, {{object_name}}.
+end:              

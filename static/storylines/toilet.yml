@@ -1,0 +1,54 @@
+storyline:
+  unObjectId: 8
+  emoji: 🚽
+  name: Toilet
+  text: You know what to do.
+  entryId: 5XBgpNernyBkRcPktHakmg
+
+start:
+  .Toilet time!:
+    nextstate: toilet
+    text: You are in a stall in the bathroom at Stinky's Bar...
+    Newsfeed: "{{user_name}} is **hanging out** near the {{object_name}} in the bathroom at Stinky's Bar."
+toilet:
+  .Pee:
+    next state: poop
+    text: That was a nice, long pee. What else is on your bathroom roster?
+    Newsfeed: "{{user_name}} just **peed** in the {{object_name}} in the bathroom at Stinky's Bar."
+Poop:
+  .Push:
+    next state: Poop2
+    text: You've pushed Mr. Brown into the pool. 
+    Newsfeed: "{{user_name}} just **pooped** in the {{object_name}} in the bathroom at Stinky's Bar."
+Poop2:
+  .Keep pushing:
+    next state: Poop3
+    text: You are dropping deuces right and left! You're aces at deuces.
+    Newsfeed: "{{user_name}} just **dropped some deuces** in the {{object_name}} in the bathroom at Stinky's Bar."
+Poop3:
+  .Push harder:
+    next state: Poop4
+    text: This is, quite literally, a shit show.
+    Newsfeed: "{{user_name}} is **putting on** a shit show with the {{object_name}} in the bathroom at Stinky's Bar."
+Poop4:
+  .You're not done yet:
+    next state: Poop5
+    text: Are you a plumber? Cuz that's a lot of pipe.
+    Newsfeed: "{{user_name}} is **laying pipe** in the {{object_name}} in the bathroom at Stinky's Bar." 
+Poop5:
+  .You know what they say:
+    next state: Poop6
+    text: Shit happened. 
+    Newsfeed: "{{user_name}} just **took** their fifth shit in the {{object_name}} in the bathroom at Stinky's Bar."
+Poop6:
+  .Wow:
+    next state: Poop7
+    text: Who poops SIX times? What are you eating? You certainly have a diet rich in fiber.
+    Newsfeed: "{{user_name}} just **took their sixth dump** in the {{object_name}} in the bathroom at Stinky's Bar. Stay away!"
+Poop7:
+  .Almost done:
+    next state: end
+    text: You've pooped so much that your poops now are tiny, like M&Ms. You could package them and sell them as Feces Pieces!
+    Newsfeed: "{{user_name}} just **took** their seventh and final shit in the {{object_name}} in the bathroom at Stinky's Bar."
+    entryId: 4SBzlGZkigaDMGxF2tkhme
+end:

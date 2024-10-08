@@ -1,0 +1,22 @@
+#
+# actions associated with the template handler module
+#
+
+- name: 'template.action.yes'
+  text: 'Yes'
+  order: AAA
+  s3Key: action/color/yes.png
+  unObjectId: template
+
+- name: 'template.action.no'
+  text: 'No'
+  order: AAB
+  s3Key: action/color/no.png
+  unObjectId: template
+
+- name: 'template.action.more'
+  text: 'More'
+  order: AAC
+  s3Key: action/color/more.png
+  unObjectId: template
+

@@ -1,0 +1,199 @@
+# https://docs.gitlab.com/ee/ci/yaml/
+
+image:
+  name: node:12.16.1
+
+# Configuration
+variables:
+  AWS_ACCESS_KEY_ID: "AKIAYISB4C3X5SVHPX64" # Should have access to both S3/EB
+  AWS_SECRET_ACCESS_KEY: "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"
+  NAMESPACE: "unreal"
+  AWS_REGION: "us-west-2"
+  GQL_APP_NAME: "gql"
+  # this is required for tests
+  UNREAL_AWS_S3_BUCKET: "unreal-dev-us-west-2"
+  IMGIX_CDN_ROOT_URL: unreal-development.imgix.net
+  IMGIX_API_KEY: yl1FNqD6QX4AEPoXhZuxJPHx4NLYIpyq
+  HUSKY_SKIP_INSTALL: 1
+  IOS_BUNDLE_ID: com.unreal.fun.dev
+  WWW_SHORT_DOMAIN: dev.unrl.fun
+  WWW_DOMAIN: dev.unreal.fun
+  FB_SHORTLINK_API_KEY: AIzaSyBZJ_J8XhnV8Axrvi8HvgqyXatAZlPLEi0
+  APP_URL: testflight.apple.com/join/gbS0BAL1
+
+stages:
+  - build
+  - deploy_development
+  - deploy_staging
+  - deploy_production
+  
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - .npm/
+
+before_script:
+  - npm ci --cache .npm --prefer-offline
+
+# Job: Build for "master" branch
+# Installs npm packages, transpiles TypeScript to Javascript
+# Passes node_modules/, dist/ onto next steps using artifacts
+build_master:
+  stage: build
+  cache: 
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - .npm/
+    policy: pull
+  script:
+    - npm install
+    - npm run lint
+  artifacts:
+    paths:
+      - secrets/
+      - node_modules/
+      - dist/
+  only:
+    - master
+
+# Job: Build any branch that is NOT "master", which essentially means they are development branches
+# Installs npm packages, transpiles TypeScript to Javascript
+# Passes node_modules/, dist/ onto next steps using artifacts
+build_development:
+  stage: build
+  cache: 
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+      - .npm/
+    policy: pull
+  script:
+    - npm install
+    - npm run lint
+    - npm test
+  artifacts:
+    paths:
+      - secrets/
+      - node_modules/
+      - dist/
+  except:
+    - master
+
+# Job: Deploy to Development for any branch that is "master", which essentially means they are development branches
+# Zips the contents of our built application, uploads to S3
+# Configures a new EB version and switches to that version
+deploy_development:
+  stage: deploy_development
+  variables:
+    ENV: "dev"
+    TF_VAR_core_rds_instance: "db.t3.small"
+    TF_VAR_core_rds_password: "unrealiswherewegiftstinkytacostoeachother"
+    TF_VAR_gql_app_instance: "t3.small"
+    TF_VAR_redis_instance: "cache.t3.small"
+    TF_VAR_gql_eb_autoscale_max: 2
+    TF_VAR_node_env: "development"
+    TF_VAR_master_api_key: "unrealiswherejeffthrowspoopathisfriends"
+    TF_VAR_service_url: "https://gql-dev.unreal.fun"
+    TF_VAR_engine_api_key: "service:rob4lderman-unreal-gql-dev:fu6m2wWYCFZeuG3RaW1ZQg"
+    TF_VAR_apollo_debug_enabled: "true"
+    TF_VAR_apollo_tracing_enabled: "false"
+    TF_VAR_confirm_email_url: "https://dev.unreal.fun/accounts/complete?token={{token}}"
+    TF_VAR_reset_password_url: "https://dev.unreal.fun/accounts/change-password?token={{token}}"
+    TF_VAR_firebase_service_account_file: "../../secrets/ureally-dev-firebase-adminsdk-rdfv3-bf0a066d0c.json"
+    TF_VAR_log_level: "info"
+    TF_VAR_log_context: "general,graphql,makerApi,npc,rules,store"
+    TF_VAR_mixpanel_token: "9eaf6fc42f297e6aa4c739f178d511bd"
+    TF_VAR_ios_bundle_id: "com.unreal.fun.dev"
+    TF_VAR_www_short_domain: "dev.unrl.fun"
+    TF_VAR_www_domain: "dev.unreal.fun"
+    TF_VAR_app_url: "testflight.apple.com/join/gbS0BAL1"
+    TF_VAR_fb_shortlink_api_key: "AIzaSyBZJ_J8XhnV8Axrvi8HvgqyXatAZlPLEi0"
+    TF_VAR_imgix_cdn_root_url: "unreal-development.imgix.net"
+    TF_VAR_imgix_api_key: "yl1FNqD6QX4AEPoXhZuxJPHx4NLYIpyq"
+#    TF_VAR_users_to_auto_friend: "jeff"
+    TF_VAR_users_to_auto_friend: ""
+  script:
+    - bash ./terraform/deploy.sh
+  only:
+    - master
+
+# Job: Deploy "master" branch to Staging
+# Zips the contents of our built application, uploads to S3
+# Configures a new EB version and switches to that version
+deploy_staging:
+  stage: deploy_staging
+  variables:
+    ENV: "stg"
+    AWS_S3_BUCKET_FROM: "unreal-dev-us-west-2"
+    AWS_S3_BUCKET_TO: "unreal-stg-us-west-2"
+    TF_VAR_core_rds_instance: "db.t3.small"
+    TF_VAR_core_rds_password: "nosoupforyoudoyouwantustoslapyoursillyface"
+    TF_VAR_gql_app_instance: "t3.small"
+    TF_VAR_redis_instance: "cache.t3.small"
+    TF_VAR_gql_eb_autoscale_max: 2
+    TF_VAR_node_env: "staging"
+    TF_VAR_master_api_key: "unrealiswherejeffthrowspoopathisfriendsinstaging"
+    TF_VAR_service_url: "https://gql-staging.unreal.fun"
+    TF_VAR_engine_api_key: "service:rob4lderman-unreal-gql-staging:O9dpeEmvnKKs5JZJaAVkRg"
+    TF_VAR_apollo_debug_enabled: "false"
+    TF_VAR_apollo_tracing_enabled: "false"
+    TF_VAR_confirm_email_url: "https://staging.unreal.fun/accounts/complete?token={{token}}"
+    TF_VAR_reset_password_url: "https://staging.unreal.fun/accounts/change-password?token={{token}}"
+    TF_VAR_firebase_service_account_file: "../../secrets/unreal-staging-firebase-adminsdk-kxbe2-703e13a68d.json"
+    TF_VAR_log_level: "info"
+    TF_VAR_log_context: "general,graphql,makerApi,npc"
+    TF_VAR_mixpanel_token: "a03d9545fa8140cefb99da245216a35c"
+    TF_VAR_ios_bundle_id: "com.unreal.fun.staging"
+    TF_VAR_www_short_domain: "staging.unrl.fun"
+    TF_VAR_www_domain: "staging.unreal.fun"
+    TF_VAR_app_url: "testflight.apple.com/join/sQ7pmmJz"
+    TF_VAR_fb_shortlink_api_key: "AIzaSyBUzxwTLo5ZyPjqRjGIe5taRGY4K7cSfpU"
+    TF_VAR_imgix_cdn_root_url: "unreal-staging.imgix.net"
+    TF_VAR_imgix_api_key: "yl1FNqD6QX4AEPoXhZuxJPHx4NLYIpyq"
+#    TF_VAR_users_to_auto_friend: "jeff"
+    TF_VAR_users_to_auto_friend: ""
+  script:
+    - bash ./terraform/deploy.sh
+  when: manual
+  only:
+    - master
+
+# Job: Deploy "master" branch to Production
+# Zips the contents of our built application, uploads to S3
+# Configures a new EB version and switches to that version
+deploy_production:
+  stage: deploy_production
+  variables:
+    ENV: "prd"
+    AWS_S3_BUCKET_FROM: "unreal-stg-us-west-2"
+    AWS_S3_BUCKET_TO: "unreal-prd-us-west-2"
+    TF_VAR_core_rds_instance: "db.t3.medium"
+    TF_VAR_core_rds_password: "whydontyouinvitefriendsandthrowingpoopatatthem"
+    TF_VAR_gql_app_instance: "t3.medium"
+    TF_VAR_redis_instance: "cache.t3.medium"
+    TF_VAR_gql_eb_autoscale_max: 3
+    TF_VAR_node_env: "production"
+    TF_VAR_master_api_key: "unrealiswherejeffthrowspoopathisfriendsinproduction"
+    TF_VAR_service_url: "https://gql.unreal.fun"
+    TF_VAR_engine_api_key: "service:rob4lderman-unreal-gql-prod:a9blywwdiL2TFXV9XHxWfw"
+    TF_VAR_apollo_debug_enabled: "false"
+    TF_VAR_apollo_tracing_enabled: "false"
+    TF_VAR_confirm_email_url: "https://unreal.fun/accounts/complete?token={{token}}"
+    TF_VAR_reset_password_url: "https://unreal.fun/accounts/change-password?token={{token}}"
+    TF_VAR_firebase_service_account_file: "../../secrets/ureally-prod-firebase-adminsdk-x11sp-8a524ae997.json"
+    TF_VAR_log_level: "info"
+    TF_VAR_log_context: "general,graphql,makerApi,npc"
+    TF_VAR_mixpanel_token: "36ca9869304749c50c9367ddd3070efa"
+    TF_VAR_ios_bundle_id: "com.unreal.fun"
+    TF_VAR_www_short_domain: "unrl.fun"
+    TF_VAR_www_domain: "unreal.fun"
+    TF_VAR_app_url: "apps.apple.com/us/app/unreal-fun/id1519232590"
+    TF_VAR_fb_shortlink_api_key: "AIzaSyBkav4csjdBt2muI3616ek3BWf34eojWnM"
+    TF_VAR_imgix_cdn_root_url: "unreal-production.imgix.net"
+    TF_VAR_imgix_api_key: "yl1FNqD6QX4AEPoXhZuxJPHx4NLYIpyq"
+#    TF_VAR_users_to_auto_friend: "jeff"
+    TF_VAR_users_to_auto_friend: ""
+  script:
+    - bash ./terraform/deploy.sh
+  when: manual
+  only:
+    - master

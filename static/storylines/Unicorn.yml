@@ -1,0 +1,48 @@
+storyline:
+  unObjectId: 13
+  emoji: 🦄
+  name: Unicorn
+  text: Unicorns are the kings of all other magical beings.
+  entryId: 6kkisM6CrNl1XjR7e8DsJH
+
+start:
+  .What is the deal with unicorns?:
+    nextstate: virgin
+    text:  In the Middle Ages and Renaissance, Unicorns were commonly described as wild woodland creatures, a symbol of purity and grace, which could be captured only by a virgin. 
+    newsfeed:
+virgin:
+  .So, I can never capture one?:
+    next state: nope
+    text: Apparently not.
+    newsfeed: "{{user_name}} **found a special treasure** that the {{object_name}} left at the end of the rainbow (and it's grosser than you'd think)."
+nope:
+  .What is the deal with the horn?:
+    nextstate: sparkle
+    text: Mythology about Unicorns says that their horns have magical powers, because the horn is made out of angel. 
+    newsfeed: "The {{object_name}} has a special horn (if you know what I mean). {{user_name}} is very **curious** about the horn's special powers."
+sparkle:
+  .What does this unicorn look like?:
+    next state: pink
+    text: This particular Unreal Unicorn is pink, pale green, and sparkly all over. It is marvelous and farts glitter clouds.
+    newsfeed: This {{object_name}} is pink, pale green, and **sparkly all over**.
+pink:
+  .How do you make a unicorn fart?:
+    nextstate: fart
+    text: You can feed it magical beans. They are, after all, the magical fruit. The more you eat, the more you toot.
+    newsfeed: Beans are **the magical fruit**, not just for humans, but also for the {{object_name}}.
+fart:
+  .What do unicorns do all day?:
+    next state: poop
+    text: Unicorns cast spells, pull pranks, blow bubbles, and sing songs. And poop. They poop a lot.
+    newsfeed: "The {{object_name}} can **cast spells**, pull pranks, sing songs, and poop. A lot."
+poop:
+  .Wait, if unicorns fart glitter, what do they poop?:
+    nextstate: rainbows
+    text: Unicorns poop pots of poop that are found at the end of every rainbow. Every time you see a rainbow, find it's end and enjoy a pot of Unicorn dumps.
+    newsfeed: Have you ever **wondered** where rainbows come from? When a {{object_name}} farts, the gas converts to glittery rainbows that lead to pots. Not pots of gold, silly, pots of {{object_name}} turds.
+rainbows:
+  .How can I meet the unicorn?:
+    next state: end
+    text: Stay in Unreal and watch the newsfeed for mentions of the Unicorn. Every time it's mentioned, click, and eventually you will meet it!
+    newsfeed: "{{user_name}} is now **following** the {{object_name}}, hoping for that pot of {{object_name}} gold."
+end:               

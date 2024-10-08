@@ -1,0 +1,69 @@
+storyline:
+  unObjectId: 12
+  emoji: 👻
+  name: Unreal Cemetery
+  text: Wander through the Unreal cemetery, meet some ghosts, and commune with the undead.
+  entryId: 5ANTucU89VUiwfUYT4al8O
+
+start:
+  .Enter the cemetery:
+    next state: yes
+    text: There is a wrought iron gate in front of you. Beyond it lies a very old cemetery. The marble headstones are crumbling.
+    Newsfeed: "**Enter the {{object_name}}** and commune with the dead."
+yes:
+  .Should I go in?:
+    next state: yes2
+    text: The mist is heavy, and you can only see a few feet beyond the gate.
+    Newsfeed: In the {{object_name}}, the fog is heavy and low on the crumbling marble headstones. **{{user_name}} shivers**. 
+yes2:
+  .Open the gate:
+     next state: yes3
+     text: You have stepped into the cemetery. 
+     Newsfeed: "{{user_name}} just **got #scared** in the {{object_name}}."
+yes3:
+  .Now what?:
+     next state: yes4
+     text: Read some of the tombstones.
+     Newsfeed: Reading old tombstones in the {{object_name}} is a peculiar pastime, yet {{user_name}} is **digging it**.
+yes4:
+  .Read the first headstone:
+     next state: yes5
+     text: The tombstone says that Mimi G. Kitty was born in 1917, and died in 1917! Purrhaps that's why she haunts the Cemetary. 
+     Newsfeed: 
+yes5:
+  .Wait, is that a ghost?:
+     next state: yes6
+     text: A ghostly kitty appears before you. She is Mimi G. Kitty. Is this is a pet cemetery?
+     Newsfeed: "**Visit** an adorably scary kitty ghost in the {{object_name}}." 
+yes6:
+  .Talk to the ghost: 
+     next state: yes7
+     text: The kitty ghost tells you her sad story. Her life was cut short at just 6 months old, when she fell asleep inside a car hood, on top of the engine.
+     Newsfeed: "What did the ghost kitty **just hand** {{ user_name }} in the {{object_name}}? A boo-rito."
+yes7:
+  .Oh, that's not good:
+     next state: yes8
+     text: The kitty says don't feel bad for her, the afterlife has been fun. She specializes in haunting crazy cat ladies, and most of them love it, before they get committed to a mental institution. She asks if you want to see a secret door.
+     Newsfeed: "{{user_name}} **discovered** that crazy cat ladies can communicate with cat ghosts when they go to the {{ object_name }}."
+     entryId: 44Fjn09V0S4aiDQmlDquLA
+yes8:
+  .Secret door? Okay:
+     next state: yes9
+     text: Mimi G. Kitty takes you through the door and points to an elaborately carved cat statue. She invites you to touch it.
+     Newsfeed: In the {{object_name}}, cat tombstones **outnumber** dog tombstones. Because cat people are nuts.
+yes9:
+  .You touch the amulet:
+     next state: yes10
+     text: As you touch the cat statue, every dead relative you have appears out of the mist with their arms outstretched. They march towards you. They are moaning.
+     Newsfeed: What do you call a ghost's erection, that can be seen in the {{object_name}}? a **boo-ner**.
+yes10:
+  .This is terrifying:
+      next state: yes11
+      text: Just as the spidery dead limbs of your ancestors are about to reach you, the zombie ghosts of all your dead pets rush to protect you. Clawsome!
+      Newsfeed: "{{user_name}} has discovered that **the best defense** in the {{object_name}} against ghosts is other ghosts."
+yes11:
+  .Thanks friends!:
+      next state: end
+      text: The dead relatives and the ghost pets collide on their way to you. The mist clears, the ghosts disappear, and you're left on a street with a wrought iron gate, leading to a cemetery.
+      newsfeed: "{{user_name}} was **saved from the zombie army** by a loyal group of ghosts in the {{object_name}}."
+end:                                                

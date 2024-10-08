@@ -1,0 +1,77 @@
+
+parserVersion: v1 
+storyline:
+  unObjectId: 5
+  emoji: 🚀
+  name: The Psychedelic Mushroom 
+  text: Hi I'm the Psychedelic Mushroom here to take you on an unreal journey
+  imageUrl: https://blahblah.com/blah
+  entryId: 5syD94dQatb3zLgTTfYVFA
+
+start:
+  _onEnter:
+    reset: eat
+  eat:
+    text: "You **ate** a mushroom. 🚀 But you don't feel any different. Wanna try that again?"
+    imageUrl: https://blahblah.com
+    newsfeed: "{{ user_name }} just took a bite of {{object_name}}"
+    entryId: 6hs3C4XEb03rt86dbaGPYP
+    emoji: 🔥
+  eat.:
+    text: |
+      You **ate more** mushrooms. You're getting high!
+      Colors look brighter.  The air smells wonderful.
+      Your dog is talking to you and you understand every word.
+      He's dictating a grocery list to you.
+  .eat.:
+    next state: stoned
+    text: |
+      You **ate more** mushrooms. You are very, very, very high.
+      The walls are vibrating. The ghost of Timothy Leary is planning
+      a road trip with you. You are almost out of mushrooms!
+    newsfeed: "{{user_name}} is **stoned** on the psychedelic mushroom"
+  Dance.It.Up! 🚀:
+    text: You're not high enough to pull this off. Eat more!
+  end: 
+    next state: end
+    text: bye bye
+ 
+stoned:
+  eat:
+    text: You're tripping your face off. Let's do something!
+  .dance it up!:
+    text: |
+      You are **dancing** to music only you can hear! 
+      Everyone is staring at you.  Your moves are legit. #Dancelikenooneiswatching
+  ..dance it up!:
+    text: On second thought you're WAY too high to pull this off. Try something else!
+  kiss:
+    nextState: bigfoot
+    text: |
+      You are **kissing** the Psychadelic Mushroom, and it is kissing 
+      you back.  With tongue.  When you open up your eyes again, 
+      you discover that you are now kissing BIGFOOT!  His mustache
+      tickles.  Okay, his whole face ticklers.
+  _: 
+    text: You're way too stoned for that. Try something else!
+
+bigfoot:
+  run:
+    text: |
+      You are **running** through the forest with the Psychadelic Mushroom, 
+      and BigFoot is chasing you!
+  hide:
+    nextState: cave
+    text: |
+      You are **HIDING** from Bigfoot with the Psychadelic Mushroom
+      in a secret cave and the danger has passed.
+
+cave:
+  start over:
+    text: You're back to the start!  
+    nextstate: start
+  end this now:
+    text: Bye Bye!
+    nextstate: end
+  
+end:

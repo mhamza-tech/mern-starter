@@ -1,0 +1,92 @@
+#
+# hammock-specific actions 
+#
+
+- name: 'action.yes'
+  text: 'Yes'
+  order: AAA
+  s3Key: action/color/yes.png
+  unObjectId: hammock
+
+- name: 'action.no'
+  text: 'No'
+  order: AAB
+  s3Key: action/color/no.png
+  unObjectId: hammock
+
+- name: 'action.more'
+  text: 'More'
+  order: AAC
+  s3Key: action/color/more.png
+  unObjectId: hammock
+
+- name: 'action.hammock.rest'
+  text: 'Rest'
+  order: AAD
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/85184787_269659934016019_6308503128924749824_n.png?_nc_cat=101&_nc_ohc=CfLAEJIwpTAAX9c0g-C&_nc_ht=scontent.fsfn4-1.fna&oh=309d79091346469d278f922a60885127&oe=5EB702C0
+  unObjectId: hammock
+
+- name: 'action.hammock.countSheep'
+  text: 'Sheep'
+  order: AAE
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/87074554_652066528669612_2779306305410564096_n.png?_nc_cat=105&_nc_ohc=ElJHQsLML6sAX9Yi9U0&_nc_ht=scontent.fsfn4-1.fna&oh=668e04de13ce9b3bbdc813d92a141eb8&oe=5EC7B1D5
+  unObjectId: hammock
+
+- name: 'action.hammock.wakeup'
+  text: 'Wake Up'
+  order: AAF
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/87219380_240656816949578_5437616179432652800_n.png?_nc_cat=110&_nc_ohc=NY94c1stfuoAX_WtkVe&_nc_ht=scontent.fsfn4-1.fna&oh=6af7ae41217d750aba326caef7ce0caa&oe=5EF52051
+  unObjectId: hammock
+
+- name: 'action.hammock.restCompletely'
+  text: 'Badass Nap'
+  order: AAG
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/87148256_129809798387341_4872380165243535360_n.png?_nc_cat=110&_nc_ohc=CXKui21vuN8AX8LChc8&_nc_ht=scontent.fsfn4-1.fna&oh=65eaf15608921c45de3b1f973ce011ed&oe=5EBA0232
+  unObjectId: hammock
+
+- name: 'action.hammock.search'
+  text: 'Search'
+  order: AAA
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/89070146_304201340539585_6522871174370689024_n.png?_nc_cat=101&_nc_sid=b96e70&_nc_ohc=xxXt2mm3TNgAX_cCYnZ&_nc_ht=scontent.fsfn4-1.fna&oh=1fcd108368016dda16fba00e76d8cd52&oe=5E97BCB4
+  unObjectId: hammock
+
+- name: 'action.hammock.blunt'
+  text: 'Light blunt'
+  order: AAH
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/87518066_134940287835097_128517851131674624_n.png?_nc_cat=107&_nc_sid=b96e70&_nc_ohc=sgPhtYDjfZYAX8LW0ps&_nc_ht=scontent.fsfn4-1.fna&oh=6970e2bc33a44b19c1594121f9aec9f1&oe=5EBB3CFE
+  unObjectId: hammock
+
+- name: 'action.hammock.tighten'
+  text: 'Tighten hammock'
+  order: AAH
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/89250286_3203442316351896_2504536769081376768_n.png?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=immxWlA9c4MAX8feP7y&_nc_ht=scontent.fsfn4-1.fna&oh=61185e971554a2b00c6c1bece043ed35&oe=5E989BB9
+  unObjectId: hammock
+
+- name: 'action.hammock.tightenOptions'
+  text: 'Tighten hammock'
+  order: AAK
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/89250286_3203442316351896_2504536769081376768_n.png?_nc_cat=105&_nc_sid=b96e70&_nc_ohc=immxWlA9c4MAX8feP7y&_nc_ht=scontent.fsfn4-1.fna&oh=61185e971554a2b00c6c1bece043ed35&oe=5E989BB9
+  unObjectId: hammock
+
+- name: 'action.hammock.goBack'
+  text: 'Go back'
+  order: AAA
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/89334965_622511441922304_310731404872777728_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=s_k3Vr5VzeAAX8tbPut&_nc_ht=scontent.fsfn4-1.fna&oh=33f6cb3a0e8d81b8d5461dcb71cc1ac4&oe=5E8024CE
+  unObjectId: hammock
+
+- name: 'action.hammock.payAssistant'
+  text: 'Pay assistant $5'
+  order: AAA
+  s3Key: action/color/5bill.png
+  unObjectId: hammock
+  backgroundColor: 'F6F6F6'
+

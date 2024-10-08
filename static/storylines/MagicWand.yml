@@ -1,0 +1,53 @@
+Storyline:
+  unObjectId: 4
+  emoji: 💥
+  name: Magic Wand
+  text: Cast some spells.
+  entryId: 2p0dWBhvUv3LTnieGsvRPV
+
+start:
+  .First spell:
+    nextstate: spell1
+    text: Hm, what are the spells? Turning toads into princes?
+    Newsfeed: "{{ user_name }} is **casting** a spell with {{object_name}}!"
+spell1:
+  .That seems unneccesary.:
+    next state: spell2
+    text: Yeah, toads are boring and princes are even more boring. How about turning random animals into diamonds?
+    Newsfeed: "{{user_name}} is waving the {{object_name}} around with impunity."
+spell2:
+  .Give it your best shot:
+    next state: spell3
+    text: You are waving the Wand at a nearby squirrel; will a diamond appear?
+    Newsfeed: "{{user_name}} **is casting a transformation spell** with the {{object_name}}. Check yourself to make sure you're not a frog."
+spell3:
+  .I want a diamond!:
+    next state: spell4 
+    text: The squirrel is gone. Dig through the leaves and grass to see if there is a diamond in its place?
+    Newsfeed: "{{ user_name }} just waved the {{object_name}} and the squirrel **disappeared**." 
+spell4:
+  .Dig!:
+    next state: spell5
+    text: It's not very big, but you found a diamond. What's your next spell going to be?
+    Newsfeed: "No no no {{user_name}}, it's leviOsa, not levioSA. Now **pick up** your {{object_name}} and try again."
+spell5:
+  .Instant transport to France?:
+    next state: spell6
+    text: Good choice! You're now in France. But you don't have any euros and you're a little hungry.
+    Newsfeed: When in France, do like the French...which is where {{ user_name }} just got **transported** courtesy of the {{object_name}}.
+spell6:
+  .Can I get euros with the Wand?:
+    next state: spell7
+    text: Yes! Wave the Magic Wand over the the Eiffel Tower and watch as all the euros in the pockets of the tourists magically flow into your pockets.
+    Newsfeed: At the Eiffel Tower in Paris, {{user_name}} waved the {{object_name}} at some tourists and **all the euros** fell out of their pockets.
+spell7:
+  .I'm rich! Now what?:
+    next state: spell8
+    text: If I were you, which I'm not, I'd get a room at the Paris Ritz and get all the room service. ALL THE ROOM SERVICE.
+    Newsfeed: 
+spell8:
+  .Champagne time at the Ritz:
+    next state: end
+    text: Please enjoy your champagne at the Ritz and come back and play with the Magic Wand again!
+    Newsfeed: Right now, {{user_name}} is **getting room service** at the Ritz in Paris, all thanks to the {{object_name}}.
+end:             

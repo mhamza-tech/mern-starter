@@ -1,0 +1,120 @@
+storyline:
+  unObjectId: 37
+  emoji: 🥤
+  name: Basic Bitch Wine
+  text: This wine is enjoyed 12 ounces at a time.
+  entryId: 5cO89udvmV7toimANftkqh
+
+start:
+  .Let's begin:
+    text: Wine in a can is a genius invention. For one, aluminum is pool-safe, unlike bottles. Also, cans fit perfectly in the cupholders in your car.
+    Newsfeed: "{{user_name}} is **opening** some {{object_name}}."
+    next state: sip
+sip:
+  .Take a sip:
+    text: The label on this can of wine reads "Basic Bitch Chardonnay." It's oaky, and sweet, like a freshly cut oak 2x4 covered in strawberry jam.
+    Newsfeed: "{{user_name}} doesn't **have** fancy wine tasting vocabulary. {{object_name}} doesn't need it. So it all works out."
+    next state: sophisticated
+sophisticated:
+  .Another slug?:
+    text: Some people think wine in a bottle is sophisticated and fancy, and that wine in a can is tacky. They're idiots. Wine in a can is classy AF.
+    Newsfeed: "{{object_name}} is classy AF and you **know it**."
+    next state: second 
+    entryId: 7E8hpKIhsUgnGrFHm6RHOk    
+second:
+  .See?:
+    text: It's time to open a second can of this Basic Bitch Chardonnay. Pop that tab and give it a chug!
+    Newsfeed: If one can of {{object_name}} is good, then two is twice as good. {{user_name}} is **getting exponential**.
+    next state: straw 
+    entryId: 6U4L1BcUhPtKaUlCcb5ycU
+straw:
+  .So refreshing:
+    text: You know, you wouldn't get lipstick all over the can if you used a straw. Go get a straw.
+    Newsfeed: It's not sophisticated to **drink** {{object_name}} straight out of the can. Use a straw to let people know you are elegant.
+    next state: heybitch 
+    entryId: 2x2aZ8IndlDmbStIbwcTef
+heybitch:
+  .Slurp:
+    text: Someone just said "Hey Bitch." Are they talking to you? WTF?
+    Newsfeed: "{{user_name}} ain't no Hollaback girl, even if they have **had a bunch** of {{object_name}}."
+    next state: heybitch2 
+    entryId: 1DKZdV6B1HrWaMducENxyA 
+heybitch2:
+  .Who just said that:
+    text: A group of girls is whispering and snickering. You wave your can at them and tell them that they better shut the F*#k up. Ain't nobody gonna ruin your good time.
+    Newsfeed: Nothing worse than a gaggle of snickering bitches. {{object_name}} can help you **sort them out**.
+    next state: heybitch3 
+    entryId: 6xwjKgHEEEg9UYS4tC0gxj
+heybitch3:
+  .Step off:
+    text: You very politely have told these bitches to shut up and step off. And how do they respond? 
+    Newsfeed: Always be polite when you tell bitches to **shut up**. {{object_name}} doesn't make that easy. And this lady says, Or What?
+    next state: heybitch4 
+    entryId: 4jGwcbsMdEbfDYAQeIuXdA
+heybitch4:
+  .Aw hell nah:
+    text: You run up to the lead bitch and grab her hair. You rip off a handful of long blonde hair extensions.
+    Newsfeed: "**Catfight** happening in {{object_name}}!!"
+    next state: heybitch5 
+    entryId: 3C3r5SDxaiC02eZH8DHoeh  
+heybitch5:
+  .Who's next?:
+    text: Throw the hair extensions on the ground. They slowly blow away in the wind, a tumbleweave.
+    Newsfeed: What do you call a bunch of hair extensions **blowing** down the street? Visit {{object_name}} to find out.
+    next state: heybitch6 
+    entryId: 69slhfXW6XCWmTPQ75fPly   
+heybitch6:
+  .I said, who's next?:
+    text: A blonde chick steps up. Pull off her earrings so she knows you mean business.
+    Newsfeed: Always **take your earrings off** before a fight. You don't want torn earlobes do you? Even {{object_name}} can't dull that pain.
+    next state: heybitch7
+    entryId: 3VckIgv5eDxkfaDRhzh9il
+heybitch7:
+  .Oh no!:
+    text: She broke your nail off! You just got your nails done yesterday!
+    Newsfeed: You do not want to **run into** {{user_name}} when their manicure has been F*&#d with. Especially not when they are full of {{object_name}}.
+    next state: heybitch8
+    entryId: 1KHwOMS1YfQHpCSo0JUzuP
+heybitch8:
+  .Not my nails!:
+    text: "As you look, horrified and devastated, at your broken nail, the head bitch approaches. She says, 'OMG I love your nails! Where do you go? These are ah-maaaaayyy-seeeeng.' You reply, 'I KNOW RIGHT? I have the best nail artist in town.'" 
+    Newsfeed: "{{user_name}} is **sharing** manicure tips over a nice can of {{object_name}}."
+    next state: backup
+    entryId: 4ersPTemAmiXKgTSacXX0I
+backup:
+  .Who is coming towards us?:
+    text: A woman is walking over, clearly ready to rumble. You recognize her from this season's The Bachelor.
+    Newsfeed: Some chick from The Bachelor just **showed up** for some {{object_name}} with {{user_name}}.
+    next state: backup2
+    entryId: FLLqWTko4UBCuc0kcE8rd
+backup2:
+  .De-escalate:
+    text: You invite this reality show contestant to get white girl wasted with you and your new best friends. More Wine in a Can please!
+    Newsfeed: The more the merrier when {{object_name}} is **hosting the party**.
+    next state: backup3
+    entryId:                   
+backup3:
+  .Let's drink, new best friends!:
+    text: Everyone knows that Wine in a Can tastes better on a BOAT.
+    Newsfeed: "{{object_name}} kicks it up a level and now {{user_name}} is **on a boat**."
+    next state: winecooler
+    entryId: 46ucsA7lp8Aa4sI75ZKULN               
+winecooler:
+  .Check out the water cooler:
+    text: The water cooler on the boat is filled with Pinot Grigio! It's literally a wine cooler!
+    Newsfeed: "{{object_name}} can **make** a water cooler a wine cooler."
+    next state: giantglass
+    entryId: 6G706eph0dX553651Md3Bz
+giantglass:
+  .Everyone can have a glass:
+    text: Hand out glasses to your friends and make a toast.
+    Newsfeed: "Let's **toast** to {{object_name}}."
+    next state: sloppy
+    entryId: 7gKloKqygl3s8hAUjI09UL
+sloppy:
+  .I love you all:
+    text: You're a little sloppy, but the love is flowing. You and your bitches hold onto each other as you stagger off the boat. What an adventure you've had. You'll remember it...vaguely.
+    Newsfeed: Sloppy bitches full of {{object_name}} coming to a ditch near you real soon.
+    next state: end
+    entryId: 7J2WyR45K7SHIiHhhU1jS7
+end:    

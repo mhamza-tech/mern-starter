@@ -1,0 +1,50 @@
+{
+    "$id": "https://unreal.fun/storyline.schema.json",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Storyline",
+    "description": "An UnReal storyline",
+    "type": "object",
+    "properties": {
+        "parserVersion": {
+            "type": "string"
+        },
+        "storyline": {
+            "type": "object",
+            "properties": {
+                "unObjectId": { "type": "integer" },
+                "name": { "type": "string" },
+                "text": { "type": "string" },
+                "imageUrl": { "type": "string" },
+                "entryId": { "type": "string" },
+                "emoji": { "type": "string" }
+            },
+            "required": [ "unObjectId", "name" ],
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": { 
+        "type": "object",
+        "properties": {
+            "_onEnter": {
+                "type": "object",
+                "properties": {
+                    "reset": { "type": "string" }
+                }
+            }
+        },
+        "additionalProperties": {
+            "type": "object",
+            "properties": {
+                "text": { "type": "string" },
+                "imageUrl": { "type": "string" },
+                "entryId": { "type": "string" },
+                "nextState": { "type": "string" },
+                "newsfeed": { "type": "string" },
+                "emoji": { "type": "string" }
+            },
+            "required": [ "text" ],
+            "additionalProperties": { "type": "string" }
+        }
+    },
+    "required": ["storyline"]
+}

@@ -1,0 +1,54 @@
+
+# 
+# Delete re-named action.
+#
+- name: 'Action.General.GiveSeed'
+  text: 'Give Seed'
+  isDeleted: true
+  package: core.deleted
+
+- name: Action.Gnome.GiveSeed
+  isDeleted: true
+  text: Give Seed
+  order: AAA
+  s3Key: null
+  unObjectId: 70
+  collectionId: unobject/70/actionx
+  backgroundColor: 3da5b3
+
+# 
+# Delete re-named action.
+#
+- name: 'Action.General.GiveFruit'
+  text: 'Give Fruit'
+  isDeleted: true
+  unObjectId: 70
+
+# 
+# Delete re-named action.
+#
+- name: 'Action.Gnome.GiveFuit'
+  text: 'Give Fruit'
+  isDeleted: true
+  unObjectId: 70
+
+
+- name: Action.Gnome.GiveFruit
+  isDeleted: true
+  text: Give Fruit
+  order: AAA
+  s3Key: null
+  unObjectId: 70
+  collectionId: unobject/70/actionx
+  backgroundColor: 3da5b3
+
+- name: Action.Gnome.GiveWater
+  isDeleted: true
+  text: Give Water
+  order: AAA
+  s3Key: null
+  unObjectId: 70
+  collectionId: unobject/70/actionx
+  backgroundColor: 3da5b3
+
+

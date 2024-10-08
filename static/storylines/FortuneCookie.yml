@@ -1,0 +1,68 @@
+storyline:
+  unObjectId: 32
+  emoji: 🥠
+  name: Fortune Cookie
+  text: Fortunes are always better when you add "in bed" to the end of them.
+  entryId: 17xfTOGxjdcNCvIGCcAUDw
+
+start:
+  .Let's crack one open!:
+    next state: fortune2
+    text: Why not treat yourself to a good time rather than waiting for someone else to do it?
+    Newsfeed: "{{user_name}} is **getting dubious advice** from the {{object_name}}."
+fortune2:
+  .Next fortune, please: 
+    next state: fortune3
+    text: Be on the alert to recognize your prime at whatever time of your life it may occur.
+    Newsfeed: "{{ object_name }} **doles out** wisdom, but can't make {{user_name}} act on it."
+fortune3:
+  .Next fortune, please: 
+    next state: fortune4
+    text: Your road to glory will be rocky, but fulfilling. (IN BED!)
+    Newsfeed: "{{ object_name }} is **predicting a rocky road** for {{user_name}}. (IN BED!)"
+fortune4:
+  .Next fortune, please: 
+    next state: fortune5
+    text: Nothing is impossible to a willing heart.
+    Newsfeed: "It probably won't **tell your future**, but on the other hand it's probably also stale. It's a {{object_name}}."
+fortune5:
+  .Next fortune, please: 
+    next state: fortune6
+    text: Don’t worry about money. The best things in life are free.
+    Newsfeed: "{{ object_name }} **being disingenuous**, all the best things in life are not free. A really good hamburger is like 12 bucks now!"
+fortune6:
+  .Next fortune, please: 
+    next state: fortune7
+    text: Courage is not the absence of fear; it is the conquest of it.
+    Newsfeed: "{{ object_name }} is **encouraging** {{user_name}} to conquer fear. (IN BED!)"
+fortune7:
+  .Next fortune, please: 
+    next state: fortune8
+    text: Don't do anything you know would disappoint your mother. (IN BED!)
+    Newsfeed: "Why does {{object_name}} need to **bring anyone's mom into this**?" 
+fortune8:
+  .Next fortune, please: 
+    next state: fortune9
+    text: It's amazing how much great work you can do when you don't worry about getting the credit for it. IN BED!
+    Newsfeed: "Everyone **likes** a dirty {{ object_name }}."
+fortune9:
+  .Next fortune, please: 
+    next state: fortune10
+    text: Optimists believe we are in the best of times, and pessimists fear that's true.
+    Newsfeed: 
+fortune10:
+  .Next fortune, please: 
+    next state: fortune11
+    text: People will rise to your expectations. (In bed?)
+    Newsfeed: "{{ object_name }} **advises** {{user_name}} to raise their expectations. In bed!"
+fortune11:
+  .Next fortune, please: 
+    next state: fortune12
+    text: Every exit is the opening to a new opportunity. (In bed.)
+    Newsfeed: "{{ object_name }} knows that every object is the **opening** to a new opportunity."
+fortune12:
+  .Next fortune, please: 
+    next state: end
+    text: People are like parachutes. If they don't open the first time you need them, you will never need them again.
+    Newsfeed: 
+end:    

@@ -1,0 +1,100 @@
+storyline:
+  unObjectId: 3
+  emoji: 🎬
+  name: Nicolas Cage
+  text: Get in the cage and enjoy quotes from Nic Cage's most iconic films.
+  entryId: 7rkH2pwGg3cOzxzOXOBNa6
+
+start:
+  .Con Air:
+    nextstate: cage
+    text: Why couldn't you put Bunny back in the box?
+    Newsfeed: "{{object_name}} and Steve Buscemi **are awesome together** in Con Air."
+    entryId: 
+cage:
+  .Face-Off:
+    next state: cage1
+    text: I want to take his face off. Eyes. Nose. Skin. Teeth. It’s coming off.
+    Newsfeed: "Who would you **bet on** to win, {{object_name}} or John Travolta?"
+    entryId: tuIrnM4nxxISnBK0EnPi2
+cage1:
+  .The Rock:
+    next state: cage2
+    text: How… In the name of Zeus’s BUTTHOLE, did you get out of your cell?
+    Newsfeed: "{{object_name}} is not **putting up** with Sean Connery's shit anymore."  
+    entryId: 3IGAiShlfztrSfopvrRZwl
+cage2:
+   .Raising Arizona:
+    next state: cage3
+    text: Ed's womb was a rocky place where my seed could find no purchase. -Raising Arizona
+    newsfeed: "{{object_name}} and Holly Hunter **wanted a baby** so badly in Raising Arizona. So they stole one!"
+    entryId: 1YH6vznBLLmaIZPbXPPcva
+cage3:
+  .Raising Arizona:
+    next state: cage4
+    text: I'll be taking these Huggies and whatever cash you got.
+    Newsfeed: "{{object_name}} **stealing Huggies** with pantyhose on his head in Raising Arizona is a classic scene."
+    entryId: 14SoIkBAusJrUZj50wQqyT
+cage4:
+  .Seeking Justice.:
+    next state: cage5
+    text: Only if it's a noun, and the words have equal weight. Like, Homeland Security. If it's a participle modifying the first word, then you better keep it lower case.
+    Newsfeed: There are so many {{object_name}} films it's hard to **remember** them all. 
+cage5:
+  .Kick-Ass:
+    next state: cage6
+    text: Tool up, honey bunny. It's time to get bad guys.
+    Newsfeed: "{{object_name}} **played** the doting father of a superhero in Kick-Ass."
+    entryId: 683dllf9aM74P5Vkmxr1z8
+cage6:
+  .Bad Lieutenant:
+    next state: cage7
+    text: Everything I take is prescription - except for the heroin.
+    Newsfeed: 
+cage7:
+  .Gone in Sixty Seconds:
+    next state: cage8
+    text: That’s funny, my name’s Roger. Two Roger’s don’t make a right.
+    Newsfeed: If {{object_name}} **had no underwear on**, he'd be Nickerless Cage.
+    entryId: 6r4A700oQ1K0V5gk57uC3s    
+cage8:
+  .Kiss of Death:
+    next state: cage9
+    text: I have an acronym for myself. Know what it is? B.A.D. Balls, Attitude, Direction. You should give yourself an acronym. It helps you visualize your goals.
+    Newsfeed: Everyone should **give themselves an acronym**, like {{object_name}} has.
+cage9:    
+  .Snake Eyes:
+    next state: cage10
+    text: It isn't lying! You just tell them what you did right, and you leave out the rest!
+    Newsfeed: "{{object_name}} **has no problem lying**."
+    entryId: 2mxRljFBPu4R1dUbeqbH5r    
+cage10:
+  .Con Air:
+    next state: cage11
+    text: What do you think I'm gonna do? I'm gonna save the fuckin' day!
+    Newsfeed: "Fun Fact-the director of Con Air, starring {{object_name}}, also **directed** the Rick Astley video for Never Gonna Give You Up."
+    entryId: xrw7eQeSn9yNILFnYh55o
+cage11:
+  .Wicker Man:
+    next state: cage12
+    text: Killing me won’t bring back your goddamn honey!
+    Newsfeed: "{{object_name}} has a pyramid-shaped tombstone **waiting for him** in a New Orleans cemetary."
+    entryId: 7fE9ZPrdeFuNrEutnuhEOn
+cage12:
+  .Gone in 60 seconds:
+    next state: cage13
+    text: I just stole fifty cars for you in one night! I’m a little tired, a little wired and I think I deserve a little appreciation.
+    newsfeed: Did you like Gone in 60 Seconds, **starring** {{object_name}}? You should, that's the name of your sex tape.
+    entryId: P5H0xofb8qHw82NBSSaWS
+cage13:
+  .National Treasure:
+    next state: cage14
+    text: Yes, ma'am. Well, I'm gonna get straight to the point. Someone's gonna steal the Declaration of Independence.
+    newsfeed: "{{object_name}} **wants that** Declaration of Independence BAD!" 
+    entryId: 5orjk54iTm49MvCsQweSCL 
+cage14:    
+  .Windtalkers:
+    next state: end
+    text: I ain't that drunk, Yahzee, you cut that horseshit out.
+    newsfeed: What do you get if you **soak** {{object_name}} in vinegar? Picolas Cage!  
+end:                     

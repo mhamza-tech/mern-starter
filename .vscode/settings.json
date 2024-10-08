@@ -1,0 +1,16 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "search.exclude": {
+      "**/dist": true,
+      "**/node_modules": true,
+      "**/coverage": true,
+      "**/libs": true
+    },
+    "files.associations": {
+      "dist/tsconfig.json": "plaintext"
+    }
+}

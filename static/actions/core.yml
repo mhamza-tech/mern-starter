@@ -1,0 +1,228 @@
+#
+# @rob4lderman
+# nov2019
+#
+# "core" actions - available to every player.
+#
+# Note: DONT RENAME ACTIONS!!!
+#       The name is the unique identifier.  
+#       If you rename it, you'll get another record in the db.
+#       If you absolutely must rename it, keep the record with the 
+#       old name and mark it isDeleted: true.
+#
+#
+
+- name: 'Action.General.Bite'
+  text: Bite
+  description: Take a bite, you know you want to.
+  s3Key: action/color/bite.png
+  backgroundColor: '#F6F6F6'
+  isDeleted: true
+  xp: 1
+  collectionId: actionx
+
+- name: 'Action.General.Look'
+  text: Look
+  description: Take a look around
+  order: Aa
+  s3Key: action/color/look.png
+  backgroundColor: '#F6F6F6'
+  xp: 1
+  collectionId: actionx
+  tags: 
+    - seek
+
+- name: 'Action.General.Punch'
+  text: Punch
+  description: Throw a punch. POW!
+  order: Ab
+  s3Key: action/color/punch.png
+  dropAnimationS3Key: 'gif/punch_drop_effect.gif'
+  backgroundColor: '#F6F6F6'
+  isDeleted: true
+  xp: 2
+  power: 1
+  collectionId: actionx
+  tags: 
+    - touch
+    - aggressive
+
+- name: 'Action.General.BirthdayFistBump'
+  text: Cake
+  description: A Cake
+  order: Aba
+  s3Key: action/color/bdaycake.png
+  backgroundColor: '#F6F6F6'
+  xp: 13
+  power: 1
+  collectionId: actionx
+  tags: 
+    - touch
+    - aggressive
+
+- name: 'Action.General.Smile'
+  text: Smile
+  description: Smile
+  order: Ac
+  s3Key: action/color/smile.png
+  backgroundColor: '#F6F6F6'
+  xp: 2
+  collectionId: actionx
+  tags: 
+    - friendly
+    - reflexive
+
+- name: 'Action.General.Kiss'
+  text: Kiss
+  order: Ad
+  description: Pucker up and smootch it out!
+  s3Key: action/color/kiss.png
+  backgroundColor: '#F6F6F6'
+  isDeleted: true
+  xp: 2
+  power: 1
+  collectionId: actionx
+  tags: 
+    - friendly
+    - touch
+
+- name: 'Action.General.Dance'
+  isDeleted: true
+  text: Dance
+  description: Dance
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  collectionId: actionx
+  tags:
+    - friendly
+
+- name: 'Action.General.SprayMace'
+  text: Spray Mace
+  description: Spray Mace
+  order: Af
+  s3Key: action/color/pappermace.png
+  backgroundColor: '#F6F6F6'
+  xp: 12
+  tags: 
+    - unfriendly
+    - reflexive
+
+- name: 'Action.General.Glare'
+  text: Glare
+  description: Glare
+  order: Ag
+  s3Key: action/color/glaze.png
+  backgroundColor: '#F6F6F6'
+  xp: 2
+  tags: 
+    - unfriendly
+    - reflexive
+
+- name: 'Action.General.StinkyFart'
+  text: Stinky Fart
+  description: Stinky Fart
+  order: Ai
+  s3Key: action/color/stinkyfart.png
+  backgroundColor: '#F6F6F6'
+  xp: 2
+  tags: 
+    - unfriendly
+    - noxious
+
+- name: 'Action.General.Help'
+  text: Get Tips
+  description: Get Tips
+  order: Ab
+  s3Key: action/color/help.png
+  dropAnimationS3Key: 'gif/question_drop_effect_002.gif'
+  backgroundColor: '#F6F6F6'
+  collectionId: actionx
+
+- name: 'Action.General.CheckWealth'
+  text: Check Wealth
+  description: Check Wealth
+  order: Ab
+  s3Key: action/color/wallet.png
+  backgroundColor: '#F6F6F6'
+  collectionId: actionx
+  tags: 
+    - seek
+
+- name: 'Action.General.ChitChat'
+  text: Chit Chat
+  description: Chit Chat
+  order: Za
+  s3Key: action/color/chitchat.png
+  backgroundColor: null
+  xp: 1
+  collectionId: actionx
+
+- name: 'Action.General.Hug'
+  text: Hug
+  description: Open up your arms for a friendly hug, or a romantic embrace.
+  order: Ac
+  s3Key: action/color/hug.png
+  backgroundColor: 'F6F6F6'
+  isDeleted: true
+  xp: 2
+  collectionId: actionx
+
+- name: 'Action.General.Kick'
+  text: Kick
+  description: Kick
+  order: Ac
+  s3Key: action/color/kick.png
+  backgroundColor: 'F6F6F6'
+  package: anythingotherthancore
+  xp: 1
+  collectionId: actionx
+
+- name: 'Action.General.Smell'
+  isDeleted: true
+  text: Smell
+  description: Smell
+  order: Ac
+  s3Key: action/monkeybutt.smell@3x.png
+  backgroundColor: 'F6F6F6'
+  package: anythingotherthancore
+  xp: 1
+  collectionId: actionx
+
+- name: 'Action.General.Poke'
+  text: Poke
+  description: Get that pointer finger out and give them a poke.
+  s3Key: action/color/poke.png
+  backgroundColor: '#F6F6F6'
+  isDeleted: true
+  xp: 1
+  collectionId: actionx
+
+- name: 'Action.General.Lick'
+  text: Lick
+  description: Don't you want just a little taste?
+  s3Key: action/color/lick.png
+  backgroundColor: '#F6F6F6'
+  isDeleted: true
+  xp: 1
+  collectionId: actionx
+
+- name: 'Action.General.Tickle'
+  text: Tickle
+  description: A tickle
+  s3Key: action/color/tickle.png
+  backgroundColor: '#F6F6F6'
+  isDeleted: true
+  xp: 1
+  collectionId: actionx
+
+- name: 'Action.General.Slap'
+  text: Slap
+  description: Open your hand real wide, and SLAP!
+  s3Key: action/color/slap.png
+  backgroundColor: '#F6F6F6'
+  isDeleted: true
+  xp: 1
+  collectionId: actionx

@@ -1,0 +1,23 @@
+storyline:
+  unObjectId: 42
+  emoji: 🍆
+  name: Eggplant
+  text: How did an innocent vegetable become a universal symbol of sexy time?
+  entryId: 
+
+start:
+  .How did this all start?:
+    text: 'The eggplant emoji first debuted in 2010 and quickly became a symbol for the penis. The eggplant emoji was used on Twitter to mean “penis” as early as 2011.'
+    Newsfeed: When did the {{object_name}} **start being a symbol** for sex? {{user_name}} just accidentally sent their mom a text which was predominantly eggplant emojis.
+    nextstate: long
+long:
+  .And then what:
+    text: 'Later that year, the emoji inspired a trend on Instagram and other social-media sites called “#EggplantFriday,” a hashtag that was linked to posts where men posted explicit images of their “eggplants.” But in 2015, Instagram actually blocked the eggplant emoji and references to it (e.g., “#eggplant”) from its search functionality. Instagram’s ban resulted in a campaign called “#FreetheEggplant,” modeled after the similar campaign “#FreetheNipple,” in 2012.'
+    Newsfeed: Beyonce just **texted** {{user_name}} a bunch of {{object_name}} emojis. Lucky {{user_name}}, and poor Jay-Z!
+    next state: long2  
+long2:
+  .More please:
+    text: 'In 2016, the American Dialect Society named the eggplant emoji the “Most Notable Emoji” of 2015 due to its widespread use as sexual innuendo. The eggplant emoji has also inspired two companies, Eggplant in the Mail and the Eggplant Mail, which let customers send actual eggplants in the mail as gag gifts. And, the company Emojibrator released an eggplant emoji vibrator in 2016. Of course.'
+    Newsfeed: "{{user_name}} just **bought** an {{object_name}} vibrator. Go ask if you can borrow it!"
+    next state: end    
+end: 

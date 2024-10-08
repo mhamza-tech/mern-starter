@@ -1,0 +1,6 @@
+{
+  "parserOptions": {
+    "project": "src/lambda/avatar/tsconfig.json",
+    "sourceType": "module"
+  }
+}

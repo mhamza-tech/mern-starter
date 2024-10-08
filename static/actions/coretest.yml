@@ -1,0 +1,234 @@
+#
+# @rob4lderman
+# jan2020
+#
+# test actions - for testing actions, effects, tiles, etc.
+#
+
+  
+- name: localLottie
+  isDeleted: true
+  text: Local Lottie
+  order: ZblocalLottie
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: globalLottie
+  isDeleted: true
+  text: Global Lottie
+  order: Zb
+  s3Key: null
+  backgroundColor: 'FFF6F6'
+
+- name: shakePartner
+  isDeleted: true
+  text: Shake Partner
+  order: Zb
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: shakeSelf
+  isDeleted: true
+  text: Shake Self 
+  order: Zb
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: lottiePartner
+  isDeleted: true
+  text: Lottie Partner
+  order: Zb
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: lottieSelf
+  isDeleted: true
+  text: Lottie Self
+  order: Zb
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: blinkGlobalTile
+  isDeleted: true
+  text: Blink Global Tile
+  order: Zb
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: blinkLocalTile
+  isDeleted: true
+  text: Blink Local Tile
+  order: Zb
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: shakeLocalTile
+  isDeleted: true
+  text: Shake Local Tile
+  order: Zb
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: lottieLocalTile
+  isDeleted: true
+  text: Lottie Local Tile
+  order: Zb
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: newsfeedItem
+  isDeleted: true
+  text: Newsfeed Item
+  order: Zb
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+
+- name: action.test.setLocalTileOnActor
+  isDeleted: true
+  text: Local Tile on Actor
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.setPrivateLocalTileOnActor
+  isDeleted: true
+  text: Private Local Tile on Actor
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.setGlobalTileOnActor
+  isDeleted: true
+  text: Global Tile on Actor
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.setPrivateGlobalTileOnActor
+  isDeleted: true
+  text: Private Global Tile on Actor
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.setLocalTileOnPartner
+  isDeleted: true
+  text: Local Tile on Partner
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.setPrivateLocalTileOnPartner
+  isDeleted: true
+  text: Private Local Tile on Partner
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.setGlobalTileOnPartner
+  isDeleted: true
+  text: Global Tile on Partner
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.setPrivateGlobalTileOnPartner
+  isDeleted: true
+  text: Private Global Tile on Partner
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.setLocalTileOnChatRoom
+  isDeleted: true
+  text: Local Tile on ChatRoom
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.setGlobalTileOnChatRoom
+  isDeleted: true
+  text: Global Tile on ChatRoom
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doLocalEffectOnActor
+  isDeleted: true
+  text: Local Effect on Actor
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doPrivateLocalEffectOnActor
+  isDeleted: true
+  text: Private Local Effect on Actor
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doGlobalEffectOnActor
+  isDeleted: true
+  text: Global Effect on Actor
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doPrivateGlobalEffectOnActor
+  isDeleted: true
+  text: Private Global Effect on Actor
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doLocalEffectOnPartner
+  isDeleted: true
+  text: Local Effect on Partner
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doPrivateLocalEffectOnPartner
+  isDeleted: true
+  text: Private Local Effect on Partner
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doGlobalEffectOnPartner
+  isDeleted: true
+  text: Global Effect on Partner
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doPrivateGlobalEffectOnPartner
+  isDeleted: true
+  text: Private Global Effect on Partner
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doLocalEffectOnChatRoom
+  isDeleted: true
+  text: Local Effect on ChatRoom
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.doGlobalEffectOnChatRoom
+  isDeleted: true
+  text: Global Effect on ChatRoom
+  order: Zc
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+
+- name: action.test.toggleGridTile
+  isDeleted: false
+  text: Toggle Grid Tile
+  order: Zzb
+  s3Key: 'overlay/grid.png'
+  backgroundColor: 'F6F6F6'
+
+

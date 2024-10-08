@@ -1,0 +1,49 @@
+#
+# @rob4lderman
+# jan2020
+#
+# casino actions
+#
+
+
+- name: Action.NaughtyNurse.Roleplay
+  text: Roleplay
+  order: AAA
+  s3Key: ''
+  unObjectId: 62
+  backgroundColor: 4cfc20
+
+- name: Action.NaughtyNurse.CheckRoleplayHealth
+  text: Check Character's Health
+  order: AAA
+  s3Key: ''
+  unObjectId: 62
+  backgroundColor: 7820fc
+
+- name: Action.NaughtyNurse.D20
+  text: Roll a D20
+  order: AAA
+  s3Key: ''
+  unObjectId: 62
+  backgroundColor: fc208e
+
+- name: Action.NaughtyNurse.D10
+  text: Roll a D10
+  order: AAA
+  s3Key: ''
+  unObjectId: 62
+  backgroundColor: 20fce2
+
+- name: Action.NaughtyNurse.DrinkHealthPotion
+  text: Health Potion
+  order: AAA
+  s3Key: ''
+  unObjectId: 62
+  backgroundColor: 2028fc
+
+- name: Action.NaughtyNurse.LeaveGame
+  text: Leave the Game
+  order: AAA
+  s3Key: ''
+  unObjectId: 62
+  backgroundColor: 4c20fc

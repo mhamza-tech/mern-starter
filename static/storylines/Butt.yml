@@ -1,0 +1,58 @@
+storyline:
+  unObjectId: 22
+  emoji: 👐🏼
+  name: Butt
+  text: Badonk a donk, there's junk in that trunk!
+  entryId: 40HYnILJEa7WUzmmyEnnJJ
+
+start:
+  .Is it Butt Time?:
+    nextstate: butt1
+    text: You have chosen to click on something named "Butt." Are you ready for this jelly?
+    Newsfeed: "**GET IN** THE {{ object_name }}. You'll see {{user_name}} there."
+butt1:
+  .I can't back out now:
+    next state: butt2
+    text: That's right, it's Butt O' Clock. Let's dive in.
+    Newsfeed: "Hey {{ user_name }}, **what's up**? Chicken {{ object_name }}! Never gets old."
+butt2:
+  .Time for a Butt joke?:
+    next state: butt3
+    text: What did one butt cheek say to another?
+    Newsfeed: What what **in the** {{ object_name }}!
+butt3:
+  .No idea:
+    next state: butt4
+    text: Together, we can stop this shit.
+    Newsfeed: Poop and {{ object_name }} jokes **are ALWAYS funny**.
+butt4:
+  .That is not really funny:
+    next state: butt5
+    text: Do you get butt-dialed a lot?  
+    Newsfeed: "The **most action** {{ user_name }} ever gets in their {{object_name}} is an occasional butt-dial."     
+butt5:
+  .Is this another butt joke?:
+    next state: butt6
+    text: That means only assholes want to talk to you!
+
+butt6:
+  .These jokes are not good:
+    next state: butt7
+    text: Your momma's butt is so big
+    Newsfeed: "The {{object_name}} is **telling** some good butt jokes to {{user_name}}."
+butt7:
+  .OK, how big is my momma's butt?:
+    next state: butt8
+    text: When she's naked it looks like two pigs fighting over a Milk Dud.
+    Newsfeed: "The {{object_name}} is **joking** about your momma's butt."
+butt8:
+  .Please put me out of my misery:
+    next state: butt9
+    text: Well please check back on this Butt because more fant-ass-tic jokes are coming!
+    Newsfeed: "The {{object_name}} has **worn out** {{user_name}} with all the fant-ass-tic jokes."
+butt9:
+  .I promise I'll return:
+    next state: end
+    text: Don't let the door knob hit you where the good lord split you on the way out!
+    Newsfeed: Well, the fun with {{user_name}} and {{object_name}} has **ended**. REAR ENDED! Aw yeah.
+end:        

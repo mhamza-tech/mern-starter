@@ -1,0 +1,118 @@
+storyline:
+  unObjectId: 6
+  emoji: 💥
+  name: Build a Superhero
+  text: Like Build-A-Bear, but you're the bear.
+  entryId: YqD4l8WA9k3cWWL2IR6Dy
+
+start:
+  .Start with the superhero basics:
+    text: Would you like to have the power of flight?
+    Newsfeed: "{{user_name}} is **picking** a type of flight in the {{object_name}} workshop."
+    next state: flight
+flight:
+  .Sure.:
+    text: Flight with feathery wings, or flight with rocket propulsion, like Iron Man?
+    Newsfeed: Fly like an eagle, or fly like Iron Man? **You decide** in the {{object_name}} workshop.
+    next state: flight2
+flight2:
+  .Iron Man, obviously:
+    text: You chose rocket propulsion. If it's good enough for Tony Stark it should be good enough for you, right?
+    Newsfeed: If you have rocket propulsion, does that mean you have to **go to the rocket fuel gas station**? Asking for {{user_name}} at the {{object_name}} workshop.
+    next state: hands1
+  .Wings please:
+    text: You chose wings. There aren't a lot of superheroes with wings, so congrats on a bold choice. You ready to keep going?
+    next state: hands1
+hands1:
+  .Yes:
+    text: Next up, hands. Would you prefer to shoot concentrated power bursts out of your hands like Captain Marvel, or super sharp knives like Wolverine?
+    newsfeed: You can probably count the number of times you've shot fire out of your hands on, uh, no hands? Maybe it turns out better when you get the power from the {{object_name}} workshop.
+    next state: hands2 
+hands2:    
+  .Bursts!:
+    text: You chose power bursts. When people make you mad, your arms are like lethal laser beams.
+    next state: invisible
+  .Knives!:
+    text: Wolverine knuckles! What are the people who don't choose knuckle knives thinking? Dummies.
+    Newsfeed: You won't want a **bite of the knuckle sandwich** {{user_name}} just got in the {{object_name}} workshop.  
+    entryId: 5InirFJdMe56PlsY8bXFV0
+    next state: invisible 
+invisible:
+  .Want to be invisible?: 
+    text: Let's talk about invisibility. Something you command, like Wonder Woman's Invisible Plane, or a power you always have, like Violet from The Incredibles?
+    next state: invisible2
+invisible2:
+  .Invisible Plane:
+    text: You chose Wonder Woman's glass plane. That plane is has been around for a while, but still so cool. 
+    newsfeed: You can get some of Wonder Woman's powers in the {{object_name}} workshop, but you'll never **have her boobs**.
+    next state: truth
+  .Superpower:
+    text: You chose to have invisibility be one of your superpowers, like Violet Parr from the Incredibles.
+    newsfeed: Don't we all want the **power of invisibility**? You could ask {{user_name}} at the {{object_name}} workshop, if they weren't invisible.  
+    next state: truth  
+truth:
+  .What else?:
+    text: Alright, your superhero can fly, shoot knives out of his or her knuckles, and can be invisible. Back to Wonder Woman, she has a golden truth lasso to get the truth out of the bad guys. On the other hand, Professor X from the X-Men can read minds, manipulate memories, and control thoughts. 
+    Newsfeed: Shower with your clothes on, because {{user_name}} just got the **ability** to become invisible, at the {{object_name}} workshop.  
+    next state: strength  
+truth2:
+  .Wonder Woman's truth lasso:
+    text: Excellent! You now have a verified replica of Wonder Woman's golden truth lasso. 
+    Newsfeed: What's shiny and makes you **tell the truth**? Find out in the {{object_name}} workshop.
+    entryId: 7kfO2i1nTkSgRQ3WAbMZBu
+    next state: strength
+  .Professor X mind control: 
+    text: You chose telepathy, which allows you to read and control other people's minds. That's kind of creepy. But also kind of god-like.
+    next state: strength
+strength:
+  .Super strength please?:
+    text: "Obviously! There are very few superheroes without super strength. You've got Thor's hammer, and while it's pretty heavy, it is also a phallic symbol, which can be a pro and a con. And back to the Incredibles, Mr. Incredible is a strong guy! With strong hair, a strong jaw, and a strong outfit. The whole package." 
+    Newsfeed: "{{user_name}} just **realized** at the {{object_name}} workshop that Thor's Hammer is a metaphor. For a big you-know-what."
+    next state: strength2
+strength2:
+  .Hammer of Thor: 
+    text: Thor smash! Well done.
+    next state: shapeshift
+  .Mr. Incredible:
+    text: Now you've got a nice package too.
+    Newsfeed: "{{ user_name }} just got a **real nice package** at the {{object_name}} workshop."
+    next state: shapeshift
+shapeshift:
+  .I love being strong:
+    text: Excellent. How about the ability to shape-shift into an animal? Like Mystique in the X-Men?
+    Newsfeed: "{{user_name}} isn't sure that the DC and Marvel universes can be **blended** like they are over at the {{object_name}} workshop."
+    next state: shapeshift2
+shapeshift2:
+  .Animals are cool:
+    text: Boom, you now can change into a turtle at will. Let's work on your superhero costume now.
+    entryId: QhzWQ58R4uCUkCRZLgzci
+    Newsfeed: "{{ user_name }} is **unhappy** at the {{object_name}} workshop because he got the power to turn into a turtle."
+    next state: costume
+costume:
+  .But turtles aren't cool at all:
+    text: Yep, that's how the cookie crumbles sometimes, sport! Alright pick a color for your costume.
+    next state: costume2
+costume2:
+  .Blue:
+    text: Blue it is! Just like Silver Surfer and Captain America!
+    Newsfeed: "{{user_name}} has something in common with Captain America, and is **almost done building** at the {{object_name}} workshop."
+    next state: gosave
+  .Red:
+    text: Red it is! The iconic superhero color. Superman, Spiderman, Deadpool.
+    Newsfeed: "{{user_name}} has something in common **with Deadpool**, and is almost done building at the {{object_name}} workshop."
+    next state: gosave
+  .Green:
+    text: Green it is! Like the Green Lantern! And the Hulk! And Kermit the Frog!
+    Newsfeed: "{{user_name}} has **something in common** with Kermit the Frog, and is almost done building at {{object_name}} workshop."
+    entryId: 6JVuWrileHS3DBmev2znYP
+    next state: gosave
+  .Yellow:
+    text: Yellow it is! Solid choice, if it's good enough for Wolverine, it's good enough for you.
+    Newsfeed: "{{user_name}} has something in common with Wolverine, and is **almost done** building at the {{object_name}} workshop."
+    next state: gosave
+gosave:
+  .I am amazing!:
+    text: Well congratulations. You're super strong, can be invisible, your hands are deadly, you can read minds, and shape shift into a turtle. Oh and you can fly! Go out there and save some cities full of innocent people from impending doom!
+    Newsfeed: Welcome {{user_name}} back to Unreal and **keep your eye on the skies**, because the {{object_name}} workshop is churning out heroes right and left.
+    next state: end      
+end:           

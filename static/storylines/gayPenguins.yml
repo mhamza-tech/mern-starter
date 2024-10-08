@@ -1,0 +1,42 @@
+storyline:
+  unObjectId: 26
+  emoji: 🐧
+  name: Gay Penguins
+  text: Penguins are cheeky little chaps, aren't they?
+  entryId: 7aEE9WSGZHIPdmy7Ku895m
+
+start:
+  .Tell me everything:
+    nextstate: gp2
+    text: Gay penguins were first observed over a century ago, in 1912, by the British explorer George Murray Levick.
+    Newsfeed: "We're **here**, we're queer, we're dressed for prom. We are {{object_name}}, get used to it!"
+gp2:
+  .Wow that’s a long time ago:
+    next state: gp3
+    text: He documented extensive homosexual sex between Adélie penguins. But that’s not all.
+gp3:
+  .Do tell:
+    nextstate: gp4
+    text: It was the sight of a young male Adélie penguin attempting to have sex with a dead female that particularly unnerved George Murray Levick.
+    Newsfeed: "The first time that the **behavior** of {{object_name}} was recorded was in 1912."
+gp4:
+  .Wait what:
+    next state: gp5
+    text: Worse was to come, however. Levick spent the Antarctic summer of 1911-12 observing the colony of Adélies at Cape Adare. During that time, he witnessed males having sex with other males and also with dead females, including several that had died the previous year. He also saw them sexually coerce females and occasionally kill them.
+    Newsfeed: "Sometimes {{object_name}} are more than **just gay**. They're deeply perverted." 
+gp5:
+  .This is not cool at all:
+    next state: gp6
+    text: "Levick blamed this 'astonishing depravity' on 'hooligan males'."
+    newsfeed: I'm not sure that all {{object_name}} **are hooligans**, but clearly some are.
+gp6:
+  .Well, sure:
+    nextstate: gp7
+    text: Levick also commented on the astonishing frequency of sexual activity, auto-erotic behaviour, and seemingly aberrant behaviour of all young unpaired males and females, including necrophilia, sexual coercion, and homosexual behaviour.
+    Newsfeed: "Do you want to learn all of the **sexy moves** of {{object_name}}?"
+gp7:
+  .Necrophiliac masturbators, huh:
+    next state: end
+    text: "Today, there are many happily paired same-sex penguins in zoos all over the world. They raise chicks from eggs that other penguins have abandoned. Same-sex relationships in the animal kingdom are more common than most people think. In fact, in his 1999 book, 'Biological Exuberance: Animal Homosexuality and Natural Diversity,' biologist Bruce Bagemihl catalogs the unconventional sexual behaviors -- including bisexuality and transvestite tendencies -- of almost 200 different animals."
+    Newsfeed: "The more you know about {{object_name}}, the more **you want** to  have a Straight Penguin Pride Parade."  
+end:             

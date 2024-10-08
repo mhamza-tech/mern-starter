@@ -1,0 +1,153 @@
+#
+# fortuneteller-specific actions 
+#
+
+- name: 'action.fortuneteller.aries'
+  text: 'Aries'
+  description: 'The firestarter'
+  order: AAA
+  s3Key: action/aries.png
+  args:
+    zodiacsymbol: Aries
+    zodiacImageUrl: 'url image'
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.taurus'
+  text: 'Taurus'
+  description: 'You look before you leap'
+  order: AAB
+  s3Key: action/taurus.png
+  args:
+    zodiacsymbol: Taurus
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.gemini'
+  text: 'Gemini'
+  description: 'Everybody wants you'
+  order: AAC
+  s3Key: action/gemini.png
+  args:
+    zodiacsymbol: Gemini
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.cancer'
+  text: 'Cancer'
+  description: 'The eye of the storm'
+  order: AAD
+  s3Key: action/cancer.png
+  args:
+    zodiacsymbol: Cancer
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.leo'
+  text: 'Leo'
+  description: "What can't you do?"
+  order: AAE
+  s3Key: action/leo.png
+  args:
+    zodiacsymbol: Leo
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.virgo'
+  text: 'Virgo'
+  description: 'Feet on ground, head in clouds'
+  order: AAF
+  s3Key: action/virgo.png
+  args:
+    zodiacsymbol: Virgo
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.libra'
+  text: 'Libra'
+  description: 'The great mediator'
+  order: AAG
+  s3Key: action/libra.png
+  args:
+    zodiacsymbol: Libra
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.scorpio'
+  text: 'Scorpio'
+  description: 'So mysterious'
+  order: AAH
+  s3Key: action/scorpio.png
+  args:
+    zodiacsymbol: Scorpio
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.sagittarius'
+  text: 'Sagittarius'
+  description: 'So temperamental'
+  order: AAI
+  s3Key: action/sagitarius.png
+  args:
+    zodiacsymbol: Sagittarius
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.capricorn'
+  text: 'Capricorn'
+  description: 'The de escalator'
+  order: AAJ
+  s3Key: action/capricorn.png
+  args:
+    zodiacsymbol: Capricorn
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.aquarius'
+  text: 'Aquarius'
+  description: 'The philosopher'
+  order: AAK
+  s3Key: action/aquarius.png
+  args:
+    zodiacsymbol: Aquarius
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.pisces'
+  text: 'Pisces'
+  description: 'The sensitive one'
+  order: AAL
+  s3Key: action/pieces.png
+  args:
+    zodiacsymbol: Pisces
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.health'
+  text: 'Health'
+  order: AAA
+  s3Key: action/health.png
+  args:
+    topic: Health
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.money'
+  text: 'Money'
+  order: AAB
+  s3Key: action/bills.png
+  args:
+    topic: Money
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.love'
+  text: 'Love'
+  order: AAC
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/l/t1.15752-9/89630782_189527329152689_4171857629032742912_n.png?_nc_cat=103&_nc_sid=b96e70&_nc_ohc=5_DAcWWC-qUAX-tVOXj&_nc_ht=scontent.fsfn4-1.fna&oh=9c35f41edbab7719a13a9482d42a2963&oe=5EA6473F
+  args:
+    topic: Love
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.career'
+  text: 'Career'
+  order: AAD
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/89684722_1849971075137390_1446431576681349120_n.png?_nc_cat=111&_nc_sid=b96e70&_nc_ohc=_8Sgnr3JRioAX8ql0y1&_nc_ht=scontent.fsfn4-1.fna&oh=edab84c4587dce6efd15067485686d0b&oe=5EA62EE0
+  args:
+    topic: Career
+  unObjectId: fortuneteller
+
+- name: 'action.fortuneteller.choosesign'
+  text: 'Choose another sign'
+  order: AAE
+  s3Key: null
+  imageUrl: https://scontent.fsfn4-1.fna.fbcdn.net/v/t1.15752-9/83827627_1275676125973433_7999622479972663296_n.png?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=LEIWJXFwIlYAX_q0WAd&_nc_ht=scontent.fsfn4-1.fna&oh=11aad5919e0f13a7b930590f3a577c2b&oe=5E922AE8
+  unObjectId: fortuneteller

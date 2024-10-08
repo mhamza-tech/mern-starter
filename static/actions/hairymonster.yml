@@ -1,0 +1,15 @@
+- name: Action.HairyMonster.Patchouli
+  text: Spray Patchouli
+  order: AAA
+  s3Key: action/color/pachouli.png
+  collectionId: unobject/npc.jt.hairy.monster/actionx
+  unObjectId: npc.jt.hairy.monster
+  backgroundColor: 'F6F6F6'
+
+- name: Action.HairyMonster.Shave
+  text: Style
+  order: AAA
+  s3Key: action/color/shave.png
+  collectionId: unobject/npc.jt.hairy.monster/actionx
+  unObjectId: npc.jt.hairy.monster
+  backgroundColor: 'F6F6F6'

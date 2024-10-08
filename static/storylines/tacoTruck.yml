@@ -1,0 +1,48 @@
+storyline:
+  unObjectId: 46
+  emoji: 🌮
+  name: Taco Truck
+  text: There's one on every corner. Finally.
+  entryId:  
+start:
+  .Tacos!:
+    text: Yay, tacos. Tacos are the best. Did you know they're great for fitness?
+    newsfeed: What does the Irish guy **say at the {{object_name}}**? Taco the morning to ya! 
+    next state: t2
+    entryId: 
+t2:
+  .I did not know that:
+    text: Fitness taco in my mouth!
+    next state: t3
+    newsfeed: "{{object_name}}? Let's taco-bout it."
+t3: 
+  .Groan:
+    text: Who do you call when there is a taco emergency?
+    next state: t4
+    newsfeed: Just putting this **link to the {{object_name}}** here in queso need it.
+t4:
+  .Who:
+    text: Nine Juan Juan.
+    newsfeed: How do ducks **order their tacos** from the {{object_name}}? With Quack-amole.
+    next state: t5
+t5:
+  .That's terrible:
+    text: What do you call the taco bowl that forced itself onto the menu at Trump Tower?
+    newsfeed:
+    next state: t6
+t6:    
+  .What:
+    text: A hostile Taco-ver.
+    newsfeed:  
+    next state: t7
+t7:
+  .Groan:
+    text: What do you call the lesbian version of a cock block?
+    newsfeed: 
+    next state: t8    
+t8:
+  .Ooh what:
+    text: The old flesh-taco blocko.
+    newsfeed: 
+    next state: end
+end:             

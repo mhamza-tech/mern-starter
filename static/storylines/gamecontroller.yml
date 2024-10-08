@@ -1,0 +1,21 @@
+storyline:
+  unObjectId: 34
+  emoji: 🕹
+  name: Game Controller
+  text: This game controller controls more than just games.
+
+start:
+  .Hello, game controller:
+    nextstate: outsideBar
+    text: This game controller has unusual action buttons.
+    Newsfeed: "{{user_name}} is examining an unusual game controller."
+super7:
+  .More like Mr. Incredible?:
+    next state: super8
+    text: That's more like it! How about the ability to shape-shift into an animal?
+    Newsfeed: "{{ user_name }} is trying to think up an animal to shape-shift into at the {{object_name}} workshop."
+super8:
+  .Duh, of course:
+    next state: super9
+    text: Great, you can change into a turtle. And, your superhuman costume is made out of old Amish quilts.
+    Newsfeed: "{{user_name}} took too long to pick an animal for shape-shifting in the {{object_name}} workshop."    

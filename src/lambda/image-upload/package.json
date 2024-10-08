@@ -1,0 +1,17 @@
+{
+  "main": "./build/lambda/handler.js",
+  "description": "unreal aws lambdas",
+  "private": true,
+  "dependencies": {
+    "busboy": "^0.3.1",
+    "pg": "^8.2.1",
+    "typeorm": "^0.2.25",
+    "uuid": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.56",
+    "aws-sdk": "^2.698.0",
+    "ts-node": "8.10.2",
+    "typescript": "3.9.5"
+  }
+}

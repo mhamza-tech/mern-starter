@@ -1,0 +1,86 @@
+storyline: 
+  unObjectId: 17
+  name: Presidential Election
+  emoji: 🇺🇸
+  text: The 2020 Presidential Election is coming up. There are a lot of people running! Would you like to meet the candidates?
+  entryId: 3NErRBt6DWJvTqvTTrMFmu
+start:
+  .Joe Biden 🤡:
+    next state: who2
+    text: Hi, I'm Regular Joe! Just because my words don't always mean the things I want them to, I'm so relatable who cares! I'm like a vigorous sexy grandpa! Dammit, I did it again. 
+    Newsfeed: "{{user_name}} is **laughing at Joe Biden** about his dumb mistakes in the 2020 {{object_name}}."
+    entryId: 4a6Z1Haq5He8IZBT2WqqqF
+  .Bill deBlasio 🚈:
+    next state: who2
+    text: People used to really like me, and now they don't, I guess because I wanted Amazon to come to Queens, oh and also the subway has deteriorated rapidly, is that why? That's why, isn't it? 
+    Newsfeed: "{{user_name}} is **talking to Bill deBlasio** about the 2020 {{object_name}}."
+  .Cory Booker 👨🏾‍🎓:
+    next state: who2
+    text: I'm Cory Booker. I'm progressive if you think that's a good thing, otherwise I just say "I'm an American." I like single-payer health care and long walks on the Jersey Shore with my alleged girlfriend, Rosario Dawson. 
+    Newsfeed: "{{user_name}} is **talking to Corey Booker** about the 2020 {{object_name}}, but mostly just wants to know more about Rosario Dawson."
+  .Pete Buttigieg 👨🏻‍🎓:
+    next state: who2
+    text: I'm Mayor Pete! Don't bother with my last name, because the temptation to pronounce it Booty Gig is too strong to resist. I like dogs, dudes, and multilingual literary experiences.
+    Newsfeed: "{{user_name}} is **talking to Pete Buttigieg** about the 2020 {{object_name}}."
+    entryId: 52zvDfgk1EHzZkThzi1bLK
+  .Julian Castro 🌮:
+    next state: who2
+    text: Hi, I'm the coolest Hispanic candidate on the ballot. I like universal healthcare, immigration reform, and, obviously, tacos. 
+    Newsfeed: "{{user_name}} is **complaining to Julian Castro** about the 2020 {{object_name}}."
+  . Kamala Harris 👩🏾‍⚖️:
+    next state: who2
+    text: Let's face it, we all want to see Donald Trump try and debate me. It'll be like a mongoose devouring a pig. We can have a fun BBQ afterwards with the leftovers!
+    Newsfeed: "{{user_name}} is **talking to Kamala Harris** about the 2020 {{object_name}}."
+  .Amy Klobuchar 💁🏻:
+    next state: who2
+    text: Sure, I'm not "fun". Sure, I "belittle staff members" and "throw things" at them. But come on, I can give a speech in a blizzard and not blink an eye.  
+    Newsfeed: "{{user_name}} is **talking to Amy Klobuchar** about the 2020 {{object_name}}."
+  .Beto O'Rourke 🕺🏼:
+    next state: who2
+    text: I'm Beto! I was born for this! I tell it like it is. I stand up for the little guy. And I stand on any lunch counter I can find. Did you know I speak Spanish? Let me speak to you in Spanish!
+    Newsfeed: "{{user_name}} is **talking to Beto O'Rourke in Spanish** about the 2020 {{object_name}}."
+  .Bernie Sanders 😲:
+    next state: who2
+    text: SINGLE PAYER HEALTHCARE! MILLIONAIRES AND BILLIONAIRES! TOMATO SOUP IS MY FAVORITE SUPPER! IN MY DAY A SODA POP WAS ELEVEN CENTS!
+    Newsfeed: Bernie Sanders is **bellowing** at {{user_name}}. He's feeling confident about his chances in the {{object_name}}.
+  .Elizabeth Warren 🏦:
+    next state: who2
+    text: When I was a young mother, my Aunt had to help out with the kids so I could work. Honestly, she's still pissed about it. I'm for free healthcare and turning every bank branch into a childcare center! 
+    newsfeed: Elizabeth Warren **has a plan** for {{user_name}} and she's going to hit you with it at the {{object_name}}.   
+  .Andrew Yang 📐:
+    next state: who2
+    text: A thousand dollars a month. A thousand for you, and for you, and for you, and for you!
+    entryId: 1GaZwEyskD3jiue8eIjGoQ
+    Newsfeed: Andrew Yang is **promising** to give {{user_name}} a thousand dollars a month if he wins the {{object_name}}!
+  .Tom Steyer 💸:
+    next state: who2
+    text: If money truly can buy an election, then I look forward to serving as the 46th President of the United States. 
+    Newsfeed: "{{user_name}} is **talking to Tom Steyer** about the 2020 {{object_name}}."
+  .Marianne Williamson 😍:
+    next state: who2
+    text: Only love can defeat hate. Only avoiding cracks can save your mother's back. If everyone is kung-fu fighting, no one fights alone. When you shake it, please don't break it. Thank you.  
+    Newsfeed: Marianne Williamson is **spreading love and wisdom** to {{user_name}}. It might not take her all the way to the {{object_name}}, though.
+  .Kanye West 🐉:
+    next state: who2
+    text: Trump has dragon energy! He's my real dad. But I'm still running against him, cuz I'm not gonna let him finish.
+    Newsfeed: "{{user_name}} is **talking to Kanye West** about the 2020 {{object_name}}."
+  .Kid Rock 👼🏻:
+    next state: who2
+    text: Like I always tell my best friend Donald Trump, Bawitdaba da bang a dang diggy diggy diggy said the boogie said up jump the boogie. My name is kiiiiiiiiiiiid...Kid Rock. Bawitdaba da bang a dang diggy diggy diggy said the boogie said up jump the boogie.
+    Newsfeed: "{{user_name}} is **talking to Kid Rock** about the 2020 {{object_name}}, but not getting very far."
+  .Barak Obama's dog Bo 👊🏾:
+    next state: who2
+    text: Let's face it guys, this is the closest we can get to an Obama third term.
+    Newsfeed: "{{user_name}} is talking to Barak Obama's dog Bo about the {{object_name}} and **begging** him to run."
+  .Donald Trump Also 🍟:
+    next state: who2
+    text: 나는 매우 합법적이고 매우 시원합니다
+    Newsfeed: "{{user_name}} is **talking to Donald Trump** about the 2020 {{object_name}}."
+  .Donald Trump 🏌🏻‍♂️:
+    next state: who2
+    text: Я очень легальный и очень крутой
+    Newsfeed: "{{user_name}} is **still talking** to Donald Trump about the 2020 {{object_name}}."
+who2:
+  .Nice to meet you!:
+    next state: start
+    text: Let's meet another Presidential candidate!

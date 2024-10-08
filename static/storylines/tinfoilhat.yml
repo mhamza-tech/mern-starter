@@ -1,0 +1,43 @@
+storyline: 
+  unObjectId: 19
+  emoji: 📡
+  name: Tin Foil Hat
+  text: It shields your brain from alien mind control. 
+  entryId: 1RVcRxvzIZyNEWSkBZyj2z
+
+start:
+  .This is a real nice hat:
+    next state: tin1
+    text:  This tin foil hat is fairly straightforward. It's several sheets of foil, molded to fit a human head.
+    Newsfeed: Just a run-of-the-mill {{object_name}}, that all the conspiracy theorists, including {{user_name}}. It **stops** the alien transmissions from getting to your brain.
+tin1:
+  .Do you hear that?:
+    next state: tin2
+    text: You are hearing a high-frequency buzz. An alien dispatch? Put on the hat!
+    Newsfeed: "{{user_name}} is positive that aliens are trying to **make contact**. The {{object_name}} is the only defense."
+tin2:
+  .Hat is on, buzzing gone:
+    next state: tin3
+    text: It's quiet inside the Tin Foil hat. The alien messages are subdued. But you still hear something.
+    Newsfeed: The alien messages aimed at {{user_name}} are being **intercepted** by the {{object_name}}.
+tin3:
+  .Now you can think:
+    next state: tin4
+    text: Inside the Tin Foil Hat, it's just you and your thoughts. And a faint voice saying something about an anal probe.
+    Newsfeed: The {{object_name}} is **working** for the most part, but {{user_name}} is hearing something about an anal probe.
+tin4:
+  .Anal probe?:
+    next state: tin5
+    text: The voice talking about the anal probe gets louder and more insistent. You feel a sharp pain in your butthole. Run!
+    Newsfeed: "{{user_name}} is **trying not to get** an anal probe, despite wearing a {{object_name}}."
+tin5:
+  .Keep running:
+    next state: tin6
+    text: "You are running through the middle of town screaming 'don't probe me, you goddamn aliens'."
+    Newsfeed: "{{user_name}} is **running away** from the aliens, still wearing the {{object_name}}."    
+tin6:
+  .PLEASE STOP ALIENS!:
+    next state: end
+    text: The aliens have stopped chasing you. For now. 
+    Newsfeed: Just because the {{object_name}} didn't **protect** {{user_name}} from everything, doesn't mean you shouldn't try it.
+end:                 

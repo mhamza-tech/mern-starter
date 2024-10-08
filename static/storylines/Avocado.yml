@@ -1,0 +1,58 @@
+storyline:
+  unObjectId: 35
+  emoji: 🥑
+  name: Avocado
+  text: This avocado comes from one of the 5,321 avocado trees in Unreal.
+  entryId: 4BTDfSRLKp5IzrwivGu9Xu
+
+start:
+  .Examine this avocado:
+    next state: feel
+    text: This avocado appears to be a run-of-the-mill, supermarket avocado. But it was grown in Unreal.
+    Newsfeed: Did you know that Unreal **has 5,321 {{ object_name }} trees**?
+feel:
+  .Feel it:
+    next state: peel
+    text: The avocado feels pebbled, smooth, cool. It's slightly squeezable, but otherwise firm. 
+    Newsfeed: "An overripe {{ object_name }} is so **squeezeable**. And squeezing it is a move in the ripe direction."
+peel:
+  .Peel it:
+    next state: touch
+    text: Peeling an avocado is very difficult. The peel never really wants to detach from the dense green flesh, you know?
+    Newsfeed: No one in Unreal is good at **peeling** an {{ object_name }}. Green goosh everywhere.
+touch:
+  .Touch it:
+    next state: halve
+    text: The inside of the avocado is calling out to be disturbed, for a thumb to press into it. Kind of like putting a thumb in Play-doh.
+    Newsfeed: The Unreal {{ object_name }} **is the pits**.
+halve:
+  .Cut it in half:
+    next state: lick
+    text: Cutting an avocado in half is so satifying; pulling one half away from the other, whichever side is bigger keeps the pit.
+    Newsfeed: "Overheard in Unreal, 'Whichever side is bigger **keeps the pit**.' That's about the {{object_name}}, right?"
+lick:
+  .Lick it:
+    next state: bite
+    text: Licking an avocado doesn't really result in much avocado in the mouth. It's a compact fruit (yes, it's a fruit), and it hunkers down around the pit.
+    Newsfeed: "{{ user_name }} is **licking an {{ object_name }}** in a very suggestive manner."
+bite:
+  .Bite it:
+    next state: chew
+    text: Biting into an avocado half is the best. The avocado bite squishes up away from the teeth, giving one avocado chipmunk cheeks. 
+    Newsfeed: "{{user_name}} is deciding between **paying rent** and a delicioius avocado."
+chew:
+  .Chew it:
+    nextstate: swallow
+    text: Avocados almost can't be chewed, they melt more than they are masticated.
+    Newsfeed: What do you **call** a courageous {{ object_name }}? A bravocado.
+swallow:
+  .Swallow it:
+    next state: toast
+    text: Swallowing avocado plain is always kind of weird, like, the gag reflex shows up unexpectedly.
+    Newsfeed: "**Swallowing** a big {{ object_name }} bite makes {{ user_name }} gag."
+toast:
+  .Put it on toast:
+    next state: end
+    text: Putting avocado on toast makes it more delicious, and it instantly transforms you into a hipster with a man bun and a reusable water container filled with Kombucha.
+    Newsfeed: Toast + {{ object_name }} = **instant hipsterdom** for {{ user_name }}. You could be next!
+end:   

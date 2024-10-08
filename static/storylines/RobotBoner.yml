@@ -1,0 +1,68 @@
+storyline: 
+  unObjectId: 20
+  emoji: 🚀
+  name: Robot Boner
+  text: What's hard and inappropriate?
+  entryId: 4f6N8WRcjst6lArRcx9co4
+start:
+  .Want to check it out?:
+    nextstate: um
+    text: There is a robot in front of you. You can't help but notice that this robot has an erection. 
+    Newsfeed: There's a {{object_name}} in Unreal, want to **check it out**?
+um:
+  .Excuse me, what?:
+    next state: what
+    text: Yep, this robot has a boner. What would you like to do?
+    Newsfeed: "{{user_name}} **is face to face** with a {{object_name}}."
+what:
+  .Probably nothing?:
+    next state: what2
+    text: You aren't the least bit curious? 
+    Newsfeed: "{{user_name}} says that they aren't the least bit **curious about** the {{object_name}}."  
+what2:
+  .Not really.:
+    next state: what3
+    text: Oh come on. Don't you kind of want to hold a fully erect robot boner? When's the next time you could do that?
+    Newsfeed: Have you ever **touched** a {{object_name}}? {{user_name}} is getting closer to it.
+what3:
+  .Never, I hope?:
+    next state: what4
+    text: The robot is now talking to you, and says in his flat staccato robot voice, "would you like me to open my missile silo if you know what I mean." 
+    Newsfeed: The {{object_name}} is extremely **flirtatious**.
+what4:
+  .No thank you!:
+    next state: what5
+    text: He presses a button and several metal shields around the hard metal robot erection retract into the robot's body. The boner itself looks like a missile.
+    Newsfeed: The {{object_name}} is being **unsheathed** for {{user_name}}. Lucky devil!
+what5:
+  .That's some missile:
+    next state: what6
+    text: The robot says "Commencing explosive containment procedures, because you are the bomb."
+    Newsfeed: Robot pickup lines are NOT smooth. Unlike the {{object_name}} which is smooth, shiny, and **ready for takeoff.**
+what6:
+  .Oh boy:
+    next state: what7
+    text: The robot keeps going, "If you were a gyroscope, I would apply external torque to change your orientation to a Robophiliac."
+    Newsfeed: It's a thin line between jokes and harrassment. And the {{object_name}} just **crossed** it with {{user_name}}.
+what7:
+  .Robophilia is not a thing:
+    next state: what8
+    text: How about this one, I hope you like accellerometers because I'm going to rock your world. Is that more plausible?
+    Newsfeed: The {{object_name}} **has some pretty weak pickup lines**.
+what8:
+  .Sure, that's better:
+    next state: what9     
+    text: You say to the robot, "I've got one for you. What do you call a robot with a boner who won't leave you alone? R2\#\metoo!"
+    Newsfeed: Ooh, {{user_name}} just **pulled the MeToo card** on the {{object_name}}.
+what9:
+  .Good one!:
+    next state: what10
+    text: The Robot Boner starts to wilt. But wait, is that WD-40 on your shoe? Oh gross.
+    Newsfeed: The {{object_name}} just did a **nut-and-bolt.**
+what10:
+  .Can I leave now?:
+    next state: end
+    text: Of course you can. You probably need to go to the decontamination room. W-2 is tough to get off. 
+    Newsfeed: "{{user_name}} is **headed to the showers** after that messy encounter with the {{object_name}}."
+end:
+    

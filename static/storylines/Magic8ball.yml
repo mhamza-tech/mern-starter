@@ -1,0 +1,85 @@
+storyline: 
+  unObjectId: 7
+  emoji: 🐱
+  name: Magic 8 Ball
+  text: Give it a shake for some priceless advice
+  entryId: 3BsLaXJIvFykdqIVb6T9EU
+
+start:
+  .Shake and think up a question:
+    nextstate: 
+    text: "The Magic 8 ball says 'It is certain.' Hope the question didn't have anything to do with an STD test."
+    Newsfeed:  "{{user_name}} **consulted** the {{object_name}}. Not the John Belushi {{user_name}}... The other kind."
+  ..Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Better not tell you now.' Sounds like you shouldn't check your Twitter."
+    Newsfeed: 
+  ...Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Cannot predict now.' Sounds like you're going to need a paternity test."
+    Newsfeed: 
+  ....Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Yes - definitely.' You must have asked if it's true that who smelt it, dealt it."
+    Newsfeed:
+  .....Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Very doubtful.' You must have asked if Donald Trump would win an arm wrestling match with Michelle Obama."
+    Newsfeed: 
+  ......Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'It is decidedly so.' Sounds like you just asked if you were going to hook up with Captain Picard."
+    Newsfeed: 
+  .......Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Reply hazy, try again.' Did you get the Magic 8 Ball stoned?"
+    Newsfeed: "The {{object_name}} **has** all the answers."
+  ........Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Outlook good.' Doesn't seem like you were asking about the fate of the United States or the UK."
+    Newsfeed: 
+  .........Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'You may rely on it.' Hope you weren't asking about the abstinence birth control method."
+    Newsfeed: 
+  ..........Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Concentrate and ask again.' That's what you get when you ask what the square root of negative one is."
+    Newsfeed: "{{user_name}} just **asked** the {{object_name}} a math question."
+  ...........Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Outlook not so good.' Are you asking about the Microsoft email program? Weird thing to waste your question on, but hey, to each his own."
+    Newsfeed: 
+  ............Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Without a doubt.' Are you asking the literal meaning of Gwen Stefani's band?"
+    Newsfeed: 
+  .............Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'My sources say no.' Is this like a CIA or FBI question?"
+    Newsfeed: "{{user_name}} is **asking** the {{object_name}} about the FBI."   
+  ..............Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Don't count on it.' So clearly not an abacus question."
+    Newsfeed: "{{user_name}} just **asked** the {{object_name}} another math question."
+  ...............Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Yes.' Does that mean you're engaged to the Magic 8 ball?"
+    Newsfeed: "{{user_name}} just **asked** the {{object_name}} about their love life."
+  ................Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Signs point to yes.' Signs are like symptoms, right? Is this about your rash?"
+    Newsfeed: "{{user_name}} just **asked** the {{object_name}} about their rash."
+  .................Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'Most likely.'"
+    Newsfeed: 
+  ..................Shake and think up a question:
+    next state: 
+    text: "The Magic 8 ball says 'As I see it, yes.' The Magic 8 ball sees all." 
+    Newsfeed: 
+  ...................Shake and think up a question:
+    next state: end
+    text: "'Ask again later.' You can always come back and ask the object name anything."
+    Newsfeed: 
+end:     

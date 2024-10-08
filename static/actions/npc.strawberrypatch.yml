@@ -1,0 +1,17 @@
+- name: action.npc.strawberrypatch.plantseed
+  text: Strawberry Seed
+  description: 'Plant a Strawberry seed'
+  order: AAA
+  s3Key: action/color/jellybeans.png
+  collectionId: unobject/npc.strawberrypatch/actionx
+  unObjectId: npc.strawberrypatch
+  backgroundColor: 'F6F6F6'
+
+- name: action.npc.strawberrypatch.harvest
+  text: Harvest
+  description: 'Harvest your strawberries'
+  order: AAA
+  s3Key: action/color/shovel.png
+  collectionId: unobject/npc.strawberrypatch/actionx
+  unObjectId: npc.strawberrypatch
+  backgroundColor: 'F6F6F6'

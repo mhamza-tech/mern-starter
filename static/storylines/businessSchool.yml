@@ -1,0 +1,58 @@
+storyline:
+  unObjectId: 44
+  emoji: 💼
+  name: Business School
+  text: Get an Unreal MBA.
+  entryId: 
+
+start:
+  .It's the first day of school!:
+    text: 'Welcome to the MBA program at the Unreal Business School.'
+    Newsfeed: "{{user_name}} **just enrolled** in an 18-month MBA program at the Unreal {{object_name}}."
+    nextstate: biz
+biz:
+  .Which classes should I take?:
+    text: 'Unreal Accounting 101 is a must. We use Base 16. You are going to love it.'
+    Newsfeed: 
+    next state: biz2 
+biz2:
+  .What else?:
+    text: Fundamentals in Managerial Accounting.
+    next state: biz3
+biz3:
+  .That sounds boring:
+    text: You think that's boring, how about Game Theory for Business Strategy?
+    newsfeed: I want to **get an MBA** wherever Willy Wonka went to {{object_name}}.
+    next state: biz4
+biz4:
+  .Is that real?:
+    text: Sure! Apply game mechanics to business. It's the worst part of game design and the worst part of business, together at last.  
+    next state: biz5
+biz5:
+  .Gross:
+    text: In Unreal, we have many existing businesses that, frankly, are terribly mismanaged.
+    newsfeed: Congratulations, {{user_name}}! You **got into** the Unreal {{object_name}}. 
+    next state: biz6
+biz6:
+  .Like what?:
+    text: The Build A Superhero workshop doesn't even charge, and they are handing robot jet propulsion packs out like candy.
+    next state: biz7
+biz7:
+  .That sounds expensive:
+    text: And whenever someone drinks tequila with Pepe the Chihuahua, and goes to Mexico with him, that's a $400 plane ticket that Unreal pays.
+    next state: biz8
+biz8:
+  .Not fiscally responsible:
+    text: Great observation! We are not managing our costs AT ALL. We want you to manage our profit and loss statements.
+    next state: biz9 
+biz9:
+  .What about new businesses?:
+    text: We are way behind the other worlds when it comes to innovation. Like, OZ has ruby slippers. They can license those, it's Intellectual Property. Unreal does not even have a single shoe store, much less any IP.
+    newsfeed: Other imaginary words are **so dull**. Like, Westeros and Oz don't have a {{object_name}}.
+    next state: biz10
+biz10:
+  .I alone can fix this!:
+    text: Excellent! Now go to your Spreadsheets 101 class, and let's turn this biz around.
+    next state: end                        
+end: 
+ 

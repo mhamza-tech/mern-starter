@@ -1,0 +1,84 @@
+storyline: 
+  unObjectId: 14
+  emoji: 🚬
+  name: Magic Joint
+  text: It's the most magical joint you'll never see.
+  entryId: 3PMRhACSP2GpRjQmI1eSVE
+start:
+  .Pick up:
+    next state: puff1  
+    text: Hi, I'm a Magic Joint! If you puff me enough something magical could happen. Would you like to try me?
+    newsfeed: "{{user_name}} is contemplating **puffing** the {{object_name}}."
+puff1:    
+  .Puff please:
+    next state: puff2
+    text: You've had your first puff of the Magic Joint. Feels nice, right?
+    newsfeed: "{{user_name}} just took a **puff** of the {{object_name}}."
+puff2:
+  .Yes it does:
+    next state: puff3
+    text: Another puff for you?
+    newsfeed: "{{user_name}} is taking a second **puff of the {{object_name}}**."
+puff3:    
+  .Sure:
+    next state: puff4
+    text: Does the world seem a little more...manageable now?
+    newsfeed: "{{user_name}} is **enjoying life** a little more, thanks to the {{object_name}}."
+puff4:    
+  .It does, actually:
+    next state: stoned
+    text: Now you are officially getting stoned. What do you like to do when you are stoned?
+    newsfeed: "{{user_name}} **puff puff passed** the {{object_name}}. But did they inhale? Will YOU?"  
+stoned:    
+ .Not sure, what do you suggest?:
+    next state: snacks
+    text: Maybe get some snacks?
+    newsfeed: "The {{object_name}} has given {{user_name}} the urge to **get a ton of take out food**."
+snacks:    
+ .Snacks are always good:
+    next state: munchies
+    text: Let's get some french fries!
+    newsfeed: "{{user_name}} is **eating** french fries. {{object_name}} gave them the munchies."
+    entryId: 4RRrkxgxusi2rE2XAyhbZJ
+munchies:    
+ .And what else?:
+    next state: pizza
+    text: And pizza?
+    newsfeed: "{{user_name}} is **ordering** pizza. {{object_name}} makes everyone ravenous."
+    entryId: 3wuYzWoQBOYAvJBO7wgLC9
+pizza:
+  .And then?:
+    next state: springrolls
+    text: How about deep fried spring rolls?
+    newsfeed: "{{user_name}} is now **eating** deep friend spring rolls. {{object_name}} is to blame."
+    entryId: 2EujSuMXoiPlYvhybA7b5X
+springrolls:
+  .And then?:
+    next state: kungpao
+    text: How about Kung Pao chicken?  
+    newsfeed: "{{user_name}} is **getting** some Kung Pao chicken. {{object_name}} is great for Chinese restaurants."
+    entryId: 4yVC4vYM8tDZTA7ibZ4ovQ
+kungpao:
+  .And then?:
+    next state: sweetsourpork
+    text: How about sweet and sour pork?  
+    newsfeed: "The Chinese food lady is **pranking {{user_name}}** by quoting Dude, Where's My Car. Those characters were very familiar with {{object_name}}."
+    entryId: 03826ZZjWfG9ga23fee0q
+sweetsourpork:
+  .And then?:
+    next state: friedrice
+    text: Shrimp fried rice?  
+    newsfeed: "{{user_name}} is **falling for** the Dude Where's My Car routine. LOL! Thanks, {{object_name}} for getting {{user_name}} so high that they still don't get the joke."
+    entryId: 1IonH7VWIgZqgYrIfnSLhT
+friedrice:
+  .And then?:
+    next state: wontonsoup
+    text: How about wonton soup? 
+    newsfeed: "{{user_name}} is **slurping** Wonton Soup and taking some more hits of the {{object_name}}."
+    entryId: 66Oxlsg1C1wyXmcRwdG4pm
+wontonsoup:
+  .And then?:
+    next state: end
+    text: Finally, you realize that the Chinese Food lady is quoting a scene from "Dude Where's My Car." She's playing Chinese food mind games on you! Get out of there.
+    newsfeed: "{{user_name}} finally got the joke. {{object_name}} definitely doesn't **make you smarter**."
+end:          

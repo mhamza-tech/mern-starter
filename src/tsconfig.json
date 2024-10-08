@@ -1,0 +1,15 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "../dist",
+    "baseUrl": ".",
+    "rootDir": ".",
+    "inlineSources": true,
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "paths": {
+      "src/*": ["*"]
+    }
+  }
+}

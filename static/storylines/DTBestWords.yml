@@ -1,0 +1,100 @@
+storyline: 
+  unObjectId: 18
+  emoji: 🤦🏼‍♂️ 
+  name: Donald Trump
+  text: Donald Trump has the best words. 
+  entryId: 3AZ6Opgk3HLaVizMRDtaSb
+start:
+  .Quote Please:
+    next state:
+    text: I had some beautiful pictures taken in which I had a big smile on my face. I looked happy, I looked content, I looked like a very nice person, which in theory I am. 
+    Newsfeed: "{{ object_name }} is **boasting** to {{ user_name }} that in theory, he's a very nice person."
+  ..Quote Please:
+    next state:
+    text: Unemployment for African-Americans, you've heard me say this many times, I'm very proud of it.
+    Newsfeed: "Is it Mad Libs written by a **drunk phone sex operator**? Nope... more {{object_name}} babbling."
+  ...Quote Please:
+    next state:
+    text: It is good. You know what uranium is, right? It’s this thing called nuclear weapons. And other things. Like lots of things are done with uranium. Including some bad things.
+    Newsfeed: "If only {{object_name}} **would confuse** uranium with uranus, the world would be safer."
+  ....Quote Please:
+    next state:
+    text: I have been briefed. And I can tell you one thing that we're allowed to say because anybody that ever read the most basic book can say it, a nuclear holocaust would be like no other.
+    Newsfeed: It's so obvious that it's a surprise that {{ object_name }} just told it to {{ user_name }}, but if you need confirmation, there is **no upside to a nuclear war**.
+  .....Quote Please:
+    next state:
+    text: And when you're talking about an atmosphere, oceans are very small. And it blows over and it sails over.
+    Newsfeed: "{{ user_name }} is not so sure that {{ object_name }}'s **theories about atmospheric science** are based in reality."
+  ......Quote Please:
+    next state: 
+    text: I try to learn from the past, but I plan for the future by focusing exclusively on the present. 
+    Newsfeed: "{{ object_name }} is **a walking puzzle**."
+  .......Quote Please:
+    next state:
+    text: And nobody knows what community college is.
+    Newsfeed: 
+  .........Quote Please:
+    next state:
+    text: Apologizing is a great thing but you have to be wrong. I'll absolutely apologize sometime hopefully in the distant future if I'm ever wrong.
+    Newsfeed: "{{ object_name }} just said to {{ user_name }} that **IF he were ever wrong**, he'd apologize, but also, he doesn't see that happening anytime soon."
+  ..........Quote Please:
+    next state:
+    text: I think my rhetoric is a very – it brings people together.
+    Newsfeed: "{{ user_name }} is **skeptical** about the statement that {{ object_name }} just made and has some followup questions. Like WTF!?!?!?!"
+  ...........Quote Please:
+    next state:
+    text: We're going to win at space.
+    Newsfeed: "{{ object_name }} wants to win at space. **Against** who? {{ user_name }} is trying not to laugh."
+  ............Quote Please:
+    next state: 
+    text: And then you want to really drive them crazy, go to hashtag third term, hashtag fourth term. You’ll drive them totally crazy. I mean, you have one guy on television, I’m telling you he’s not leaving. He’s going to win. And then he’s not leaving. So in 2024 he won’t leave, I’m telling you, this is a serious person. These people have gone stone cold crazy.
+    Newsfeed: "{{ object_name }} is **throwing hashtags** left and right."
+  .............Quote Please:
+    next state: 
+    text: Those big windmills that destroy everybody’s property values, kill all the birds. And then all of a sudden it stops, the wind, and the televisions go off. And your wives and husbands say, “Darling, I want to watch Donald Trump on television tonight, but the wind stopped blowing and I can’t watch, there’s no electricity in the house, Darling.”
+    Newsfeed: "{{ user_name }} is not convinced that {{ object_name }} really **understands windmills**."
+  ..............Quote Please:
+    next state: 
+    text: I have second thoughts about everything.
+    Newsfeed: "{{ user_name }} is **laughing at** {{ object_name }}."
+  ...............Quote Please:  
+    text: I didn't say that. I will tell you I didn't say that. And there'd be nothing wrong if I did say it according to everybody that I've read today, but I did not say that.
+    next state:
+  ................Quote Please:   
+    text: Mental health -- very important.
+    Newsfeed: "{{ user_name }} is **scoffing** at {{ object_name }}."
+  .................Quote Please: 
+    text: Remember two things. Number one, I said, we're going to be saying Christmas again. And, number two, I said I was going to give you a Christmas present.
+  ..................Quote Please:  
+    text: I would give myself an A+.
+  ...................Quote Please: 
+    text: And nobody knows what community college is.
+  ....................Quote Please: 
+    text: We're going to win at space.
+  .....................Quote Please:   
+    text: We got more money. We got more brains. We got better houses, apartments. We got nicer boats. We're smarter than they are. And they say, The elite.
+  ......................Quote Please:   
+    text: We love winners. We love winners. Winners are winners.
+  .......................Quote Please:   
+    text: Even one of them recently said that President Trump made promises, but he's kept many more promises. I mean, far more than I made.
+  ........................Quote Please:   
+    text: And when you're talking about an atmosphere, oceans are very small. And it blows over and it sails over.
+  .........................Quote Please:   
+    text: I try to learn from the past, but I plan for the future by focusing exclusively on the present.
+  ..........................Quote Please:   
+    text: I know words. I have the best words. 
+  ...........................Quote Please:   
+    text: The greatest movement in the history of our country, the greatest political movement in the history of our country. And even though we had fake witch hunts on our back and all the other things that we had to go through, we have taken this big, beautiful ship and it's being turned around very quickly.
+  ............................Quote Please:   
+    text: All you have to do is say, China, how you doing? They're not too happy, they're not too happy. They're losing millions of jobs. The tariffs are working and they're eating the tariffs by the way. There's no price increase.
+  ...........................Quote Please:
+    text: No, it's a beautiful thing. We wanted to continue onward until about a month before the election. I will let them have it like you've never heard before. I don't want them to change. Wow, it's like Elizabeth Warren. I did the Pocahontas thing. I hit her really hard and it looked like she was down and out, but that was too long ago.
+  ..............................Quote Please:   
+    text: I should have waited, but don't worry, we will revive it. It can be revived. It can be -- right? It will be revived and it can be revived very easily and very quickly and we're going to have some fun in the state of New Hampshire. Now, what do we do ready? Let me have first, make America great again, then keep America great, right?
+  ...............................Quote Please:   
+    text: Hey, who knows it better than you? You're like central casting for the closing of factories. 
+  ................................Quote Please:   
+    text: They had pipes underneath, and the pipes were made out of copper. And during the evening things would happen, like the copper would be stolen because it was very valuable. So they’d have a little piece with copper and then the rest of the pipe they’d lay and they’d get ready to pour, and they’d leave and everybody would steal the copper. So they’d … this took place for … I guess from seven to nine years, nobody actually knows, nobody wants to talk about it. But those trucks were operated incredibly well and I never missed a delivery and it’s called the teamsters.   
+    next state: end
+end:
+

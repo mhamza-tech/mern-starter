@@ -1,0 +1,59 @@
+[
+  {
+    "name": "default",
+    "type": "postgres",
+    "host": "localhost",
+    "database": "unreal_core",
+    "port": 5432,
+    "username": "unreal",
+    "password": "password",
+    "migrationsRun": true,
+    "entities": [
+      "src/db/entity/User.ts",
+      "src/db/entity/UserRole.ts",
+      "src/db/entity/DeviceInfo.ts",
+      "src/db/entity/EmailRegistry.ts",
+      "src/db/entity/Report.ts",
+      "src/db/entity/Activity.ts",
+      "src/db/entity/Edge.ts",
+      "src/db/entity/QEdge.ts",
+      "src/db/entity/SDist.ts",
+      "src/db/entity/EdgeStats.ts",
+      "src/db/entity/Event.ts",
+      "src/db/entity/Effect.ts",
+      "src/db/entity/NewsfeedItem.ts",
+      "src/db/entity/Comment.ts",
+      "src/db/entity/CommentReceipt.ts",
+      "src/db/entity/Receipt.ts",
+      "src/db/entity/Field.ts",
+      "src/db/entity/Tile.ts",
+      "src/db/entity/ChatRoom.ts",
+      "src/db/entity/Notification.ts",
+      "src/db/entity/Location.ts",
+      "src/db/entity/Job.ts",
+      "src/db/entity/FriendRequest.ts",
+      "src/db/entity/Action.ts",
+      "src/db/entity/ActionX.ts",
+      "src/db/entity/ActionXInstance.ts",
+      "src/db/entity/ActionResult.ts",
+      "src/db/entity/ActionWithContext.ts",
+      "src/db/entity/PlayerContext.ts",
+      "src/db/entity/Storyboard.ts",
+      "src/db/entity/StoryboardEdge.ts",
+      "src/db/entity/StoryboardEdgeType.ts",
+      "src/db/entity/StorylineSession.ts",
+      "src/db/entity/UnObject.ts",
+      "src/db/entity/CompletedAction.ts",
+      "src/db/entity/Image.ts"
+    ],
+    "migrations": [
+      "src/db/migrations/*.ts"
+    ],
+    "cli": {
+      "migrationsDir": "src/db/migrations"
+    },
+    "dropSchema": false,
+    "synchronize": false,
+    "logging": false
+  }
+]

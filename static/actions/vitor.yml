@@ -1,0 +1,211 @@
+#
+# feb2020
+# 
+# actions created by vitor.
+#
+
+- name: 'Action.General.AirGuitar'
+  isDeleted: true
+  text: Air Guitar
+  description: Air Guitar
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+- name: 'Action.General.BlackHole'
+  isDeleted: true
+  text: Black Hole
+  description: Black Hole
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+# 
+# Delete re-named action.
+#
+- name: 'Action.General.DiscoBall'
+  isDeleted: true
+  text: Disco Ball
+  package: core.deleted
+
+- name: 'Action.Rewarded.DiscoBall'
+  isDeleted: true
+  text: Disco Ball
+  description: Disco Ball
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+#
+# Delete re-named action
+#
+- name: 'Action.Rewarded.DancingDog'
+  isDeleted: true
+  text: 'Dancing Dog'
+  package: core.deleted
+
+- name: 'Action.General.DancingDog'
+  isDeleted: true
+  text: Dancing Dog
+  description: Dancing Dog
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+# 
+# Delete re-named action.
+#
+- name: 'Action.Rewarded.CatDisguise'
+  isDeleted: true
+  text: Cat Disguise
+  package: core.deleted
+
+- name: 'Action.General.CatDisguise'
+  isDeleted: true
+  text: Cat Disguise
+  description: A furry disguise
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+- name: 'Action.General.ChocolateWaterfall'
+  isDeleted: true
+  text: Chocolate Waterfall
+  description: A yummy waterfall
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+- name: 'Action.General.DroneSelfie'
+  isDeleted: true
+  text: Drone Selfie
+  description: Drone Selfie
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+- name: 'Action.General.Burp'
+  isDeleted: true
+  text: Burp
+  description: A burp
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+- name: 'Action.General.Fireball'
+  isDeleted: true
+  text: Fireball
+  description: A fireball
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+- name: 'Action.General.FlipOff'
+  isDeleted: true
+  text: Flip Off
+  description: Flip off
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+- name: 'Action.General.FullMoon'
+  isDeleted: true
+  text: Full Moon
+  description: Full Moon
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly
+
+- name: 'Action.General.Confetti'
+  isDeleted: true
+  text: Confetti
+  description: Confetti
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly 
+
+- name: 'Action.General.Sing'
+  isDeleted: true
+  text: Sing
+  description: Sing
+  order: Ad
+  s3Key: null
+  backgroundColor: 'F6F6F6'
+  xp: 2
+  power: 1
+  package: core
+  collectionId: actionx
+  tags:
+    - friendly 

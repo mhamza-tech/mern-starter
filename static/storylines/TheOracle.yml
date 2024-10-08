@@ -1,0 +1,54 @@
+storyline:
+  unObjectId: 24
+  emoji: 🔮
+  name: The Oracle
+  text: Touch the orb, get wisdom.
+  entryId: 6hevHBjao3UMaWrtfCLoNo
+
+start:
+  .Wisdom please:
+    next state: touch
+    text: "If you are a worm, stay away from birds who say they are 'morning people.'"
+    Newsfeed: "{{user_name}} is **getting** some Dali Lama-style wisdom from {{object_name}}."
+touch:    
+  .Touch:
+    next state: 
+    text: The mind and the breath are the king and queen of human consciousness.
+    Newsfeed: "{{user_name}} is **pondering** human consciousness at {{object_name}}."
+  ..Touch:
+    next state: 
+    text: If you want the best the world has to offer, offer the world your best.
+    Newsfeed: "Do you have one of those friends who just **posts** stupid inspirational quotes on social media? Now, {{user_name}} does. It's {{object_name}}."
+  ...Touch:
+    next state: 
+    text: Live, Laugh, Love. That is such a useless saying.
+    Newsfeed: "Despite a **trite saying** to the contrary (I'm looking at you {{object_name}}), today is NOT the first day of the rest of your life."
+  ....Touch:
+    next state: 
+    text: Every day is a winding road. A long and winding road. A mighty wind. Then dust in the wind.
+    Newsfeed: 
+  .....Touch:
+    next state: 
+    text: Everything happens for a reason. Sometimes the reason is, you suck.   
+    Newsfeed: What's the **opposite** of new age? That's what {{object_name}} seems to be.
+  ......Touch:
+    next state: 
+    text: We are all atheists about most of the gods that humanity has ever believed in. Some of us just go one god further.
+    Newsfeed: "{{object_name}} acts like it **knows all**, but some of these statements belong on a de-motivation poster."
+  .......Touch:
+    next state: 
+    text: Keep your friends close, and your sex toys closer.
+    Newsfeed: Inspirational bullshit is STILL bullshit. So **sayeth** {{object_name}}.
+  ........Touch:
+    next state: 
+    text: The price good men pay for indifference to public affairs is to be ruled by evil men.
+    Newsfeed: Anyone telling you life is short is probably **vaping**. {{object_name}} just told me that.
+  .........Touch:
+    next state: 
+    text: A paranoid is someone who knows a little of what's going on. 
+    Newsfeed: The wisdom of William S. Burroughs **is dispensed** freely by {{object_name}}.
+  ..........Touch:
+    next state: end
+    text: Now is the time for you to seize the day, get up and get cray, rosé all day, then slay.
+    Newsfeed: "{{object_name}} is **getting crunk** up in here."
+end: 
